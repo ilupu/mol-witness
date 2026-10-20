@@ -1,0 +1,17 @@
+name: MOL witness
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # la fiecare 3 ore, UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  witness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python witness.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

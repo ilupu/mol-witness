@@ -1,0 +1,40 @@
+{
+  "base": "https://miroslava.cityon.ro",
+  "list_page": "/MonitorulOficialLocal/HotararileAutoritatiiDeliberative",
+  "list_endpoint": "/api/services/app/SedintaMol/IncarcaListaSedinteMol",
+  "list_body": {
+    "filter": "",
+    "deLaData": "",
+    "panaLaData": "",
+    "maxResultCount": 40,
+    "skipCount": 0
+  },
+  "max_sedinte": 25,
+  "always": [
+    "8758",
+    "8779",
+    "8781"
+  ],
+  "endpoints": {
+    "hotarari": "/api/services/app/SedintaMol/IncarcaListaHotarari",
+    "proiecte": "/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+    "prezenta": "/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta"
+  },
+  "extra_endpoints": {
+   "registru-proiecte-2026": {
+    "path": "/api/services/app/RegistruMonitorulOficialLocal/IncarcaRegistruProiecte",
+    "body": {"filter":"","deLaData":"","panaLaData":"","an":"2026","idCategorieDocument":7,"maxResultCount":500,"skipCount":0},
+    "referer": "/MonitorulOficialLocal/RegistruProiecte"
+   },
+   "registru-hotarari-2026": {
+    "path": "/api/services/app/RegistruMonitorulOficialLocal/IncarcaRegistruHotarari",
+    "body": {"filter":"","deLaData":"","panaLaData":"","an":"2026","idCategorieDocument":6,"maxResultCount":500,"skipCount":0},
+    "referer": "/MonitorulOficialLocal/RegistruHotarari"
+   },
+   "registru-pv-2026": {
+    "path": "/api/services/app/RegistruMonitorulOficialLocal/IncarcaRegistruProceseVerbale",
+    "body": {"filter":"","deLaData":"","panaLaData":"","an":"2026","idCategorieDocument":6,"maxResultCount":500,"skipCount":0},
+    "referer": "/MonitorulOficialLocal/RegistruProceseVerbale"
+   }
+  }
+}

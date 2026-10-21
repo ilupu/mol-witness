@@ -1,0 +1,26 @@
+{
+ "name": "sedinta-8758-2026-09-17/prezenta",
+ "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+ "request_body": {
+  "idSedinta": "8758",
+  "maxResultCount": 100,
+  "skipCount": 0
+ },
+ "fetched_at_utc": "2026-10-21T21:28:16.428192+00:00",
+ "http_status": 200,
+ "response_headers": {
+  "Content-Length": "124",
+  "Content-Type": "application/json; charset=utf-8",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Content-Type-Options": "nosniff",
+  "X-XSS-Protection": "1; mode=block",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "Date": "Wed, 21 Oct 2026 21:28:09 GMT",
+  "Connection": "close"
+ },
+ "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+ "bytes": 124,
+ "github_run_id": "39678909934",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/39678909934"
+}

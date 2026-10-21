@@ -1,0 +1,30 @@
+{
+ "name": "registru-proiecte-2026",
+ "url": "https://miroslava.cityon.ro/api/services/app/RegistruMonitorulOficialLocal/IncarcaRegistruProiecte",
+ "request_body": {
+  "filter": "",
+  "deLaData": "",
+  "panaLaData": "",
+  "an": "2026",
+  "idCategorieDocument": 7,
+  "maxResultCount": 500,
+  "skipCount": 0
+ },
+ "fetched_at_utc": "2026-10-21T06:48:55.200566+00:00",
+ "http_status": 200,
+ "response_headers": {
+  "Content-Length": "173700",
+  "Content-Type": "application/json; charset=utf-8",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Content-Type-Options": "nosniff",
+  "X-XSS-Protection": "1; mode=block",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "Date": "Wed, 21 Oct 2026 06:48:56 GMT",
+  "Connection": "close"
+ },
+ "sha256": "44547c503b53eba21405af0cbd9283c685d211b168d94e143828a2403c6981e3",
+ "bytes": 173700,
+ "github_run_id": "39557214360",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/39557214360"
+}

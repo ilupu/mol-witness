@@ -1,0 +1,26 @@
+{
+ "name": "sedinta-3638-2024-10-18/proiecte",
+ "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+ "request_body": {
+  "idSedinta": "3638",
+  "maxResultCount": 100,
+  "skipCount": 0
+ },
+ "fetched_at_utc": "2026-10-22T06:51:33.533164+00:00",
+ "http_status": 200,
+ "response_headers": {
+  "Content-Length": "5590",
+  "Content-Type": "application/json; charset=utf-8",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Content-Type-Options": "nosniff",
+  "X-XSS-Protection": "1; mode=block",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "Date": "Thu, 22 Oct 2026 06:51:31 GMT",
+  "Connection": "close"
+ },
+ "sha256": "0d7482eac74a6971af378074226bd204326fab70be0a68eff3f64fc24d6d739e",
+ "bytes": 5590,
+ "github_run_id": "39735776032",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/39735776032"
+}

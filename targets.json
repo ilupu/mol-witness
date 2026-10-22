@@ -10,6 +10,8 @@
     "skipCount": 0
   },
   "max_sedinte": 250,
+  "max_sedinte_recent": 25,
+  "full_sweep_hours": 22,
   "always": [
     "8758",
     "8779",

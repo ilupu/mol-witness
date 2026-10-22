@@ -3,13 +3,17 @@
 Pentru fiecare ședință: GET pagina (primește cookie-urile ABP + XSRF), apoi POST pe endpoint-urile JSON.
 Fiecare răspuns brut + metadate e scris prin API-ul GitHub (commit server-side, semnat de GitHub)."""
 import base64, hashlib, json, os, re, sys, time, urllib.request, urllib.error, http.cookiejar
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 REPO = os.environ["GITHUB_REPOSITORY"]
 TOKEN = os.environ["GITHUB_TOKEN"]
 RUN = os.environ.get("GITHUB_RUN_ID", "local")
 API = f"https://api.github.com/repos/{REPO}/contents/"
 UA = f"mol-witness/1.0 (+https://github.com/{REPO})"
+RUNS_DIR = "data/_runs"   # un fișier per rulare: mod (full/recent), ce s-a verificat, ce era neschimbat
+RUNLOG = {"github_run_id": RUN, "github_run_url": f"https://github.com/{REPO}/actions/runs/{RUN}",
+          "started_at_utc": datetime.now(timezone.utc).isoformat(), "mode": None,
+          "sedinte": {}, "recorded": [], "unchanged": []}
 
 jar = http.cookiejar.CookieJar()
 opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
@@ -63,9 +67,33 @@ def gh_commit(files, message):
     _head["oid"] = d["createCommitOnBranch"]["commit"]["oid"]
     return _head["oid"]
 
+def last_snapshot(name):
+    """(sha256, http_status, fișier) din cel mai recent .meta.json salvat pentru `name`, din checkout."""
+    d = f"data/{name}"
+    try:
+        files = sorted(f for f in os.listdir(d) if f.endswith(".meta.json"))
+    except FileNotFoundError:
+        return None, None, None
+    if not files:
+        return None, None, None
+    try:
+        m = json.load(open(os.path.join(d, files[-1])))
+        return m.get("sha256"), m.get("http_status"), files[-1]
+    except Exception:
+        return None, None, None
+
 def record(name, url, request_body, t0, status, hdrs, body):
     sha = hashlib.sha256(body).hexdigest()
     stamp = t0.strftime("%Y%m%dT%H%M%SZ")
+    prev_sha, prev_status, prev_file = last_snapshot(name)
+    if prev_sha == sha and prev_status == status:
+        # identic cu ultimul snapshot: nu mai comitem încă o copie, doar notăm verificarea în jurnalul rulării
+        RUNLOG["unchanged"].append({"name": name, "url": url, "fetched_at_utc": t0.isoformat(),
+                                    "http_status": status, "sha256": sha, "bytes": len(body),
+                                    "same_as": f"data/{name}/{prev_file}"})
+        print(f"{name}: {status} {len(body)}B sha256={sha[:16]} neschimbat (= {prev_file})")
+        time.sleep(0.5)
+        return
     meta = {"name": name, "url": url, "request_body": request_body, "fetched_at_utc": t0.isoformat(),
             "http_status": status, "response_headers": hdrs, "sha256": sha, "bytes": len(body),
             "github_run_id": RUN, "github_run_url": f"https://github.com/{REPO}/actions/runs/{RUN}"}
@@ -74,7 +102,7 @@ def record(name, url, request_body, t0, status, hdrs, body):
     msg = f"{name} {stamp} status={status} sha256={sha[:16]}"
     c1 = gh_commit({base + ext: body,
                     base + ".meta.json": json.dumps(meta, ensure_ascii=False, indent=1).encode()}, msg)
-    c2 = c1
+    RUNLOG["recorded"].append(base + ext)
     # rezumat lizibil pentru hotărâri: câte și care
     summary = ""
     if ext == ".json":
@@ -84,7 +112,7 @@ def record(name, url, request_body, t0, status, hdrs, body):
             if isinstance(items, dict): items = items.get("items", [])
             summary = f" items={len(items)}"
         except Exception: pass
-    print(f"{name}: {status} {len(body)}B{summary} sha256={sha[:16]} commits={c1[:7]},{c2[:7]}")
+    print(f"{name}: {status} {len(body)}B{summary} sha256={sha[:16]} commit={c1[:7]}")
     time.sleep(1.5)
 
 def post(base, url, body, referer):
@@ -93,8 +121,8 @@ def post(base, url, body, referer):
         "X-Requested-With": "XMLHttpRequest", "X-XSRF-TOKEN": xsrf(),
         "Origin": base, "Referer": referer})
 
-def discover(cfg):
-    """Lista ședințelor din endpoint-ul ABP; returnează {id: eticheta}. Robust la nume de câmpuri necunoscute."""
+def discover(cfg, limit):
+    """Primele `limit` ședințe din endpoint-ul ABP; returnează {id: eticheta}. Robust la nume de câmpuri necunoscute."""
     base = cfg["base"]
     do(base + cfg["list_page"])  # cookie-uri
     url = base + cfg["list_endpoint"]
@@ -104,7 +132,7 @@ def discover(cfg):
     try:
         res = json.loads(b).get("result", {})
         items = res.get("items") if isinstance(res, dict) else res
-        for it in (items or [])[: cfg.get("max_sedinte", 25)]:
+        for it in (items or [])[:limit]:
             sid = str(it.get("id") or it.get("idSedinta") or "")
             if not sid: continue
             date = next((str(v)[:10] for k, v in it.items() if "data" in k.lower() and v), "")
@@ -116,23 +144,64 @@ def discover(cfg):
         out.setdefault(sid, "sedinta")
     return out
 
+def last_full_sweep():
+    """Momentul ultimei rulări `full`, din jurnalele de rulare din checkout."""
+    try:
+        files = sorted(f for f in os.listdir(RUNS_DIR) if f.endswith(".json"))
+    except FileNotFoundError:
+        return None
+    for f in reversed(files):
+        try:
+            j = json.load(open(os.path.join(RUNS_DIR, f)))
+            if j.get("mode") == "full":
+                return datetime.fromisoformat(j["started_at_utc"])
+        except Exception:
+            continue
+    return None
+
+def pick_mode(cfg):
+    """`full` (toate max_sedinte) o dată la full_sweep_hours sau la cerere (MOL_FULL=1); altfel `recent`."""
+    if os.environ.get("MOL_FULL", "").lower() in ("1", "true", "yes"):
+        return "full"
+    last = last_full_sweep()
+    if last is None:
+        return "full"
+    age = datetime.now(timezone.utc) - last
+    return "full" if age >= timedelta(hours=cfg.get("full_sweep_hours", 22)) else "recent"
+
+def write_runlog():
+    RUNLOG["finished_at_utc"] = datetime.now(timezone.utc).isoformat()
+    stamp = datetime.fromisoformat(RUNLOG["started_at_utc"]).strftime("%Y%m%dT%H%M%SZ")
+    n_rec, n_unch = len(RUNLOG["recorded"]), len(RUNLOG["unchanged"])
+    msg = f"run {stamp} mode={RUNLOG['mode']} sedinte={len(RUNLOG['sedinte'])} noi={n_rec} neschimbate={n_unch}"
+    c = gh_commit({f"{RUNS_DIR}/{stamp}.json": json.dumps(RUNLOG, ensure_ascii=False, indent=1).encode()}, msg)
+    print(f"{msg} commit={c[:7]}")
+
 def main():
     cfg = json.load(open("targets.json"))
     base = cfg["base"]
-    sedinte = discover(cfg)
-    print("sedinte:", sedinte)
-    for sid, label in sedinte.items():
-        page_url = f"{base}/MonitorulOficialLocal/Sedinta/{sid}"
-        do(page_url)  # doar pentru cookie-uri (conținutul vine prin XHR, HTML-ul nu se salvează)
-        for ep_name, ep in cfg["endpoints"].items():
-            url = base + ep
-            req_body = {"idSedinta": sid, "maxResultCount": 100, "skipCount": 0}
-            t0, st, h, b = post(base, url, req_body, page_url)
-            record(f"sedinta-{sid}-{label}/{ep_name}", url, req_body, t0, st, h, b)
-    for name, ep in cfg.get("extra_endpoints", {}).items():
-        if name.startswith("_"): continue
-        t0, st, h, b = post(base, base + ep["path"], ep["body"], base + ep.get("referer", "/"))
-        record(name, base + ep["path"], ep["body"], t0, st, h, b)
+    mode = pick_mode(cfg)
+    limit = cfg.get("max_sedinte", 250) if mode == "full" else cfg.get("max_sedinte_recent", 25)
+    RUNLOG["mode"] = mode
+    print(f"mod: {mode} (max {limit} sedinte)")
+    try:
+        sedinte = discover(cfg, limit)
+        RUNLOG["sedinte"] = sedinte
+        print("sedinte:", sedinte)
+        for sid, label in sedinte.items():
+            page_url = f"{base}/MonitorulOficialLocal/Sedinta/{sid}"
+            do(page_url)  # doar pentru cookie-uri (conținutul vine prin XHR, HTML-ul nu se salvează)
+            for ep_name, ep in cfg["endpoints"].items():
+                url = base + ep
+                req_body = {"idSedinta": sid, "maxResultCount": 100, "skipCount": 0}
+                t0, st, h, b = post(base, url, req_body, page_url)
+                record(f"sedinta-{sid}-{label}/{ep_name}", url, req_body, t0, st, h, b)
+        for name, ep in cfg.get("extra_endpoints", {}).items():
+            if name.startswith("_"): continue
+            t0, st, h, b = post(base, base + ep["path"], ep["body"], base + ep.get("referer", "/"))
+            record(name, base + ep["path"], ep["body"], t0, st, h, b)
+    finally:
+        write_runlog()
 
 if __name__ == "__main__":
     main()

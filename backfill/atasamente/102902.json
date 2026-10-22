@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "13fe4863-0203-fec5-c681-3a17c471520c",
+    "denumireAtasament": "hot-CL-19.12.2024-315.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

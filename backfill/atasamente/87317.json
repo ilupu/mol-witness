@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "4aef9fd2-e341-cd29-6abf-3a13894571e4",
+    "denumireAtasament": "proiect-hot-CL-23.05.2024-143.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

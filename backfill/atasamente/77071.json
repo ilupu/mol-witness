@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "8c8c9e6e-ec8c-a8f4-6edf-3a0f8e46531b",
+    "denumireAtasament": "hot-CL-29.11.2023-250.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "ff112ae2-0f2a-1b9c-2331-3a07929fcedc",
+    "denumireAtasament": "hot-CL-30.09.2022-245.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

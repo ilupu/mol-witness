@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "97a290ca-6444-375a-8fe3-3a0117deee4c",
+    "denumireAtasament": "hot-CL-28.10.2021-232.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

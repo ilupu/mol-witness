@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "7f54ff84-8876-1965-5afe-3a1ee7ffc961",
+    "denumireAtasament": "PHCL-SED-ORD-18.12.2025-NR.280-SUPLIMENTAR.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "7b5ebcd2-e5ad-07bf-6fe4-3a19788bc0df",
+    "denumireAtasament": "HCL-SED-ORD-27.03.2025-NR.51.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "b5b81121-bbad-c85a-d570-3a19788bc115",
+    "denumireAtasament": "HCL-SED-ORD-27.03.2025-NR.51-ANEXE.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

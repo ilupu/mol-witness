@@ -1,0 +1,138 @@
+[
+ {
+  "idSedinta": 348,
+  "dataSedinta": "2021-12-21T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 21.12.2021",
+  "aprobatInSedinta": "ORDINARĂ din 21.12.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 183,
+  "dataSedinta": "2021-11-25T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 25.11.2021",
+  "aprobatInSedinta": "ORDINARĂ din 25.11.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 182,
+  "dataSedinta": "2021-11-17T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 17.11.2021",
+  "aprobatInSedinta": "DE ÎNDATĂ din 17.11.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 181,
+  "dataSedinta": "2021-11-01T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 01.11.2021",
+  "aprobatInSedinta": "DE ÎNDATĂ din 01.11.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 180,
+  "dataSedinta": "2021-10-28T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 28.10.2021",
+  "aprobatInSedinta": "ORDINARĂ din 28.10.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 179,
+  "dataSedinta": "2021-10-19T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 19.10.2021",
+  "aprobatInSedinta": "DE ÎNDATĂ din 19.10.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 178,
+  "dataSedinta": "2021-10-14T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 14.10.2021",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 14.10.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 177,
+  "dataSedinta": "2021-09-30T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 30.09.2021",
+  "aprobatInSedinta": "ORDINARĂ din 30.09.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 117,
+  "dataSedinta": "2021-09-23T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 23.09.2021",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 23.09.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 82,
+  "dataSedinta": "2021-08-31T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 31.08.2021",
+  "aprobatInSedinta": "ORDINARĂ din 31.08.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 79,
+  "dataSedinta": "2021-08-18T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 18.08.2021",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 18.08.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 68,
+  "dataSedinta": "2021-07-29T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 29.07.2021",
+  "aprobatInSedinta": "ORDINARĂ din 29.07.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 53,
+  "dataSedinta": "2021-06-30T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 30.06.2021",
+  "aprobatInSedinta": "ORDINARĂ din 30.06.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 6,
+  "dataSedinta": "2021-06-18T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 18.06.2021",
+  "aprobatInSedinta": "DE ÎNDATĂ din 18.06.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 5,
+  "dataSedinta": "2021-05-31T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 31.05.2021",
+  "aprobatInSedinta": "ORDINARĂ din 31.05.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 7,
+  "dataSedinta": "2021-04-28T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 28.04.2021",
+  "aprobatInSedinta": "ORDINARĂ din 28.04.2021",
+  "id": 0
+ },
+ {
+  "idSedinta": 15,
+  "dataSedinta": "2021-01-08T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 08.01.2021",
+  "aprobatInSedinta": "ORDINARĂ din 08.01.2021",
+  "id": 0
+ }
+]

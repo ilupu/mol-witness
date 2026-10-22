@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "eab2ee51-a5a8-1ded-bed5-39fdb1652fe6",
+    "denumireAtasament": "hot-CL-30.06.2021-145.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "dd387d15-e8be-d4e4-4480-39fdb5cb524c",
+    "denumireAtasament": "plan-paza-2021-anexa1-hcl-145.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

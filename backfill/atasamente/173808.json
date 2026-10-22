@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "3cc744a1-28e4-9ba8-24fc-3a23e4f56f34",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-DE-INDATA-24.09.2026 -NR.179.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

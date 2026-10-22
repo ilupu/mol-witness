@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "28155fef-6fd8-6ca1-14ed-3a232ac3bc42",
+    "denumireAtasament": "HCL-SED-ORD-30.07.2026-NR.132.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "1c08dea3-1bc0-2c72-200b-3a232ac3bcc2",
+    "denumireAtasament": "HCL-SED-ORD-30.07.2026-NR.132-ANEXA 1-REGULAMENT.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

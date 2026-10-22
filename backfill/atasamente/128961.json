@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "9b3c1a98-c07e-2428-5d51-3a1c4f42123e",
+    "denumireAtasament": "HCL-SED-EXTRAORD-DE-INDATA-04.09.2025-NR.172.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

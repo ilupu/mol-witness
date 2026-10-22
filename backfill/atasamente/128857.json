@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "b131f1c1-1aa3-1c62-480c-3a1c402157b7",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-DE-INDATA-04.09.2025-NR.173.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

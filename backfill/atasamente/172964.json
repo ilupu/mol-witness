@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "33255a4f-dfd3-dc14-4298-3a238d5dda45",
+    "denumireAtasament": "HCL-SED-ORD-27.08.2026-NR.152.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "82936c48-0dac-9897-c2c0-3a238d5dda91",
+    "denumireAtasament": "HCL-SED-ORD-27.08.2026-NR.152-ANEXA 1.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

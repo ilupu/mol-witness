@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "81bae64c-53b7-caa3-05a6-3a19d5b355d9",
+    "denumireAtasament": "HCL-SED-ORD-CL-30.04.2025-NR.67.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "145f618f-4f9b-e2e0-c26e-3a19d5b35620",
+    "denumireAtasament": "HCL-SED-ORD-CL-30.04.2025-NR.67-PLAN DE ORDINE SI SIGURANTA PUBLICA 2025.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

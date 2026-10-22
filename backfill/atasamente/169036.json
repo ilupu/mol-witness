@@ -1,0 +1,30 @@
+{
+ "result": {
+  "totalCount": 3,
+  "items": [
+   {
+    "idAtasament": "0ef8bd4b-d0b4-35cf-84e2-3a2229cb2835",
+    "denumireAtasament": "HCL-SED-ORD-28.05.2026-NR.104 - ANEXA 1.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "7f8cd318-930d-2db7-2032-3a2229cb2895",
+    "denumireAtasament": "HCL-SED-ORD-28.05.2026-NR.104 - ANEXA 2.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "7eef339f-77fa-f720-3d1b-3a2229cb28fb",
+    "denumireAtasament": "HCL-SED-ORD-28.05.2026-NR.104.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "1c33d1c5-1a9d-aea7-ded5-3a1ae5f9b3fc",
+    "denumireAtasament": "PHCL-SED-ORD-26.06.2025-NR.133.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "afdc34ab-68f2-6509-6630-3a1ae5f9b42d",
+    "denumireAtasament": "PHCL-SED-ORD-26.06.2025-NR.133-anexe.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

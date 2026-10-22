@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "83637372-d7a4-b0ee-64ed-3a1ae5f8a598",
+    "denumireAtasament": "PHCL-SED-ORD-26.06.2025-NR.132.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "23f51619-5c40-bd9e-e671-3a1ae5f8a5d6",
+    "denumireAtasament": "PHCL-SED-ORD-26.06.2025-NR.132-anexe.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

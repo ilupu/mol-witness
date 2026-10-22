@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "f5cbda1d-b071-7fe4-af7f-3a1c3f2a2606",
+    "denumireAtasament": "HCL-SED-EXTRAORD-12.08.2025-NR.146.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

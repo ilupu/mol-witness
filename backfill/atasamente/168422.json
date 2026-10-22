@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "fd5b5794-bf46-dd86-f5a4-3a21f1a2a333",
+    "denumireAtasament": "PHCL-SED-ORD-25.06.2026-NR.117.pdf",
+    "vizualizareExterna": false,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

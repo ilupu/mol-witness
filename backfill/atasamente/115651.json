@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "130a38fe-dcd3-9e62-4563-3a1ae5fc63ce",
+    "denumireAtasament": "HCL-SED-ORD-26.06.2025-NR.108.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "553e6504-bd5b-0a34-ccb4-3a1afc32e6bd",
+    "denumireAtasament": "HCL-SED-ORD-26.06.2025-NR.108-anexa 1.pdf",
+    "vizualizareExterna": false,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

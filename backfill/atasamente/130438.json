@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "6a190842-c4c8-ce88-148c-3a1cbbac1e97",
+    "denumireAtasament": "HCL-SED-ORD-30.09.2025-NR.174.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "833a327b-2937-a8ed-12cf-3a1cbbac1f11",
+    "denumireAtasament": "Regulament-restrictii-tonaj-09.2025.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

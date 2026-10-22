@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "4b7a9f86-24f4-8d9d-e11e-3a2103ef4b1c",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-05.05.2026-NR.86.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "f68a28d4-ca9c-a4c7-71f8-3a2103ef4b75",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-05.05.2026-NR.86-NOTA DE FUNDAMENTARE.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

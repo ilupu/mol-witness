@@ -1,0 +1,30 @@
+{
+ "result": {
+  "totalCount": 3,
+  "items": [
+   {
+    "idAtasament": "11b6b0c2-6583-a0ab-35df-3a205493bf36",
+    "denumireAtasament": "PHCL-SED-ORD-31.03.2026-NR.62-Raport de Specialitate.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "c313f5bd-16bc-56f6-c64b-3a205493bf8d",
+    "denumireAtasament": "PHCL-SED-ORD-31.03.2026-NR.62-Referat de Aprobare.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "1cff3bae-42a8-ceb3-99da-3a205493bfbf",
+    "denumireAtasament": "PHCL-SED-ORD-31.03.2026-NR.62..pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

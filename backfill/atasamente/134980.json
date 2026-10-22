@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "8174e4ea-37c3-8b89-ce9d-3a1e9f1d4978",
+    "denumireAtasament": "HCL-SED-ORD-18.12.2025-NR.259.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "db2de269-c9e3-73ce-3cbb-3a1e9f1d499d",
+    "denumireAtasament": "HCL-SED-ORD-18.12.2025-NR.259-ANEXA-4.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

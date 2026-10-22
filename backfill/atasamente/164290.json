@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "33578055-65ee-d50b-b946-3a20a1c709a8",
+    "denumireAtasament": "HCL-SED-ORD-31.03.2026-NR.61.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "dce273fa-8c40-762e-5d06-3a20a1c70a53",
+    "denumireAtasament": "Raport activitate primar 2025.pdf",
+    "vizualizareExterna": false,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

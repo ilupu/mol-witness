@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "1b22d645-e02f-be41-03df-39fdb1673c4a",
+    "denumireAtasament": "hot-CL-30.06.2021-146.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "cf484831-4662-ae0a-e1b7-39fdb1a865e4",
+    "denumireAtasament": "statutul-comunei-Miroslava-30.06.2021.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

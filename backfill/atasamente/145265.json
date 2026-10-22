@@ -1,0 +1,30 @@
+{
+ "result": {
+  "totalCount": 3,
+  "items": [
+   {
+    "idAtasament": "4c4d31ba-7b99-4238-3c92-3a1fa09706cb",
+    "denumireAtasament": "PHCL-SED-ORD-26.02.2026-NR.37.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "26029b42-7ee5-0938-8fd0-3a1fa0970701",
+    "denumireAtasament": "PHCL-SED-ORD-26.02.2026-NR.37-ANEXA 1.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "cbcfcc12-79b9-8832-da90-3a1fa0970715",
+    "denumireAtasament": "PHCL-SED-ORD-26.02.2026-NR.37-ANEXA 2.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

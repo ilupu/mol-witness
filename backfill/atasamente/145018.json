@@ -1,0 +1,30 @@
+{
+ "result": {
+  "totalCount": 3,
+  "items": [
+   {
+    "idAtasament": "c9fd6746-8a25-b0e2-a4e7-3a1f87e2b72c",
+    "denumireAtasament": "HCL-SED-ORD-29.01.2026-NR.25.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "f13ec334-693f-2263-00b7-3a1f87e2b748",
+    "denumireAtasament": "HCL-SED-ORD-29.01.2026-NR.25-DEVIZ GENERAL.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "1a68bb21-b827-087e-f803-3a1f87e2b771",
+    "denumireAtasament": "HCL-SED-ORD-29.01.2026-NR.25-INDICATORI TEHNICI.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

@@ -1,0 +1,34 @@
+[
+ {
+  "titlu": "Hotărârea nr. 4",
+  "numar": 4,
+  "dataPublicare": "2022-01-11T00:00:00",
+  "stare": 16,
+  "idDocumentMonitorOficialLocalLegatura": null,
+  "id": 12868
+ },
+ {
+  "titlu": "Hotărârea nr. 3",
+  "numar": 3,
+  "dataPublicare": "2022-01-11T00:00:00",
+  "stare": 16,
+  "idDocumentMonitorOficialLocalLegatura": null,
+  "id": 12867
+ },
+ {
+  "titlu": "Hotărârea nr.  2",
+  "numar": 2,
+  "dataPublicare": "2022-01-11T00:00:00",
+  "stare": 16,
+  "idDocumentMonitorOficialLocalLegatura": null,
+  "id": 12866
+ },
+ {
+  "titlu": "Hotărârea nr. 1",
+  "numar": 1,
+  "dataPublicare": "2022-01-11T00:00:00",
+  "stare": 16,
+  "idDocumentMonitorOficialLocalLegatura": null,
+  "id": 12865
+ }
+]

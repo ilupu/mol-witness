@@ -1,0 +1,154 @@
+[
+ {
+  "idSedinta": 6456,
+  "dataSedinta": "2025-12-18T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 18.12.2025",
+  "aprobatInSedinta": "ORDINARĂ din 18.12.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 6395,
+  "dataSedinta": "2025-11-27T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 27.11.2025",
+  "aprobatInSedinta": "ORDINARĂ din 27.11.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 6369,
+  "dataSedinta": "2025-11-19T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 19.11.2025",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 19.11.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 6320,
+  "dataSedinta": "2025-10-31T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 31.10.2025",
+  "aprobatInSedinta": "ORDINARĂ din 31.10.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 6277,
+  "dataSedinta": "2025-09-30T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 30.09.2025",
+  "aprobatInSedinta": "ORDINARĂ din 30.09.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 6149,
+  "dataSedinta": "2025-09-04T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 04.09.2025",
+  "aprobatInSedinta": "DE ÎNDATĂ din 04.09.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 6267,
+  "dataSedinta": "2025-08-28T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 28.08.2025",
+  "aprobatInSedinta": "ORDINARĂ din 28.08.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 6147,
+  "dataSedinta": "2025-08-12T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 12.08.2025",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 12.08.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 5502,
+  "dataSedinta": "2025-07-24T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 24.07.2025",
+  "aprobatInSedinta": "ORDINARĂ din 24.07.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 5407,
+  "dataSedinta": "2025-07-14T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 14.07.2025",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 14.07.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 5398,
+  "dataSedinta": "2025-06-26T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 26.06.2025",
+  "aprobatInSedinta": "ORDINARĂ din 26.06.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 5180,
+  "dataSedinta": "2025-05-30T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 30.05.2025",
+  "aprobatInSedinta": "ORDINARĂ din 30.05.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 5146,
+  "dataSedinta": "2025-04-30T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 30.04.2025",
+  "aprobatInSedinta": "ORDINARĂ din 30.04.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 4828,
+  "dataSedinta": "2025-04-04T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 04.04.2025",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 04.04.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 4822,
+  "dataSedinta": "2025-03-27T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 27.03.2025",
+  "aprobatInSedinta": "ORDINARĂ din 27.03.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 4818,
+  "dataSedinta": "2025-03-21T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 21.03.2025",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 21.03.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 4702,
+  "dataSedinta": "2025-02-27T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 27.02.2025",
+  "aprobatInSedinta": "ORDINARĂ din 27.02.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 4705,
+  "dataSedinta": "2025-02-27T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 27.02.2025",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 27.02.2025",
+  "id": 0
+ },
+ {
+  "idSedinta": 4701,
+  "dataSedinta": "2025-01-31T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 31.01.2025",
+  "aprobatInSedinta": "ORDINARĂ din 31.01.2025",
+  "id": 0
+ }
+]

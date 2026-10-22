@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "7667c8c0-ff08-222d-6bd7-3a246b843f0a",
+    "denumireAtasament": "HCL-SED-ORD-30.09.2026-NR.190.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "27c7b131-fdac-09fb-3904-3a246b843f25",
+    "denumireAtasament": "HCL-SED-ORD-30.09.2026-NR.190-ANEXA 1.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

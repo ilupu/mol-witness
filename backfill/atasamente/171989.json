@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "f7f16fe3-49eb-370b-5242-3a232be1e78b",
+    "denumireAtasament": "HCL-SED-ORD-30.07.2026-NR.146.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "165d416c-e2ec-ee00-1f20-3a232be1e7fe",
+    "denumireAtasament": "HCL-SED-ORD-30.07.2026-NR.146-ANEXA 1.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "c9fbb6df-30d8-77ee-2e2d-3a1e1a041072",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-19.11.2025-NR.234.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

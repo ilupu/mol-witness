@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "d9aca010-445c-6ff8-7a5e-3a20a868118f",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-DE-INDATA-17.04.2025-NR.65.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

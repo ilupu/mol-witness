@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "e4bbd8ab-8244-0845-9c12-3a1ae5ff816e",
+    "denumireAtasament": "HCL-SED-ORD-26.06.2025-NR.109.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "220e5c26-7185-8e2f-d603-3a1ae600c0c9",
+    "denumireAtasament": "HCL-SED-ORD-26.06.2025-NR.109-anexa-organigrama.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

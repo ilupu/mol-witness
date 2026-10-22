@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "13b08fd1-8161-8a19-7e11-3a1b5251b7a5",
+    "denumireAtasament": "HCL-SED-EXTRAORDINARA-14.07.2025-NR.131.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "436f8372-411f-c960-1b06-3a1b5253bbcb",
+    "denumireAtasament": "HCL-SED-EXTRAORDINARA-14.07.2025-NR.131-ANEXA-1+2.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

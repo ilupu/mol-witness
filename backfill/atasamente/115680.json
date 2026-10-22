@@ -1,0 +1,36 @@
+{
+ "result": {
+  "totalCount": 4,
+  "items": [
+   {
+    "idAtasament": "a87ed6d7-85ea-4cf9-1c9d-3a1ae68c6e40",
+    "denumireAtasament": "HCL-SED-ORD-30.05.2025-NR.106.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "6b81f1e0-9574-1369-c86a-3a1ae6969a53",
+    "denumireAtasament": "HCL-SED-ORD-30.05.2025-NR.106- ANEXA-2.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "8a124c55-1ab4-963b-bda6-3a1ae6969b07",
+    "denumireAtasament": "HCL-SED-ORD-30.05.2025-NR.106-ANEXA-1.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "b85e38ac-a549-8a8c-f25d-3a1ae6969b49",
+    "denumireAtasament": "HCL-SED-ORD-30.05.2025-NR.106-ANEXA-3.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

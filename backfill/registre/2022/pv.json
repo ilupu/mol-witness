@@ -1,0 +1,234 @@
+[
+ {
+  "idSedinta": 1472,
+  "dataSedinta": "2022-12-29T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 29.12.2022",
+  "aprobatInSedinta": "ORDINARĂ din 29.12.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1470,
+  "dataSedinta": "2022-12-19T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 19.12.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 19.12.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1469,
+  "dataSedinta": "2022-12-14T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 14.12.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 14.12.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1468,
+  "dataSedinta": "2022-12-12T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 12.12.2022",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 12.12.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1296,
+  "dataSedinta": "2022-11-29T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 29.11.2022",
+  "aprobatInSedinta": "ORDINARĂ din 29.11.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1290,
+  "dataSedinta": "2022-11-03T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 03.11.2022",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 03.11.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1289,
+  "dataSedinta": "2022-10-28T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 28.10.2022",
+  "aprobatInSedinta": "ORDINARĂ din 28.10.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1285,
+  "dataSedinta": "2022-10-19T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 19.10.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 19.10.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1243,
+  "dataSedinta": "2022-10-10T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 10.10.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 10.10.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1242,
+  "dataSedinta": "2022-10-05T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 05.10.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 05.10.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1229,
+  "dataSedinta": "2022-09-30T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 30.09.2022",
+  "aprobatInSedinta": "ORDINARĂ din 30.09.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1194,
+  "dataSedinta": "2022-09-21T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 21.09.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 21.09.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 1189,
+  "dataSedinta": "2022-09-14T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 14.09.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 14.09.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 874,
+  "dataSedinta": "2022-08-24T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 24.08.2022",
+  "aprobatInSedinta": "ORDINARĂ din 24.08.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 873,
+  "dataSedinta": "2022-08-17T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 17.08.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 17.08.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 872,
+  "dataSedinta": "2022-07-27T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 27.07.2022",
+  "aprobatInSedinta": "ORDINARĂ din 27.07.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 871,
+  "dataSedinta": "2022-06-30T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 30.06.2022",
+  "aprobatInSedinta": "ORDINARĂ din 30.06.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 3233,
+  "dataSedinta": "2022-06-23T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 23.06.2022",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 23.06.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 859,
+  "dataSedinta": "2022-06-15T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 15.06.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 15.06.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 850,
+  "dataSedinta": "2022-05-30T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 30.05.2022",
+  "aprobatInSedinta": "ORDINARĂ din 30.05.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 529,
+  "dataSedinta": "2022-05-20T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 20.05.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 20.05.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 519,
+  "dataSedinta": "2022-05-06T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 06.05.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 06.05.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 518,
+  "dataSedinta": "2022-04-29T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 29.04.2022",
+  "aprobatInSedinta": "ORDINARĂ din 29.04.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 505,
+  "dataSedinta": "2022-04-14T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 14.04.2022",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 14.04.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 497,
+  "dataSedinta": "2022-03-31T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 31.03.2022",
+  "aprobatInSedinta": "ORDINARĂ din 31.03.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 488,
+  "dataSedinta": "2022-02-28T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 28.02.2022",
+  "aprobatInSedinta": "ORDINARĂ din 28.02.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 487,
+  "dataSedinta": "2022-02-11T00:00:00",
+  "tipSedinta": 2,
+  "titlu": "Proces verbal ședință extraordinară din data 11.02.2022",
+  "aprobatInSedinta": "EXTRAORDINARĂ din 11.02.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 486,
+  "dataSedinta": "2022-01-27T00:00:00",
+  "tipSedinta": 1,
+  "titlu": "Proces verbal ședință ordinară din data 27.01.2022",
+  "aprobatInSedinta": "ORDINARĂ din 27.01.2022",
+  "id": 0
+ },
+ {
+  "idSedinta": 320,
+  "dataSedinta": "2022-01-11T00:00:00",
+  "tipSedinta": 3,
+  "titlu": "Proces verbal ședință de îndată din data 11.01.2022",
+  "aprobatInSedinta": "DE ÎNDATĂ din 11.01.2022",
+  "id": 0
+ }
+]

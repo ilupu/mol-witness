@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "5c32ffef-5b0a-ca79-1f42-3a1c3f2965a6",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-12.08.2025-NR.152.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

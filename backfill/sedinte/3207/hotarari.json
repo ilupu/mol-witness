@@ -1,0 +1,26 @@
+[
+ {
+  "titlu": "Hotărârea nr. 3",
+  "numar": 3,
+  "dataPublicare": "2024-01-15T00:00:00",
+  "stare": 16,
+  "idDocumentMonitorOficialLocalLegatura": 82276,
+  "id": 82279
+ },
+ {
+  "titlu": "Hotărârea nr. 2",
+  "numar": 2,
+  "dataPublicare": "2024-01-15T00:00:00",
+  "stare": 16,
+  "idDocumentMonitorOficialLocalLegatura": 82275,
+  "id": 82278
+ },
+ {
+  "titlu": "Hotărârea nr. 1 ",
+  "numar": 1,
+  "dataPublicare": "2024-01-15T00:00:00",
+  "stare": 16,
+  "idDocumentMonitorOficialLocalLegatura": 82274,
+  "id": 82277
+ }
+]

@@ -1,0 +1,30 @@
+{
+ "result": {
+  "totalCount": 3,
+  "items": [
+   {
+    "idAtasament": "1f245647-eca5-05f2-83ad-3a236e180604",
+    "denumireAtasament": "HCL-SED-ORD-25.06.2026-NR.119.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "393a259c-8e86-f77b-1115-3a236e180684",
+    "denumireAtasament": "HCL-SED-ORD-25.06.2026-NR.119-ANEXA 1 -ORGANIGRAMA.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "2d2dc3b0-8e16-80ae-39c0-3a236e1806d2",
+    "denumireAtasament": "HCL-SED-ORD-25.06.2026-NR.119-ANEXA 2.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

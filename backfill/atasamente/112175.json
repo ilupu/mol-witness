@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "948ac844-2fe3-bbfa-9653-3a19dafc3756",
+    "denumireAtasament": "HCL-SED-ORD-CL-30.04.2025-NR.78.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "3bdffb80-2605-7f2a-367e-3a19dafc377d",
+    "denumireAtasament": "HCL-SED-ORD-CL-30.04.2025-NR.78-ANEXA 1-23.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

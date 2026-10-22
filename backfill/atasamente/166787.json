@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "60fc6821-3bf4-8ddd-c378-3a215b254367",
+    "denumireAtasament": "HCL-SED-EXTRAORD-DE-INDATA-17.04.2026-NR.63.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

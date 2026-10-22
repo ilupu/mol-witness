@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "2b40a2ae-2f4a-e528-e822-3a1ae2632698",
+    "denumireAtasament": "PHCL-SED-ORD-26.06.2025-NR.114.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "0592d0a7-7416-9880-e64c-3a1ae2646b68",
+    "denumireAtasament": "PHCL-SED-ORD-26.06.2025-NR.114-ANEXA-ORGANIGRAMA.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

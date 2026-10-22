@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "e8e5b814-bc85-726e-67e1-3a1f873e7722",
+    "denumireAtasament": "HCL-SED-ORD-29.01.2026-NR.6.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "a0381fad-b9bd-1308-64b4-3a1f873e7745",
+    "denumireAtasament": "HCL-SED-ORD-29.01.2026-NR.6- ANEXA 1.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

@@ -1,0 +1,36 @@
+{
+ "result": {
+  "totalCount": 4,
+  "items": [
+   {
+    "idAtasament": "44cd5a6f-3bfc-1f1a-3e35-3a2103eecfe6",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-05.05.2026-NR.85 -Anexa 4 - Lista de investitii (003).pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "d31aec8d-4b2d-981e-7ba1-3a2103eed0ac",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-05.05.2026-NR.85 -Buget initial 2026-anexele 1 2 3 (003).pdf",
+    "vizualizareExterna": false,
+    "id": 0
+   },
+   {
+    "idAtasament": "36b75e4c-b18d-8296-2f23-3a2103eed2db",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-05.05.2026-NR.85 -Repartizari ANAF (003).pdf",
+    "vizualizareExterna": false,
+    "id": 0
+   },
+   {
+    "idAtasament": "8395e371-3dee-7bd7-a5c7-3a2103eed3ee",
+    "denumireAtasament": "PHCL-SED-EXTRAORD-05.05.2026-NR.85.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

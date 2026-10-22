@@ -1,0 +1,30 @@
+{
+ "result": {
+  "totalCount": 3,
+  "items": [
+   {
+    "idAtasament": "3d20ff6a-272b-8cd5-a9a8-3a1fe9661fa7",
+    "denumireAtasament": "HCL-SED-ORD-26.02.2026-NR.37.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "69093c4e-cbab-8500-058f-3a1fe96708a8",
+    "denumireAtasament": "HCL-SED-ORD-26.02.2026-NR.37-ANEXA 1-ORGANIGRAMA.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "e0e35ffa-d98b-142e-007d-3a1fe96708c8",
+    "denumireAtasament": "HCL-SED-ORD-26.02.2026-NR.37-ANEXA 2 - STAT DE FUNCTII.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

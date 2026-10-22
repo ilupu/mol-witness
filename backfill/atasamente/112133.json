@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "e6785b0e-6fc2-c585-e22b-3a19d5b51a57",
+    "denumireAtasament": "HCL-SED-ORD-CL-30.04.2025-NR.69.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "b573643c-8b6c-456a-69b6-3a19d5b643d6",
+    "denumireAtasament": "HCL-SED-ORD-CL-30.04.2025-NR.69-ANEXA 1- REGULAMENT.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

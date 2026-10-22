@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "79bff8e5-b2ed-5750-4f1a-3a1c4f40cecf",
+    "denumireAtasament": "HCL-SED-EXTRAORD-DE-INDATA-04.09.2025-NR.170.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

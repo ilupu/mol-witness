@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "7acaebba-4ea8-8a3e-d722-39fd4f018d53",
+    "denumireAtasament": "hot-CL-28.04.2021-102.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "95328281-e1a9-0661-640d-3a027a6216e9",
+    "denumireAtasament": "anexa-1-hcl-102-28.04.2021.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "f308a4aa-14ad-e9d4-475f-3a1dc7e5d0bf",
+    "denumireAtasament": "HCL-SED-ORD-31.10.2025-NR.198.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "42c3ccc3-6b80-ba68-1161-3a1dc7e5d0ea",
+    "denumireAtasament": "HCL-SED-ORD-31.10.2025-NR.198-REGULAMENT.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

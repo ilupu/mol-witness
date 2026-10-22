@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "f329abc9-1f6c-43dc-85a4-3a0792982da8",
+    "denumireAtasament": "hot-CL-30.09.2022-240.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "9c506ba6-d720-65ee-353b-3a079298e56c",
+    "denumireAtasament": "hot-CL-30.09.2022-240-anexe.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

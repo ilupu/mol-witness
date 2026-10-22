@@ -1,0 +1,30 @@
+{
+ "result": {
+  "totalCount": 3,
+  "items": [
+   {
+    "idAtasament": "c1d679ec-e6ff-2e26-fcfb-3a1ddc02171c",
+    "denumireAtasament": "HCL-SED-ORD-31.10.2025-NR.227.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "8103b3d2-86c1-6f7c-37d0-3a1ddc021774",
+    "denumireAtasament": "HCL-SED-ORD-31.10.2025-NR.227- REGULAMENT.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "c2dff7de-5622-4c4c-115b-3a1ddc0217c8",
+    "denumireAtasament": "HCL-SED-ORD-31.10.2025-NR.227-ORGANIGRAMA SPCLEP.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

@@ -1,0 +1,18 @@
+{
+ "result": {
+  "totalCount": 1,
+  "items": [
+   {
+    "idAtasament": "67f2d7ec-78c3-3394-d05c-3a19dfddc8e8",
+    "denumireAtasament": "Proiect-sed-ORD-CL-30.04.2025-NR.92.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

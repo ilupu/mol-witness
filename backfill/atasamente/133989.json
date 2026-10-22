@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "850ea0c9-b10f-28f6-f76e-3a1e33f1e43e",
+    "denumireAtasament": "PHCL-SED-ORD-18.12.2025-NR.279.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "4c4c2b48-f84d-7d15-bf05-3a1ee7fd1c23",
+    "denumireAtasament": "AMENDAMENT-PHCL-279 DIN 12.12.2025.pdf",
+    "vizualizareExterna": false,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

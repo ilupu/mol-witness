@@ -1,0 +1,24 @@
+{
+ "result": {
+  "totalCount": 2,
+  "items": [
+   {
+    "idAtasament": "d19fe787-656f-901d-13d4-3a2229cc19c4",
+    "denumireAtasament": "HCL-SED-ORD-28.05.2026-NR.105.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   },
+   {
+    "idAtasament": "b8833742-a985-450a-9d05-3a2229cc19fc",
+    "denumireAtasament": "HCL-SED-ORD-28.05.2026-NR.105-ANEXA 1.pdf",
+    "vizualizareExterna": true,
+    "id": 0
+   }
+  ]
+ },
+ "targetUrl": null,
+ "success": true,
+ "error": null,
+ "unAuthorizedRequest": false,
+ "__abp": true
+}

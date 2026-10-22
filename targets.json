@@ -6,10 +6,10 @@
     "filter": "",
     "deLaData": "",
     "panaLaData": "",
-    "maxResultCount": 40,
+    "maxResultCount": 250,
     "skipCount": 0
   },
-  "max_sedinte": 25,
+  "max_sedinte": 250,
   "always": [
     "8758",
     "8779",

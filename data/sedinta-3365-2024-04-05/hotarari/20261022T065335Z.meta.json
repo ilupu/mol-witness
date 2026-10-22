@@ -1,0 +1,26 @@
+{
+ "name": "sedinta-3365-2024-04-05/hotarari",
+ "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+ "request_body": {
+  "idSedinta": "3365",
+  "maxResultCount": 100,
+  "skipCount": 0
+ },
+ "fetched_at_utc": "2026-10-22T06:53:35.937709+00:00",
+ "http_status": 200,
+ "response_headers": {
+  "Content-Length": "567",
+  "Content-Type": "application/json; charset=utf-8",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Content-Type-Options": "nosniff",
+  "X-XSS-Protection": "1; mode=block",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "Date": "Thu, 22 Oct 2026 06:53:34 GMT",
+  "Connection": "close"
+ },
+ "sha256": "22ecdd056e9019be3e69feef1db37d633a9d8ec2898bbeb66ea36e5885128340",
+ "bytes": 567,
+ "github_run_id": "39735776032",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/39735776032"
+}

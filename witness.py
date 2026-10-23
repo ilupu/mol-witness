@@ -121,27 +121,74 @@ def post(base, url, body, referer):
         "X-Requested-With": "XMLHttpRequest", "X-XSRF-TOKEN": xsrf(),
         "Origin": base, "Referer": referer})
 
-def discover(cfg, limit):
-    """Primele `limit` ședințe din endpoint-ul ABP; returnează {id: eticheta}. Robust la nume de câmpuri necunoscute."""
+def label_of(it):
+    """Eticheta directorului: tip + dată, ex. `extraordinara-2026-10-20`."""
+    date = next((str(v)[:10] for k, v in it.items() if "data" in k.lower() and v), "")
+    tip = next((str(v) for k, v in it.items() if "tip" in k.lower() and isinstance(v, str)), "")
+    return re.sub(r"[^a-z0-9.-]+", "-", "-".join(x for x in (tip.lower()[:14], date) if x)) or "sedinta"
+
+def sid_of(it):
+    return str(it.get("id") or it.get("idSedinta") or "")
+
+def fetch_list(cfg, save=True):
+    """Lista ședințelor din endpoint-ul ABP (cea mai recentă prima). Cu save=True o și înregistrează."""
     base = cfg["base"]
     do(base + cfg["list_page"])  # cookie-uri
     url = base + cfg["list_endpoint"]
     t0, st, h, b = post(base, url, cfg["list_body"], base + cfg["list_page"])
-    record("lista-sedinte", url, cfg["list_body"], t0, st, h, b)
-    out = {}
+    if save:
+        record("lista-sedinte", url, cfg["list_body"], t0, st, h, b)
     try:
         res = json.loads(b).get("result", {})
         items = res.get("items") if isinstance(res, dict) else res
-        for it in (items or [])[:limit]:
-            sid = str(it.get("id") or it.get("idSedinta") or "")
-            if not sid: continue
-            date = next((str(v)[:10] for k, v in it.items() if "data" in k.lower() and v), "")
-            tip = next((str(v) for k, v in it.items() if "tip" in k.lower() and isinstance(v, str)), "")
-            out[sid] = re.sub(r"[^a-z0-9.-]+", "-", "-".join(x for x in (tip.lower()[:14], date) if x)) or "sedinta"
+        return [it for it in (items or []) if sid_of(it)]
     except Exception as e:
-        print("discover: nu pot parsa lista:", e, file=sys.stderr)
+        print("fetch_list: nu pot parsa lista:", e, file=sys.stderr)
+        return []
+
+def stored_list():
+    """Ultima listă de ședințe salvată în checkout (fără rețea), sau None."""
+    d = "data/lista-sedinte"
+    try:
+        files = sorted(f for f in os.listdir(d) if f.endswith(".json") and not f.endswith(".meta.json"))
+        res = json.load(open(os.path.join(d, files[-1]))).get("result", {})
+        items = res.get("items") if isinstance(res, dict) else res
+        return [it for it in (items or []) if sid_of(it)]
+    except Exception:
+        return None
+
+def _after_since(it, cfg):
+    since = cfg.get("watch_since")
+    return not since or str(it.get("dataSedinta", ""))[:10] >= since
+
+def watch_set(items, cfg):
+    """Ședințele de urmărit la fiecare rulare (și de capturat zilnic): fără PV sau fără HCL
+    (printre primele max_sedinte, după watch_since), plus HCL < PHCL printre primele max_sedinte_recent."""
+    out = {}
+    recent = cfg.get("max_sedinte_recent", 10)
+    for i, it in enumerate(items[: cfg.get("max_sedinte", 250)]):
+        hcl, phcl = it.get("numarHotarariConsiliuLocal") or 0, it.get("numarProiecteDeHotarare") or 0
+        reasons = []
+        if _after_since(it, cfg):
+            if not it.get("areProcesVerbal"): reasons.append("fara-pv")
+            if not hcl: reasons.append("fara-hcl")
+        if i < recent and hcl < phcl: reasons.append(f"hcl{hcl}<phcl{phcl}")
+        if reasons:
+            out[sid_of(it)] = reasons
+    return out
+
+def select(items, cfg, mode):
+    """{sid: {"label", "reasons"}}: primele N (10 recent / max_sedinte full) + watch_set + `always`."""
+    n = cfg.get("max_sedinte", 250) if mode == "full" else cfg.get("max_sedinte_recent", 10)
+    watch = watch_set(items, cfg)
+    out = {}
+    for i, it in enumerate(items[: cfg.get("max_sedinte", 250)]):
+        sid = sid_of(it)
+        reasons = (["recent"] if i < n else []) + watch.get(sid, [])
+        if reasons:
+            out[sid] = {"label": label_of(it), "reasons": reasons}
     for sid in cfg.get("always", []):
-        out.setdefault(sid, "sedinta")
+        out.setdefault(sid, {"label": "sedinta", "reasons": ["always"]})
     return out
 
 def last_full_sweep():
@@ -181,14 +228,14 @@ def main():
     cfg = json.load(open("targets.json"))
     base = cfg["base"]
     mode = pick_mode(cfg)
-    limit = cfg.get("max_sedinte", 250) if mode == "full" else cfg.get("max_sedinte_recent", 25)
     RUNLOG["mode"] = mode
-    print(f"mod: {mode} (max {limit} sedinte)")
+    print(f"mod: {mode}")
     try:
-        sedinte = discover(cfg, limit)
+        sedinte = select(fetch_list(cfg), cfg, mode)
         RUNLOG["sedinte"] = sedinte
-        print("sedinte:", sedinte)
-        for sid, label in sedinte.items():
+        print("sedinte:", {k: v["reasons"] for k, v in sedinte.items()})
+        for sid, sel in sedinte.items():
+            label = sel["label"]
             page_url = f"{base}/MonitorulOficialLocal/Sedinta/{sid}"
             do(page_url)  # doar pentru cookie-uri (conținutul vine prin XHR, HTML-ul nu se salvează)
             for ep_name, ep in cfg["endpoints"].items():

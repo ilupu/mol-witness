@@ -1,0 +1,19 @@
+name: MOL captures
+on:
+  schedule:
+    - cron: "47 18 * * *"   # zilnic 18:47 UTC = 20:47 ora României (iarna); vara 21:47
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  captures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install playwright
+      - run: playwright install --with-deps chromium
+      - run: python capture.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

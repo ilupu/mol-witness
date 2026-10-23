@@ -10,8 +10,10 @@
     "skipCount": 0
   },
   "max_sedinte": 250,
-  "max_sedinte_recent": 25,
+  "max_sedinte_recent": 10,
   "full_sweep_hours": 22,
+  "watch_since": null,
+  "capture": {"format": "jpeg", "quality": 85, "viewport": [1280, 900], "timeout_s": 60},
   "always": [
     "8758",
     "8779",

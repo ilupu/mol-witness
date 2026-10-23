@@ -53,9 +53,14 @@ def main():
     items = w.stored_list()
     if not items:
         items = w.fetch_list(cfg, save=False)
-    watch = w.watch_set(items, cfg)
     by_id = {w.sid_of(it): it for it in items}
-    targets = {sid: {"label": w.label_of(by_id[sid]), "reasons": r} for sid, r in watch.items()}
+    manual = [x.strip() for x in os.environ.get("MOL_SEDINTE", "").split(",") if x.strip()]
+    if manual:  # declanșare manuală cu listă explicită de id-uri
+        watch = {sid: ["manual"] for sid in manual}
+    else:
+        watch = w.watch_set(items, cfg)
+    targets = {sid: {"label": w.label_of(by_id[sid]) if sid in by_id else "sedinta", "reasons": r}
+               for sid, r in watch.items()}
     print(f"de capturat: {len(targets)} sedinte", {k: v["reasons"] for k, v in targets.items()})
     done, failed = [], {}
     vp = cfg.get("capture", {}).get("viewport", [1280, 900])

@@ -157,22 +157,16 @@ def stored_list():
     except Exception:
         return None
 
-def _after_since(it, cfg):
-    since = cfg.get("watch_since")
-    return not since or str(it.get("dataSedinta", ""))[:10] >= since
-
 def watch_set(items, cfg):
-    """Ședințele de urmărit la fiecare rulare (și de capturat zilnic): fără PV sau fără HCL
-    (printre primele max_sedinte, după watch_since), plus HCL < PHCL printre primele max_sedinte_recent."""
+    """Ședințele de urmărit (capturi zilnice): printre primele max_sedinte_recent, cele fără PV, fără HCL,
+    sau cu HCL < PHCL. Ședințele mai vechi nu se verifică după aceste reguli."""
     out = {}
-    recent = cfg.get("max_sedinte_recent", 10)
-    for i, it in enumerate(items[: cfg.get("max_sedinte", 250)]):
+    for it in items[: cfg.get("max_sedinte_recent", 10)]:
         hcl, phcl = it.get("numarHotarariConsiliuLocal") or 0, it.get("numarProiecteDeHotarare") or 0
         reasons = []
-        if _after_since(it, cfg):
-            if not it.get("areProcesVerbal"): reasons.append("fara-pv")
-            if not hcl: reasons.append("fara-hcl")
-        if i < recent and hcl < phcl: reasons.append(f"hcl{hcl}<phcl{phcl}")
+        if not it.get("areProcesVerbal"): reasons.append("fara-pv")
+        if not hcl: reasons.append("fara-hcl")
+        if hcl < phcl: reasons.append(f"{hcl} hcl < {phcl} phcl")
         if reasons:
             out[sid_of(it)] = reasons
     return out

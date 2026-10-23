@@ -5,10 +5,12 @@ Martor independent pentru starea Monitorului Oficial Local Miroslava (miroslava.
 La fiecare 3 ore, o rulare GitHub Actions descarcă paginile/endpoint-urile din `targets.json` și salvează
 răspunsul brut (`.json`/`.html`) și metadatele (`.meta.json`: ora UTC, status HTTP, headere, SHA-256, link la rulare).
 
-- Rularea obișnuită verifică ședințele recente (`max_sedinte_recent`) plus cele „urmărite”: fără proces-verbal
-  sau fără hotărâri (după `watch_since`, dacă e setat), și cele recente cu mai puține hotărâri decât proiecte.
-  O dată la `full_sweep_hours` (sau manual, cu input-ul `full`) verifică toate (`max_sedinte`).
-- Zilnic (`captures.yml`), pentru ședințele urmărite se face și o captură de ecran a paginii în Chromium headless,
+- Rularea obișnuită verifică cele mai recente `max_sedinte_recent` (10) ședințe; o dată la `full_sweep_hours`
+  (sau manual, cu input-ul `full`) verifică toate (`max_sedinte`).
+- „Urmărite” sunt, dintre cele 10 recente, ședințele fără proces-verbal, fără hotărâri, sau cu mai puține
+  hotărâri decât proiecte. Ședințele mai vechi nu se evaluează după aceste reguli.
+- Zilnic (`captures.yml`, sau manual, opțional cu o listă de id-uri în input-ul `sedinte`), pentru ședințele
+  urmărite se face și o captură de ecran a paginii în Chromium headless,
   cu ora UTC, URL-ul și rularea suprapuse pe imagine; se salvează în `captures/<sedinta>/<stamp>.jpg` + `.meta.json`
   (SHA-256, motiv, titlu pagină), prin același commit semnat de GitHub. Jurnalul rulării: `captures/_runs/`.
 - Un răspuns identic (același SHA-256 și status) cu ultimul snapshot nu mai este salvat încă o dată;

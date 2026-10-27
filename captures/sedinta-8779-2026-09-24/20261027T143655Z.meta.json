@@ -1,0 +1,23 @@
+{
+ "name": "sedinta-8779-2026-09-24",
+ "url": "https://miroslava.cityon.ro/MonitorulOficialLocal/Sedinta/8779",
+ "captured_at_utc": "2026-10-27T14:36:55.206069+00:00",
+ "http_status": 200,
+ "page_title": "Ședința / CityOn",
+ "reasons": [
+  "fara-pv",
+  "fara-hcl",
+  "0 hcl < 4 phcl"
+ ],
+ "overlay_text": "MOL witness  2026-10-27 14:36:55 UTC\nhttps://miroslava.cityon.ro/MonitorulOficialLocal/Sedinta/8779\nrun https://github.com/ilupu/mol-witness/actions/runs/40522686498  motiv: fara-pv, fara-hcl, 0 hcl < 4 phcl",
+ "viewport": [
+  1280,
+  900
+ ],
+ "format": "jpeg",
+ "sha256": "2ab447fdcec52898751c8f2c850965a8b2b788d833eb80f3cff9548c51fda109",
+ "bytes": 153239,
+ "browser": "chromium/playwright",
+ "github_run_id": "40522686498",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/40522686498"
+}

@@ -12,7 +12,8 @@ răspunsul brut (`.json`/`.html`) și metadatele (`.meta.json`: ora UTC, status 
 - Zilnic (`captures.yml`, sau manual, opțional cu o listă de id-uri în input-ul `sedinte`), pentru ședințele
   urmărite se face și o captură de ecran a paginii în Chromium headless,
   cu ora UTC, URL-ul și rularea suprapuse pe imagine; se salvează în `captures/<sedinta>/<stamp>.jpg` + `.meta.json`
-  (SHA-256, motiv, titlu pagină), prin același commit semnat de GitHub. Jurnalul rulării: `captures/_runs/`.
+  (SHA-256, motiv, titlu pagină), prin același commit semnat de GitHub. Se capturează și paginile din `capture_pages`
+  (lista hotărârilor, lista dispozițiilor). Jurnalul rulării: `captures/_runs/`.
 - Un răspuns identic (același SHA-256 și status) cu ultimul snapshot nu mai este salvat încă o dată;
   verificarea este consemnată în jurnalul rulării, `data/_runs/<stamp>.json`, cu referință la snapshot-ul
   cu care coincide. Un fișier nou în `data/<endpoint>/` înseamnă deci că endpoint-ul s-a schimbat.

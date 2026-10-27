@@ -13,6 +13,10 @@
   "max_sedinte_recent": 10,
   "full_sweep_hours": 22,
   "capture": {"format": "jpeg", "quality": 85, "viewport": [1280, 900], "timeout_s": 60},
+  "capture_pages": {
+    "lista-hotarari": "/MonitorulOficialLocal/HotararileAutoritatiiDeliberative",
+    "lista-dispozitii": "/MonitorulOficialLocal/DispozitiileAutoritatiiExecutive"
+  },
   "always": [
     "8758",
     "8779",

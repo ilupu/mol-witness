@@ -19,16 +19,15 @@ OVERLAY_JS = """(txt) => {
   document.body.prepend(d);
 }"""
 
-def capture(page, cfg, sid, sel):
-    base, cap = cfg["base"], cfg.get("capture", {})
-    url = f"{base}/MonitorulOficialLocal/Sedinta/{sid}"
+def capture(page, cfg, name, url, reasons):
+    cap = cfg.get("capture", {})
     t0 = datetime.now(timezone.utc)
     resp = page.goto(url, wait_until="networkidle", timeout=cap.get("timeout_s", 60) * 1000)
     page.wait_for_timeout(1500)  # XHR-urile ABP după load
     status = resp.status if resp else None
     title = page.title()
     overlay = (f"MOL witness  {t0.strftime('%Y-%m-%d %H:%M:%S UTC')}\n{url}\n"
-               f"run https://github.com/{w.REPO}/actions/runs/{w.RUN}  motiv: {', '.join(sel['reasons'])}")
+               f"run https://github.com/{w.REPO}/actions/runs/{w.RUN}  motiv: {', '.join(reasons)}")
     page.evaluate(OVERLAY_JS, overlay)
     fmt = cap.get("format", "jpeg")
     kw = {"type": fmt, "full_page": True}
@@ -36,16 +35,15 @@ def capture(page, cfg, sid, sel):
     img = page.screenshot(**kw)
     sha = hashlib.sha256(img).hexdigest()
     stamp = t0.strftime("%Y%m%dT%H%M%SZ")
-    name = f"sedinta-{sid}-{sel['label']}"
     ext = ".jpg" if fmt == "jpeg" else ".png"
     basep = f"{CAP_DIR}/{name}/{stamp}"
     meta = {"name": name, "url": url, "captured_at_utc": t0.isoformat(), "http_status": status, "page_title": title,
-            "reasons": sel["reasons"], "overlay_text": overlay, "viewport": cap.get("viewport", [1280, 900]),
+            "reasons": reasons, "overlay_text": overlay, "viewport": cap.get("viewport", [1280, 900]),
             "format": fmt, "sha256": sha, "bytes": len(img), "browser": "chromium/playwright",
             "github_run_id": w.RUN, "github_run_url": f"https://github.com/{w.REPO}/actions/runs/{w.RUN}"}
     c = w.gh_commit({basep + ext: img, basep + ".meta.json": json.dumps(meta, ensure_ascii=False, indent=1).encode()},
                     f"captura {name} {stamp} status={status} sha256={sha[:16]}")
-    print(f"{name}: {status} {len(img)}B sha256={sha[:16]} commit={c[:7]} motiv={sel['reasons']}")
+    print(f"{name}: {status} {len(img)}B sha256={sha[:16]} commit={c[:7]} motiv={reasons}")
     return basep + ext
 
 def main():
@@ -68,12 +66,16 @@ def main():
         browser = p.chromium.launch()
         ctx = browser.new_context(viewport={"width": vp[0], "height": vp[1]}, user_agent=w.UA, locale="ro-RO")
         page = ctx.new_page()
-        for sid, sel in targets.items():
+        jobs = [(f"sedinta-{sid}-{sel['label']}", f"{cfg['base']}/MonitorulOficialLocal/Sedinta/{sid}", sel["reasons"])
+                for sid, sel in targets.items()]
+        if not manual:  # paginile de listă (hotărâri, dispoziții) se capturează la fiecare rulare după reguli
+            jobs += [(name, cfg["base"] + path, ["pagina"]) for name, path in cfg.get("capture_pages", {}).items()]
+        for name, url, reasons in jobs:
             try:
-                done.append(capture(page, cfg, sid, sel))
+                done.append(capture(page, cfg, name, url, reasons))
             except Exception as e:
-                failed[sid] = f"{type(e).__name__}: {str(e)[:200]}"
-                print(f"sedinta-{sid}: EROARE {failed[sid]}", file=sys.stderr)
+                failed[name] = f"{type(e).__name__}: {str(e)[:200]}"
+                print(f"{name}: EROARE {failed[name]}", file=sys.stderr)
             time.sleep(1.0)
         browser.close()
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")

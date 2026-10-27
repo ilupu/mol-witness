@@ -1,0 +1,21 @@
+{
+ "name": "sedinta-8631-2026-07-30",
+ "url": "https://miroslava.cityon.ro/MonitorulOficialLocal/Sedinta/8631",
+ "captured_at_utc": "2026-10-27T13:29:43.727227+00:00",
+ "http_status": 200,
+ "page_title": "Ședința / CityOn",
+ "reasons": [
+  "15 hcl < 16 phcl"
+ ],
+ "overlay_text": "MOL witness  2026-10-27 13:29:43 UTC\nhttps://miroslava.cityon.ro/MonitorulOficialLocal/Sedinta/8631\nrun https://github.com/ilupu/mol-witness/actions/runs/40512371315  motiv: 15 hcl < 16 phcl",
+ "viewport": [
+  1280,
+  900
+ ],
+ "format": "jpeg",
+ "sha256": "9cf527ae06fa26f8b6485a85323f586102241cd102298a6072affb54cc1c1af3",
+ "bytes": 226793,
+ "browser": "chromium/playwright",
+ "github_run_id": "40512371315",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/40512371315"
+}

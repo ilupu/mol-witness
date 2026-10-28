@@ -1,0 +1,68 @@
+{
+ "github_run_id": "40748664437",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/40748664437",
+ "finished_at_utc": "2026-10-28T18:51:04.585636+00:00",
+ "targets": {
+  "8872": {
+   "label": "2026-10-29",
+   "reasons": [
+    "fara-pv",
+    "fara-hcl",
+    "0 hcl < 27 phcl"
+   ]
+  },
+  "8853": {
+   "label": "2026-10-20",
+   "reasons": [
+    "fara-pv",
+    "fara-hcl",
+    "0 hcl < 3 phcl"
+   ]
+  },
+  "8781": {
+   "label": "2026-09-30",
+   "reasons": [
+    "fara-pv"
+   ]
+  },
+  "8779": {
+   "label": "2026-09-24",
+   "reasons": [
+    "fara-pv",
+    "fara-hcl",
+    "0 hcl < 4 phcl"
+   ]
+  },
+  "8758": {
+   "label": "2026-09-17",
+   "reasons": [
+    "fara-hcl",
+    "0 hcl < 4 phcl"
+   ]
+  },
+  "8631": {
+   "label": "2026-07-30",
+   "reasons": [
+    "15 hcl < 16 phcl"
+   ]
+  },
+  "8512": {
+   "label": "2026-06-25",
+   "reasons": [
+    "18 hcl < 20 phcl"
+   ]
+  }
+ },
+ "captured": [
+  "captures/sedinta-8872-2026-10-29/20261028T185008Z.jpg",
+  "captures/sedinta-8853-2026-10-20/20261028T185016Z.jpg",
+  "captures/sedinta-8781-2026-09-30/20261028T185022Z.jpg",
+  "captures/sedinta-8779-2026-09-24/20261028T185028Z.jpg",
+  "captures/sedinta-8758-2026-09-17/20261028T185034Z.jpg",
+  "captures/sedinta-8631-2026-07-30/20261028T185040Z.jpg",
+  "captures/sedinta-8512-2026-06-25/20261028T185046Z.jpg",
+  "captures/lista-hotarari/20261028T185052Z.jpg",
+  "captures/lista-dispozitii/20261028T185058Z.jpg"
+ ],
+ "failed": {}
+}

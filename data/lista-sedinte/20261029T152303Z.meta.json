@@ -1,0 +1,28 @@
+{
+ "name": "lista-sedinte",
+ "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaSedinteMol",
+ "request_body": {
+  "filter": "",
+  "deLaData": "",
+  "panaLaData": "",
+  "maxResultCount": 250,
+  "skipCount": 0
+ },
+ "fetched_at_utc": "2026-10-29T15:23:03.162956+00:00",
+ "http_status": 200,
+ "response_headers": {
+  "Content-Length": "41176",
+  "Content-Type": "application/json; charset=utf-8",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Content-Type-Options": "nosniff",
+  "X-XSS-Protection": "1; mode=block",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "Date": "Thu, 29 Oct 2026 15:23:02 GMT",
+  "Connection": "close"
+ },
+ "sha256": "20449a36e5fbba7eeef654fac2272cc1338e9ec3e66ff2f59461473f7f530915",
+ "bytes": 41176,
+ "github_run_id": "40900966518",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/40900966518"
+}

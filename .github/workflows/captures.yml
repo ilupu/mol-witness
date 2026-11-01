@@ -1,7 +1,11 @@
 name: MOL captures
 on:
   schedule:
-    - cron: "0 7,19 * * *"   # de două ori pe zi, 07:00 și 19:00 UTC = 09:00 și 21:00 ora României (iarna); vara 10:00 și 22:00
+    # GitHub rulează cron doar în UTC. Pentru 09:00 și 21:00 ora României tot anul (EET iarna = UTC+2,
+    # EEST vara = UTC+3) programăm ambele variante, iar job-ul `gate` păstrează doar rulările care cad
+    # exact la 9 sau 21 în Europe/Bucharest.
+    - cron: "0 6,18 * * *"   # vara:  06:00/18:00 UTC = 09:00/21:00
+    - cron: "0 7,19 * * *"   # iarna: 07:00/19:00 UTC = 09:00/21:00
   workflow_dispatch:
     inputs:
       sedinte:
@@ -11,7 +15,26 @@ on:
 permissions:
   contents: write
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          h=$(TZ=Europe/Bucharest date +%-H)
+          echo "Ora locală (Europe/Bucharest): $h"
+          if [ "$h" = "9" ] || [ "$h" = "21" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
   captures:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

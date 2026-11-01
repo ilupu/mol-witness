@@ -1,7 +1,7 @@
 name: MOL captures
 on:
   schedule:
-    - cron: "47 18 * * *"   # zilnic 18:47 UTC = 20:47 ora României (iarna); vara 21:47
+    - cron: "0 7,19 * * *"   # de două ori pe zi, 07:00 și 19:00 UTC = 09:00 și 21:00 ora României (iarna); vara 10:00 și 22:00
   workflow_dispatch:
     inputs:
       sedinte:

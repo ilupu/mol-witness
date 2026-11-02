@@ -1,0 +1,30 @@
+{
+ "name": "registru-hotarari-2026",
+ "url": "https://miroslava.cityon.ro/api/services/app/RegistruMonitorulOficialLocal/IncarcaRegistruHotarari",
+ "request_body": {
+  "filter": "",
+  "deLaData": "",
+  "panaLaData": "",
+  "an": "2026",
+  "idCategorieDocument": 6,
+  "maxResultCount": 500,
+  "skipCount": 0
+ },
+ "fetched_at_utc": "2026-11-02T12:27:49.068316+00:00",
+ "http_status": 200,
+ "response_headers": {
+  "Content-Length": "163276",
+  "Content-Type": "application/json; charset=utf-8",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Content-Type-Options": "nosniff",
+  "X-XSS-Protection": "1; mode=block",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "Date": "Mon, 02 Nov 2026 12:27:49 GMT",
+  "Connection": "close"
+ },
+ "sha256": "5c9085aa1e51a67beb87c76c217663019164590e03d28d65c085d1e38c400b0c",
+ "bytes": 163276,
+ "github_run_id": "41444744019",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/41444744019"
+}

@@ -1,0 +1,52 @@
+{
+ "github_run_id": "41594775132",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/41594775132",
+ "finished_at_utc": "2026-11-03T07:13:48.480250+00:00",
+ "targets": {
+  "8872": {
+   "label": "2026-10-29",
+   "reasons": [
+    "fara-pv",
+    "fara-hcl",
+    "0 hcl < 30 phcl"
+   ]
+  },
+  "8853": {
+   "label": "2026-10-20",
+   "reasons": [
+    "fara-hcl",
+    "0 hcl < 3 phcl"
+   ]
+  },
+  "8779": {
+   "label": "2026-09-24",
+   "reasons": [
+    "fara-pv",
+    "fara-hcl",
+    "0 hcl < 4 phcl"
+   ]
+  },
+  "8631": {
+   "label": "2026-07-30",
+   "reasons": [
+    "15 hcl < 16 phcl"
+   ]
+  },
+  "8512": {
+   "label": "2026-06-25",
+   "reasons": [
+    "18 hcl < 20 phcl"
+   ]
+  }
+ },
+ "captured": [
+  "captures/sedinta-8872-2026-10-29/20261103T071307Z.jpg",
+  "captures/sedinta-8853-2026-10-20/20261103T071315Z.jpg",
+  "captures/sedinta-8779-2026-09-24/20261103T071320Z.jpg",
+  "captures/sedinta-8631-2026-07-30/20261103T071326Z.jpg",
+  "captures/sedinta-8512-2026-06-25/20261103T071331Z.jpg",
+  "captures/lista-hotarari/20261103T071337Z.jpg",
+  "captures/lista-dispozitii/20261103T071342Z.jpg"
+ ],
+ "failed": {}
+}

@@ -1,0 +1,387 @@
+{
+ "github_run_id": "42815607879",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/42815607879",
+ "started_at_utc": "2026-11-10T12:25:32.298074+00:00",
+ "mode": "recent",
+ "sedinte": {
+  "8909": {
+   "label": "2026-11-13",
+   "reasons": [
+    "recent",
+    "fara-pv",
+    "fara-hcl",
+    "0 hcl < 5 phcl"
+   ]
+  },
+  "8872": {
+   "label": "2026-10-29",
+   "reasons": [
+    "recent",
+    "fara-pv",
+    "fara-hcl",
+    "0 hcl < 30 phcl"
+   ]
+  },
+  "8853": {
+   "label": "2026-10-20",
+   "reasons": [
+    "recent",
+    "fara-hcl",
+    "0 hcl < 3 phcl"
+   ]
+  },
+  "8781": {
+   "label": "2026-09-30",
+   "reasons": [
+    "recent"
+   ]
+  },
+  "8779": {
+   "label": "2026-09-24",
+   "reasons": [
+    "recent"
+   ]
+  },
+  "8758": {
+   "label": "2026-09-17",
+   "reasons": [
+    "recent"
+   ]
+  },
+  "8707": {
+   "label": "2026-08-27",
+   "reasons": [
+    "recent"
+   ]
+  },
+  "8666": {
+   "label": "2026-08-12",
+   "reasons": [
+    "recent"
+   ]
+  },
+  "8631": {
+   "label": "2026-07-30",
+   "reasons": [
+    "recent",
+    "15 hcl < 16 phcl"
+   ]
+  },
+  "8560": {
+   "label": "2026-07-08",
+   "reasons": [
+    "recent"
+   ]
+  }
+ },
+ "recorded": [],
+ "unchanged": [
+  {
+   "name": "lista-sedinte",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaSedinteMol",
+   "fetched_at_utc": "2026-11-10T12:25:33.841836+00:00",
+   "http_status": 200,
+   "sha256": "81ace3223a90114c9776203cf535e0baf2038df8e190c4bb73721068d76b011a",
+   "bytes": 41436,
+   "same_as": "data/lista-sedinte/20261110T092211Z.meta.json"
+  },
+  {
+   "name": "sedinta-8909-2026-11-13/hotarari",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+   "fetched_at_utc": "2026-11-10T12:25:36.703080+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8909-2026-11-13/hotarari/20261110T092216Z.meta.json"
+  },
+  {
+   "name": "sedinta-8909-2026-11-13/proiecte",
+   "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:25:38.576107+00:00",
+   "http_status": 200,
+   "sha256": "15a3ae836b78c43790b4dfd88f4d9adc1c70bfe04fe9ee14cc80dfe0d4f83f57",
+   "bytes": 4487,
+   "same_as": "data/sedinta-8909-2026-11-13/proiecte/20261110T092220Z.meta.json"
+  },
+  {
+   "name": "sedinta-8909-2026-11-13/prezenta",
+   "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:25:40.241805+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8909-2026-11-13/prezenta/20261110T092224Z.meta.json"
+  },
+  {
+   "name": "sedinta-8872-2026-10-29/hotarari",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+   "fetched_at_utc": "2026-11-10T12:25:42.913021+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8872-2026-10-29/hotarari/20261027T153219Z.meta.json"
+  },
+  {
+   "name": "sedinta-8872-2026-10-29/proiecte",
+   "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:25:44.817048+00:00",
+   "http_status": 200,
+   "sha256": "07bb417beddb914a6fef5de08ae52f479f351d66745cd63ca969fbf063472885",
+   "bytes": 24043,
+   "same_as": "data/sedinta-8872-2026-10-29/proiecte/20261029T152310Z.meta.json"
+  },
+  {
+   "name": "sedinta-8872-2026-10-29/prezenta",
+   "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:25:46.346949+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8872-2026-10-29/prezenta/20261027T153229Z.meta.json"
+  },
+  {
+   "name": "sedinta-8853-2026-10-20/hotarari",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+   "fetched_at_utc": "2026-11-10T12:25:49.459559+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8853-2026-10-20/hotarari/20261022T064401Z.meta.json"
+  },
+  {
+   "name": "sedinta-8853-2026-10-20/proiecte",
+   "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:25:50.805822+00:00",
+   "http_status": 200,
+   "sha256": "15838b70115f4cf2eac1fe565a16d3acf5702dd66e05a3992587d97899cca29d",
+   "bytes": 2589,
+   "same_as": "data/sedinta-8853-2026-10-20/proiecte/20261022T064405Z.meta.json"
+  },
+  {
+   "name": "sedinta-8853-2026-10-20/prezenta",
+   "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:25:52.186399+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8853-2026-10-20/prezenta/20261022T064408Z.meta.json"
+  },
+  {
+   "name": "sedinta-8781-2026-09-30/hotarari",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+   "fetched_at_utc": "2026-11-10T12:25:55.591465+00:00",
+   "http_status": 200,
+   "sha256": "f4a343c28f80e97f8203feecd3335f2c488e3fb50b996331b97273045b63ec16",
+   "bytes": 2824,
+   "same_as": "data/sedinta-8781-2026-09-30/hotarari/20261022T064412Z.meta.json"
+  },
+  {
+   "name": "sedinta-8781-2026-09-30/proiecte",
+   "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:25:57.137023+00:00",
+   "http_status": 200,
+   "sha256": "8267326345de8a90f47338d600ea7a4a2a014b848a724e9b148eef03e7924e7e",
+   "bytes": 16446,
+   "same_as": "data/sedinta-8781-2026-09-30/proiecte/20261022T064416Z.meta.json"
+  },
+  {
+   "name": "sedinta-8781-2026-09-30/prezenta",
+   "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:25:59.082202+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8781-2026-09-30/prezenta/20261022T064419Z.meta.json"
+  },
+  {
+   "name": "sedinta-8779-2026-09-24/hotarari",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+   "fetched_at_utc": "2026-11-10T12:26:02.127791+00:00",
+   "http_status": 200,
+   "sha256": "7ee55a03544e23f1333418fea94cc1aff63abb3370d5af0d40387996bf8e082e",
+   "bytes": 723,
+   "same_as": "data/sedinta-8779-2026-09-24/hotarari/20261103T092148Z.meta.json"
+  },
+  {
+   "name": "sedinta-8779-2026-09-24/proiecte",
+   "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:03.505723+00:00",
+   "http_status": 200,
+   "sha256": "9a253c7554e690d84e4d738dd3c6a0752356271190b48b4250dd89d7056cca24",
+   "bytes": 4011,
+   "same_as": "data/sedinta-8779-2026-09-24/proiecte/20261022T064429Z.meta.json"
+  },
+  {
+   "name": "sedinta-8779-2026-09-24/prezenta",
+   "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:04.889347+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8779-2026-09-24/prezenta/20261022T064432Z.meta.json"
+  },
+  {
+   "name": "sedinta-8758-2026-09-17/hotarari",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+   "fetched_at_utc": "2026-11-10T12:26:07.186934+00:00",
+   "http_status": 200,
+   "sha256": "2ff29791e885e945e091f2f4cd1c64f90e4d2e058cf78292a2d89262df6bf6cb",
+   "bytes": 723,
+   "same_as": "data/sedinta-8758-2026-09-17/hotarari/20261102T122716Z.meta.json"
+  },
+  {
+   "name": "sedinta-8758-2026-09-17/proiecte",
+   "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:08.535500+00:00",
+   "http_status": 200,
+   "sha256": "9414d6bd2a90cd923be2e96f14bab6c39605c5d777655cd1e502236edfe75f9c",
+   "bytes": 3987,
+   "same_as": "data/sedinta-8758-2026-09-17/proiecte/20261022T064441Z.meta.json"
+  },
+  {
+   "name": "sedinta-8758-2026-09-17/prezenta",
+   "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:09.901542+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8758-2026-09-17/prezenta/20261022T064444Z.meta.json"
+  },
+  {
+   "name": "sedinta-8707-2026-08-27/hotarari",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+   "fetched_at_utc": "2026-11-10T12:26:12.217827+00:00",
+   "http_status": 200,
+   "sha256": "aaca01cdc65bd2c853559eb123dc7b3dc7d73447dcb57db0660c9ee37d57bfd1",
+   "bytes": 2676,
+   "same_as": "data/sedinta-8707-2026-08-27/hotarari/20261022T064449Z.meta.json"
+  },
+  {
+   "name": "sedinta-8707-2026-08-27/proiecte",
+   "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:13.634531+00:00",
+   "http_status": 200,
+   "sha256": "fc6cc81272d49ce3e346db0b3ff99205ea867154077ea7d769f4d5b1934b88a3",
+   "bytes": 14404,
+   "same_as": "data/sedinta-8707-2026-08-27/proiecte/20261022T064452Z.meta.json"
+  },
+  {
+   "name": "sedinta-8707-2026-08-27/prezenta",
+   "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:15.543043+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8707-2026-08-27/prezenta/20261022T064456Z.meta.json"
+  },
+  {
+   "name": "sedinta-8666-2026-08-12/hotarari",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+   "fetched_at_utc": "2026-11-10T12:26:17.884234+00:00",
+   "http_status": 200,
+   "sha256": "3b8170352e5964f266e503ea6c6a218aa85edbfda2b295d1669bf6d0d977420e",
+   "bytes": 273,
+   "same_as": "data/sedinta-8666-2026-08-12/hotarari/20261022T064500Z.meta.json"
+  },
+  {
+   "name": "sedinta-8666-2026-08-12/proiecte",
+   "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:19.238483+00:00",
+   "http_status": 200,
+   "sha256": "afceb1268944393b07e22deb9a3161a667b579c023cf4138d904757338156308",
+   "bytes": 1169,
+   "same_as": "data/sedinta-8666-2026-08-12/proiecte/20261022T064504Z.meta.json"
+  },
+  {
+   "name": "sedinta-8666-2026-08-12/prezenta",
+   "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:20.615457+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8666-2026-08-12/prezenta/20261022T064507Z.meta.json"
+  },
+  {
+   "name": "sedinta-8631-2026-07-30/hotarari",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+   "fetched_at_utc": "2026-11-10T12:26:22.888930+00:00",
+   "http_status": 200,
+   "sha256": "537acc3dbb64d44381600b0bff8683258df164bbce0fbe22c0647c9b72c726bb",
+   "bytes": 2374,
+   "same_as": "data/sedinta-8631-2026-07-30/hotarari/20261022T064512Z.meta.json"
+  },
+  {
+   "name": "sedinta-8631-2026-07-30/proiecte",
+   "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:24.255695+00:00",
+   "http_status": 200,
+   "sha256": "b8b3d4cef505094b5c4812d6c09a62a7922ef77660ed7569abb2b40a4c6405df",
+   "bytes": 14644,
+   "same_as": "data/sedinta-8631-2026-07-30/proiecte/20261022T064515Z.meta.json"
+  },
+  {
+   "name": "sedinta-8631-2026-07-30/prezenta",
+   "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:25.652149+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8631-2026-07-30/prezenta/20261022T064518Z.meta.json"
+  },
+  {
+   "name": "sedinta-8560-2026-07-08/hotarari",
+   "url": "https://miroslava.cityon.ro/api/services/app/SedintaMol/IncarcaListaHotarari",
+   "fetched_at_utc": "2026-11-10T12:26:27.948491+00:00",
+   "http_status": 200,
+   "sha256": "d67994c962120dd17e4478a1d69be846304762baf6130763e7bf8d9d89a6bb77",
+   "bytes": 883,
+   "same_as": "data/sedinta-8560-2026-07-08/hotarari/20261022T064523Z.meta.json"
+  },
+  {
+   "name": "sedinta-8560-2026-07-08/proiecte",
+   "url": "https://miroslava.cityon.ro/api/services/app/ListaProiecteDeHotarare/ListaProiecteByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:29.304829+00:00",
+   "http_status": 200,
+   "sha256": "2cf0a206d67fdc6dc69d209b58afece359d85891f5a6962808a6d402d040a1bb",
+   "bytes": 5700,
+   "same_as": "data/sedinta-8560-2026-07-08/proiecte/20261022T064526Z.meta.json"
+  },
+  {
+   "name": "sedinta-8560-2026-07-08/prezenta",
+   "url": "https://miroslava.cityon.ro/api/services/app/PrezentaSedinta/IncarcaPrezentaByIdSedinta",
+   "fetched_at_utc": "2026-11-10T12:26:30.703171+00:00",
+   "http_status": 200,
+   "sha256": "2e72d4837505878dbbd8561fc1487205f82a88696f45389e3e38f8ef13b6d6b0",
+   "bytes": 124,
+   "same_as": "data/sedinta-8560-2026-07-08/prezenta/20261022T064529Z.meta.json"
+  },
+  {
+   "name": "registru-proiecte-2026",
+   "url": "https://miroslava.cityon.ro/api/services/app/RegistruMonitorulOficialLocal/IncarcaRegistruProiecte",
+   "fetched_at_utc": "2026-11-10T12:26:31.990902+00:00",
+   "http_status": 200,
+   "sha256": "07ff74df9c932d28de48e1f1a3bce2f3bed187abcb18c21ca30beb5c724cbfaa",
+   "bytes": 201878,
+   "same_as": "data/registru-proiecte-2026/20261110T093544Z.meta.json"
+  },
+  {
+   "name": "registru-hotarari-2026",
+   "url": "https://miroslava.cityon.ro/api/services/app/RegistruMonitorulOficialLocal/IncarcaRegistruHotarari",
+   "fetched_at_utc": "2026-11-10T12:26:34.055783+00:00",
+   "http_status": 200,
+   "sha256": "f1baf230f44dbb589875bc2f31b65d03ec16639eb8672277032da723856af830",
+   "bytes": 167116,
+   "same_as": "data/registru-hotarari-2026/20261103T093446Z.meta.json"
+  },
+  {
+   "name": "registru-pv-2026",
+   "url": "https://miroslava.cityon.ro/api/services/app/RegistruMonitorulOficialLocal/IncarcaRegistruProceseVerbale",
+   "fetched_at_utc": "2026-11-10T12:26:36.276097+00:00",
+   "http_status": 200,
+   "sha256": "b562219f506289012da6873d4508237de84951e859dea1f8e54890e5060b6979",
+   "bytes": 3202,
+   "same_as": "data/registru-pv-2026/20261103T093450Z.meta.json"
+  }
+ ],
+ "finished_at_utc": "2026-11-10T12:26:37.592824+00:00"
+}

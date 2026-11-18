@@ -1,0 +1,231 @@
+﻿2026-10-20T21:27:20.9468402Z Current runner version: '2.338.0'
+2026-10-20T21:27:20.9491715Z ##[group]Runner Image Provisioner
+2026-10-20T21:27:20.9492542Z Hosted Compute Agent
+2026-10-20T21:27:20.9493081Z Version: 20261015.610
+2026-10-20T21:27:20.9493545Z Commit: 267fdb4e8bbec4ab5ea31367f3a00d5c480c7656
+2026-10-20T21:27:20.9494195Z Build Date: 2026-10-14T17:06:54Z
+2026-10-20T21:27:20.9494665Z Worker ID: {c2c51673-5b07-43cf-93b6-9c69e132ff61}
+2026-10-20T21:27:20.9495176Z Region: westus3
+2026-10-20T21:27:20.9495640Z Cloud: Azure
+2026-10-20T21:27:20.9497420Z ##[endgroup]
+2026-10-20T21:27:20.9499398Z ##[group]Operating System
+2026-10-20T21:27:20.9500704Z Ubuntu
+2026-10-20T21:27:20.9501349Z 24.04.5
+2026-10-20T21:27:20.9502858Z LTS
+2026-10-20T21:27:20.9503226Z ##[endgroup]
+2026-10-20T21:27:20.9504489Z ##[group]Runner Image
+2026-10-20T21:27:20.9504923Z Image: ubuntu-24.04
+2026-10-20T21:27:20.9505359Z Version: 20261018.339.1
+2026-10-20T21:27:20.9506449Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261018.339/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-20T21:27:20.9507810Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261018.339
+2026-10-20T21:27:20.9508597Z ##[endgroup]
+2026-10-20T21:27:20.9510174Z ##[group]GITHUB_TOKEN Permissions
+2026-10-20T21:27:20.9511887Z Contents: write
+2026-10-20T21:27:20.9512666Z Metadata: read
+2026-10-20T21:27:20.9513280Z ##[endgroup]
+2026-10-20T21:27:20.9514603Z Secret source: Actions
+2026-10-20T21:27:20.9515311Z Cache mode: write
+2026-10-20T21:27:20.9516452Z Prepare workflow directory
+2026-10-20T21:27:20.9842305Z Prepare all required actions
+2026-10-20T21:27:20.9901582Z Getting action download info
+2026-10-20T21:27:21.2963506Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-20T21:27:21.4285632Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-20T21:27:21.5880546Z Complete job name: witness
+2026-10-20T21:27:21.6332333Z ##[group]Run actions/checkout@v4
+2026-10-20T21:27:21.6332766Z with:
+2026-10-20T21:27:21.6333015Z   repository: ilupu/mol-witness
+2026-10-20T21:27:21.6335138Z   token: ***
+2026-10-20T21:27:21.6335382Z   ssh-strict: true
+2026-10-20T21:27:21.6335624Z   ssh-user: git
+2026-10-20T21:27:21.6335874Z   persist-credentials: true
+2026-10-20T21:27:21.6336148Z   clean: true
+2026-10-20T21:27:21.6336397Z   sparse-checkout-cone-mode: true
+2026-10-20T21:27:21.6336684Z   fetch-depth: 1
+2026-10-20T21:27:21.6336927Z   fetch-tags: false
+2026-10-20T21:27:21.6337176Z   show-progress: true
+2026-10-20T21:27:21.6337425Z   lfs: false
+2026-10-20T21:27:21.6337658Z   submodules: false
+2026-10-20T21:27:21.6337906Z   set-safe-directory: true
+2026-10-20T21:27:21.6338188Z   allow-unsafe-pr-checkout: false
+2026-10-20T21:27:21.6338651Z ##[endgroup]
+2026-10-20T21:27:21.7004351Z Syncing repository: ilupu/mol-witness
+2026-10-20T21:27:21.7005355Z ##[group]Getting Git version info
+2026-10-20T21:27:21.7005845Z Working directory is '/home/runner/work/mol-witness/mol-witness'
+2026-10-20T21:27:21.7006449Z [command]/usr/bin/git version
+2026-10-20T21:27:21.7070757Z git version 2.55.0
+2026-10-20T21:27:21.7082722Z ##[endgroup]
+2026-10-20T21:27:21.7092598Z Temporarily overriding HOME='/home/runner/work/_temp/0d8ad89d-869d-4a28-843b-2a43e9ed4cfa' before making global git config changes
+2026-10-20T21:27:21.7093878Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-20T21:27:21.7096209Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/mol-witness/mol-witness
+2026-10-20T21:27:21.7138406Z Deleting the contents of '/home/runner/work/mol-witness/mol-witness'
+2026-10-20T21:27:21.7141260Z ##[group]Initializing the repository
+2026-10-20T21:27:21.7143583Z [command]/usr/bin/git init /home/runner/work/mol-witness/mol-witness
+2026-10-20T21:27:21.7241539Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-20T21:27:21.7242303Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-20T21:27:21.7243033Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-20T21:27:21.7243621Z hint: call:
+2026-10-20T21:27:21.7243853Z hint:
+2026-10-20T21:27:21.7244145Z hint: 	git config --global init.defaultBranch <name>
+2026-10-20T21:27:21.7244486Z hint:
+2026-10-20T21:27:21.7244810Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-20T21:27:21.7245525Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-20T21:27:21.7246168Z hint:
+2026-10-20T21:27:21.7246404Z hint: 	git branch -m <name>
+2026-10-20T21:27:21.7246670Z hint:
+2026-10-20T21:27:21.7247018Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-20T21:27:21.7247685Z Initialized empty Git repository in /home/runner/work/mol-witness/mol-witness/.git/
+2026-10-20T21:27:21.7252120Z [command]/usr/bin/git remote add origin https://github.com/ilupu/mol-witness
+2026-10-20T21:27:21.7343464Z ##[endgroup]
+2026-10-20T21:27:21.7343909Z ##[group]Disabling automatic garbage collection
+2026-10-20T21:27:21.7345588Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-20T21:27:21.7444180Z ##[endgroup]
+2026-10-20T21:27:21.7444587Z ##[group]Setting up auth
+2026-10-20T21:27:21.7447835Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-20T21:27:21.7473185Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-20T21:27:21.7769252Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-20T21:27:21.7793698Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-20T21:27:21.7972009Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-20T21:27:21.7997220Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-20T21:27:21.8217713Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-20T21:27:21.8250484Z ##[endgroup]
+2026-10-20T21:27:21.8255550Z ##[group]Fetching the repository
+2026-10-20T21:27:21.8256282Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +36f909309247f1363346036d3e62459ff8ab2fb9:refs/remotes/origin/main
+2026-10-20T21:27:22.3846335Z From https://github.com/ilupu/mol-witness
+2026-10-20T21:27:22.3846857Z  * [new ref]         36f909309247f1363346036d3e62459ff8ab2fb9 -> origin/main
+2026-10-20T21:27:22.3850335Z ##[endgroup]
+2026-10-20T21:27:22.3850752Z ##[group]Determining the checkout info
+2026-10-20T21:27:22.3852087Z ##[endgroup]
+2026-10-20T21:27:22.3856263Z [command]/usr/bin/git sparse-checkout disable
+2026-10-20T21:27:22.3943993Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-20T21:27:22.3967295Z ##[group]Checking out the ref
+2026-10-20T21:27:22.3969907Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-20T21:27:22.4161881Z Switched to a new branch 'main'
+2026-10-20T21:27:22.4165886Z branch 'main' set up to track 'origin/main'.
+2026-10-20T21:27:22.4171012Z ##[endgroup]
+2026-10-20T21:27:22.4202671Z [command]/usr/bin/git log -1 --format=%H
+2026-10-20T21:27:22.4222674Z 36f909309247f1363346036d3e62459ff8ab2fb9
+2026-10-20T21:27:22.4437917Z ##[group]Run actions/setup-python@v5
+2026-10-20T21:27:22.4438228Z with:
+2026-10-20T21:27:22.4438616Z   python-version: 3.12
+2026-10-20T21:27:22.4438910Z   check-latest: false
+2026-10-20T21:27:22.4441038Z   token: ***
+2026-10-20T21:27:22.4441287Z   update-environment: true
+2026-10-20T21:27:22.4441566Z   allow-prereleases: false
+2026-10-20T21:27:22.4441832Z   freethreaded: false
+2026-10-20T21:27:22.4442217Z ##[endgroup]
+2026-10-20T21:27:22.5272923Z ##[group]Installed versions
+2026-10-20T21:27:22.5337544Z (node:2102) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-20T21:27:22.5338704Z Successfully set up CPython (3.12.15)
+2026-10-20T21:27:22.5339483Z ##[endgroup]
+2026-10-20T21:27:22.5359032Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-20T21:27:22.5473706Z ##[group]Run python witness.py
+2026-10-20T21:27:22.5474062Z [36;1mpython witness.py[0m
+2026-10-20T21:27:22.5641565Z shell: /usr/bin/bash -e {0}
+2026-10-20T21:27:22.5641865Z env:
+2026-10-20T21:27:22.5642165Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-20T21:27:22.5642622Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-20T21:27:22.5643068Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-20T21:27:22.5643476Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-20T21:27:22.5643907Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-20T21:27:22.5644318Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-20T21:27:22.5646635Z   GITHUB_TOKEN: ***
+2026-10-20T21:27:22.5646884Z ##[endgroup]
+2026-10-20T21:32:48.0217787Z lista-sedinte: 200 10350B items=40 sha256=676d7588c05681da commits=03965c4,03965c4
+2026-10-20T21:32:48.0219464Z sedinte: {'8853': '2026-10-20', '8781': '2026-09-30', '8779': '2026-09-24', '8758': '2026-09-17', '8707': '2026-08-27', '8666': '2026-08-12', '8631': '2026-07-30', '8560': '2026-07-08', '8512': '2026-06-25', '8415': '2026-05-28', '8182': '2026-05-05', '8168': '2026-04-30', '8102': '2026-04-17', '7650': '2026-03-31', '7167': '2026-02-26', '6639': '2026-01-29', '6456': '2025-12-18', '6395': '2025-11-27', '6369': '2025-11-19', '6320': '2025-10-31', '6277': '2025-09-30', '6149': '2025-09-04', '6267': '2025-08-28', '6147': '2025-08-12', '5502': '2025-07-24'}
+2026-10-20T21:32:48.0220901Z sedinta-8853-2026-10-20/hotarari: 200 124B items=0 sha256=2e72d4837505878d commits=faaf8b8,faaf8b8
+2026-10-20T21:32:48.0221463Z sedinta-8853-2026-10-20/proiecte: 200 2589B items=3 sha256=15838b70115f4cf2 commits=8ffee71,8ffee71
+2026-10-20T21:32:48.0221983Z sedinta-8853-2026-10-20/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=ede8a8d,ede8a8d
+2026-10-20T21:32:48.0222514Z sedinta-8781-2026-09-30/hotarari: 200 2824B items=18 sha256=f4a343c28f80e97f commits=5640e5c,5640e5c
+2026-10-20T21:32:48.0222841Z sedinta-8781-2026-09-30/proiecte: 200 16446B items=18 sha256=8267326345de8a90 commits=253d444,253d444
+2026-10-20T21:32:48.0223164Z sedinta-8781-2026-09-30/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=029a1df,029a1df
+2026-10-20T21:32:48.0223477Z sedinta-8779-2026-09-24/hotarari: 200 124B items=0 sha256=2e72d4837505878d commits=7bd66da,7bd66da
+2026-10-20T21:32:48.0223797Z sedinta-8779-2026-09-24/proiecte: 200 4011B items=4 sha256=9a253c7554e690d8 commits=bab54df,bab54df
+2026-10-20T21:32:48.0224138Z sedinta-8779-2026-09-24/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=cd3febd,cd3febd
+2026-10-20T21:32:48.0224451Z sedinta-8758-2026-09-17/hotarari: 200 124B items=0 sha256=2e72d4837505878d commits=f4cf8d3,f4cf8d3
+2026-10-20T21:32:48.0224767Z sedinta-8758-2026-09-17/proiecte: 200 3987B items=4 sha256=9414d6bd2a90cd92 commits=dbdcd55,dbdcd55
+2026-10-20T21:32:48.0225104Z sedinta-8758-2026-09-17/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=e4f1899,e4f1899
+2026-10-20T21:32:48.0225457Z sedinta-8707-2026-08-27/hotarari: 200 2676B items=17 sha256=aaca01cdc65bd2c8 commits=ab3b477,ab3b477
+2026-10-20T21:32:48.0225810Z sedinta-8707-2026-08-27/proiecte: 200 14404B items=17 sha256=fc6cc81272d49ce3 commits=1ec4c66,1ec4c66
+2026-10-20T21:32:48.0226136Z sedinta-8707-2026-08-27/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=869a8a2,869a8a2
+2026-10-20T21:32:48.0226447Z sedinta-8666-2026-08-12/hotarari: 200 273B items=1 sha256=3b8170352e5964f2 commits=bfec25e,bfec25e
+2026-10-20T21:32:48.0226763Z sedinta-8666-2026-08-12/proiecte: 200 1169B items=1 sha256=afceb1268944393b commits=85f00d4,85f00d4
+2026-10-20T21:32:48.0227513Z sedinta-8666-2026-08-12/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=996678a,996678a
+2026-10-20T21:32:48.0227837Z sedinta-8631-2026-07-30/hotarari: 200 2374B items=15 sha256=537acc3dbb64d443 commits=7847fa9,7847fa9
+2026-10-20T21:32:48.0228373Z sedinta-8631-2026-07-30/proiecte: 200 14644B items=16 sha256=b8b3d4cef505094b commits=6d64af5,6d64af5
+2026-10-20T21:32:48.0228881Z sedinta-8631-2026-07-30/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=e1f568f,e1f568f
+2026-10-20T21:32:48.0229199Z sedinta-8560-2026-07-08/hotarari: 200 883B items=5 sha256=d67994c962120dd1 commits=bedf506,bedf506
+2026-10-20T21:32:48.0229516Z sedinta-8560-2026-07-08/proiecte: 200 5700B items=5 sha256=2cf0a206d67fdc6d commits=b106cf5,b106cf5
+2026-10-20T21:32:48.0229832Z sedinta-8560-2026-07-08/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=9528a0f,9528a0f
+2026-10-20T21:32:48.0230152Z sedinta-8512-2026-06-25/hotarari: 200 2824B items=18 sha256=cde067da50144b87 commits=1b2c0f0,1b2c0f0
+2026-10-20T21:32:48.0230493Z sedinta-8512-2026-06-25/proiecte: 200 15031B items=20 sha256=d5ecef67da66398f commits=609797f,609797f
+2026-10-20T21:32:48.0230811Z sedinta-8512-2026-06-25/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=540f0e4,540f0e4
+2026-10-20T21:32:48.0231223Z sedinta-8415-2026-05-28/hotarari: 200 3694B items=24 sha256=a66cbfffae2f9318 commits=bb1d3e3,bb1d3e3
+2026-10-20T21:32:48.0231636Z sedinta-8415-2026-05-28/proiecte: 200 22626B items=25 sha256=1f626beae364cfb0 commits=85261aa,85261aa
+2026-10-20T21:32:48.0231958Z sedinta-8415-2026-05-28/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=e463952,e463952
+2026-10-20T21:32:48.0232272Z sedinta-8182-2026-05-05/hotarari: 200 419B items=2 sha256=451cef03baaaeecd commits=61a2e2e,61a2e2e
+2026-10-20T21:32:48.0232592Z sedinta-8182-2026-05-05/proiecte: 200 1614B items=2 sha256=9f7edbb7dfd695d3 commits=0d796f7,0d796f7
+2026-10-20T21:32:48.0232912Z sedinta-8182-2026-05-05/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=306fbff,306fbff
+2026-10-20T21:32:48.0233250Z sedinta-8168-2026-04-30/hotarari: 200 2791B items=18 sha256=a13c59deb9a3762d commits=2c64a25,2c64a25
+2026-10-20T21:32:48.0233579Z sedinta-8168-2026-04-30/proiecte: 200 14450B items=17 sha256=0c0584b8362f147f commits=4bab78a,4bab78a
+2026-10-20T21:32:48.0233905Z sedinta-8168-2026-04-30/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=a0af4fd,a0af4fd
+2026-10-20T21:32:48.0234218Z sedinta-8102-2026-04-17/hotarari: 200 567B items=3 sha256=92007738ba65f34f commits=a9cfe21,a9cfe21
+2026-10-20T21:32:48.0234535Z sedinta-8102-2026-04-17/proiecte: 200 1545B items=3 sha256=9de45bce3df132d0 commits=b79278a,b79278a
+2026-10-20T21:32:48.0234851Z sedinta-8102-2026-04-17/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=25be62f,25be62f
+2026-10-20T21:32:48.0235169Z sedinta-7650-2026-03-31/hotarari: 200 3091B items=20 sha256=2a364509722f856e commits=ed8436d,ed8436d
+2026-10-20T21:32:48.0235498Z sedinta-7650-2026-03-31/proiecte: 200 20052B items=22 sha256=9b018e2b21a8cc2d commits=c680666,c680666
+2026-10-20T21:32:48.0235825Z sedinta-7650-2026-03-31/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=a5b7c7f,a5b7c7f
+2026-10-20T21:32:48.0236141Z sedinta-7167-2026-02-26/hotarari: 200 2492B items=16 sha256=0dca40f1df0d2e13 commits=e7ba1fb,e7ba1fb
+2026-10-20T21:32:48.0236469Z sedinta-7167-2026-02-26/proiecte: 200 14395B items=16 sha256=62cdffeea8410e66 commits=bf0499a,bf0499a
+2026-10-20T21:32:48.0236786Z sedinta-7167-2026-02-26/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=fedc530,fedc530
+2026-10-20T21:32:48.0237102Z sedinta-6639-2026-01-29/hotarari: 200 3810B items=25 sha256=c47d59abd753193f commits=92b3fad,92b3fad
+2026-10-20T21:32:48.0237421Z sedinta-6639-2026-01-29/proiecte: 200 23313B items=25 sha256=e8151a4bfc924650 commits=3e7d877,3e7d877
+2026-10-20T21:32:48.0237735Z sedinta-6639-2026-01-29/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=ca0d11d,ca0d11d
+2026-10-20T21:32:48.0238147Z sedinta-6456-2025-12-18/hotarari: 200 3124B items=20 sha256=0155d55bcaf5eac8 commits=85f2ce2,85f2ce2
+2026-10-20T21:32:48.0238600Z sedinta-6456-2025-12-18/proiecte: 200 17594B items=20 sha256=47e8aa0cd676235b commits=4e01739,4e01739
+2026-10-20T21:32:48.0238924Z sedinta-6456-2025-12-18/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=fc33d72,fc33d72
+2026-10-20T21:32:48.0239334Z sedinta-6395-2025-11-27/hotarari: 200 3424B items=22 sha256=147cac69fb081472 commits=4e7b013,4e7b013
+2026-10-20T21:32:48.0239652Z sedinta-6395-2025-11-27/proiecte: 200 18638B items=22 sha256=883c1221c421fa86 commits=8ceb323,8ceb323
+2026-10-20T21:32:48.0239967Z sedinta-6395-2025-11-27/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=915d55c,915d55c
+2026-10-20T21:32:48.0240276Z sedinta-6369-2025-11-19/hotarari: 200 873B items=5 sha256=42c340c14285b3ad commits=ff033c8,ff033c8
+2026-10-20T21:32:48.0240584Z sedinta-6369-2025-11-19/proiecte: 200 6005B items=6 sha256=254437a2834879a1 commits=c072363,c072363
+2026-10-20T21:32:48.0240896Z sedinta-6369-2025-11-19/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=e427f18,e427f18
+2026-10-20T21:32:48.0241211Z sedinta-6320-2025-10-31/hotarari: 200 4924B items=32 sha256=990ae29f24e5fd3a commits=f079284,f079284
+2026-10-20T21:32:48.0241525Z sedinta-6320-2025-10-31/proiecte: 200 24421B items=29 sha256=3a486a037357d50a commits=a8273ec,a8273ec
+2026-10-20T21:32:48.0241838Z sedinta-6320-2025-10-31/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=8fd4127,8fd4127
+2026-10-20T21:32:48.0242154Z sedinta-6277-2025-09-30/hotarari: 200 3424B items=22 sha256=3aedc8964da81116 commits=af777ce,af777ce
+2026-10-20T21:32:48.0242473Z sedinta-6277-2025-09-30/proiecte: 200 2519B items=3 sha256=1bfd0aa0d6de35e5 commits=ce49596,ce49596
+2026-10-20T21:32:48.0242789Z sedinta-6277-2025-09-30/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=8b0a722,8b0a722
+2026-10-20T21:32:48.0243115Z sedinta-6149-2025-09-04/hotarari: 200 1166B items=7 sha256=fe4f20ec92bdef68 commits=6af471d,6af471d
+2026-10-20T21:32:48.0243433Z sedinta-6149-2025-09-04/proiecte: 200 5591B items=7 sha256=419675b6413b8bbc commits=d60aa47,d60aa47
+2026-10-20T21:32:48.0243741Z sedinta-6149-2025-09-04/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=dc17758,dc17758
+2026-10-20T21:32:48.0244053Z sedinta-6267-2025-08-28/hotarari: 200 2955B items=19 sha256=2ded3b6fb01e7388 commits=2f58153,2f58153
+2026-10-20T21:32:48.0244373Z sedinta-6267-2025-08-28/proiecte: 200 15946B items=19 sha256=133e8bc702ae425f commits=20c8fe7,20c8fe7
+2026-10-20T21:32:48.0244687Z sedinta-6267-2025-08-28/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=30a74b3,30a74b3
+2026-10-20T21:32:48.0244994Z sedinta-6147-2025-08-12/hotarari: 200 424B items=2 sha256=392c058843ade221 commits=3003df1,3003df1
+2026-10-20T21:32:48.0245303Z sedinta-6147-2025-08-12/proiecte: 200 1926B items=2 sha256=4d6893e4c64e5111 commits=5cc0620,5cc0620
+2026-10-20T21:32:48.0245615Z sedinta-6147-2025-08-12/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=645e1fb,645e1fb
+2026-10-20T21:32:48.0245931Z sedinta-5502-2025-07-24/hotarari: 200 1624B items=10 sha256=217c4a1c2e1b6ce4 commits=2e27689,2e27689
+2026-10-20T21:32:48.0246252Z sedinta-5502-2025-07-24/proiecte: 200 9509B items=10 sha256=a8eee6df4680d2de commits=b4d4268,b4d4268
+2026-10-20T21:32:48.0246563Z sedinta-5502-2025-07-24/prezenta: 200 124B items=0 sha256=2e72d4837505878d commits=d806787,d806787
+2026-10-20T21:32:57.3376801Z registru-proiecte-2026: 200 173700B items=198 sha256=44547c503b53eba2 commits=6ff58be,6ff58be
+2026-10-20T21:32:57.3377916Z registru-hotarari-2026: 200 159722B items=182 sha256=6dce25e4dd857e84 commits=6a63a68,6a63a68
+2026-10-20T21:32:57.3378445Z registru-pv-2026: 200 2618B items=13 sha256=6f20e4fca8a3a5b9 commits=fd30eaf,fd30eaf
+2026-10-20T21:32:57.3534476Z Post job cleanup.
+2026-10-20T21:32:57.4319766Z (node:2211) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-20T21:32:57.4384319Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-20T21:32:57.4440027Z Post job cleanup.
+2026-10-20T21:32:57.4952397Z [command]/usr/bin/git version
+2026-10-20T21:32:57.4979733Z git version 2.55.0
+2026-10-20T21:32:57.4998759Z Temporarily overriding HOME='/home/runner/work/_temp/9e090ebf-5e9f-44bf-a82d-2890275a20a1' before making global git config changes
+2026-10-20T21:32:57.4999488Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-20T21:32:57.5001406Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/mol-witness/mol-witness
+2026-10-20T21:32:57.5031655Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-20T21:32:57.5057209Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-20T21:32:57.5241534Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-20T21:32:57.5261629Z http.https://github.com/.extraheader
+2026-10-20T21:32:57.5268780Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-20T21:32:57.5294869Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-20T21:32:57.5474031Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-20T21:32:57.5506201Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-20T21:32:57.5874252Z Cleaning up orphan processes
+2026-10-20T21:32:57.6091768Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

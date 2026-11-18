@@ -1,0 +1,134 @@
+{
+ "run_id": 40383010149,
+ "run_number": 5,
+ "run_attempt": 1,
+ "workflow": "MOL captures",
+ "workflow_path": ".github/workflows/captures.yml",
+ "event": "schedule",
+ "status": "completed",
+ "conclusion": "success",
+ "actor": "ilupu",
+ "head_branch": "main",
+ "head_sha": "34495bef96ca73039d79333692f9cd9725801d34",
+ "created_at": "2026-10-26T19:01:41Z",
+ "run_started_at": "2026-10-26T19:01:41Z",
+ "updated_at": "2026-10-26T19:02:50Z",
+ "html_url": "https://github.com/ilupu/mol-witness/actions/runs/40383010149",
+ "jobs": [
+  {
+   "id": 121783903481,
+   "name": "captures",
+   "run_attempt": 1,
+   "status": "completed",
+   "conclusion": "success",
+   "started_at": "2026-10-26T19:01:44Z",
+   "completed_at": "2026-10-26T19:02:50Z",
+   "runner_name": "GitHub Actions 1000003420",
+   "html_url": "https://github.com/ilupu/mol-witness/actions/runs/40383010149/job/121783903481",
+   "steps": [
+    {
+     "number": 1,
+     "name": "Set up job",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:01:44Z",
+     "completed_at": "2026-10-26T19:01:45Z"
+    },
+    {
+     "number": 2,
+     "name": "Run actions/checkout@v4",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:01:45Z",
+     "completed_at": "2026-10-26T19:01:47Z"
+    },
+    {
+     "number": 3,
+     "name": "Run actions/setup-python@v5",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:01:47Z",
+     "completed_at": "2026-10-26T19:01:48Z"
+    },
+    {
+     "number": 4,
+     "name": "Run pip install -r requirements-capture.txt",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:01:48Z",
+     "completed_at": "2026-10-26T19:01:50Z"
+    },
+    {
+     "number": 5,
+     "name": "Cache Chromium",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:01:50Z",
+     "completed_at": "2026-10-26T19:01:53Z"
+    },
+    {
+     "number": 6,
+     "name": "Run playwright install --with-deps chromium",
+     "status": "completed",
+     "conclusion": "skipped",
+     "started_at": "2026-10-26T19:01:53Z",
+     "completed_at": "2026-10-26T19:01:53Z"
+    },
+    {
+     "number": 7,
+     "name": "Run playwright install-deps chromium",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:01:53Z",
+     "completed_at": "2026-10-26T19:02:05Z"
+    },
+    {
+     "number": 8,
+     "name": "Run python capture.py",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:02:05Z",
+     "completed_at": "2026-10-26T19:02:47Z"
+    },
+    {
+     "number": 14,
+     "name": "Post Cache Chromium",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:02:47Z",
+     "completed_at": "2026-10-26T19:02:47Z"
+    },
+    {
+     "number": 15,
+     "name": "Post Run actions/setup-python@v5",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:02:47Z",
+     "completed_at": "2026-10-26T19:02:47Z"
+    },
+    {
+     "number": 16,
+     "name": "Post Run actions/checkout@v4",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:02:47Z",
+     "completed_at": "2026-10-26T19:02:48Z"
+    },
+    {
+     "number": 17,
+     "name": "Complete job",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-10-26T19:02:48Z",
+     "completed_at": "2026-10-26T19:02:48Z"
+    }
+   ],
+   "log": "actions-logs/captures/2026-10/20261026T190141Z-40383010149.captures.log",
+   "log_sha256": "732d2dd0e15043ede413b8b2763d2122c38e9fdfbc259dd7a2b239ee0cfda34d",
+   "log_bytes": 39583
+  }
+ ],
+ "archived_at_utc": "2026-11-18T11:19:16.971608+00:00",
+ "archived_by_run_id": "44293052907",
+ "archived_by_run_url": "https://github.com/ilupu/mol-witness/actions/runs/44293052907"
+}

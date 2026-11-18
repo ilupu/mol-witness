@@ -1,0 +1,189 @@
+﻿2026-11-06T15:20:26.6406721Z Current runner version: '2.338.2'
+2026-11-06T15:20:26.6424496Z ##[group]Runner Image Provisioner
+2026-11-06T15:20:26.6425205Z Hosted Compute Agent
+2026-11-06T15:20:26.6425562Z Version: 20261028.624
+2026-11-06T15:20:26.6426001Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-06T15:20:26.6426471Z Build Date: 2026-10-28T21:51:42Z
+2026-11-06T15:20:26.6426932Z Worker ID: {b95f06bb-32ab-4575-9c14-78940c8f10c0}
+2026-11-06T15:20:26.6427380Z Region: westus2
+2026-11-06T15:20:26.6427837Z Cloud: Azure
+2026-11-06T15:20:26.6428233Z ##[endgroup]
+2026-11-06T15:20:26.6429095Z ##[group]Operating System
+2026-11-06T15:20:26.6429489Z Ubuntu
+2026-11-06T15:20:26.6429822Z 24.04.5
+2026-11-06T15:20:26.6430139Z LTS
+2026-11-06T15:20:26.6430490Z ##[endgroup]
+2026-11-06T15:20:26.6430854Z ##[group]Runner Image
+2026-11-06T15:20:26.6431207Z Image: ubuntu-24.04
+2026-11-06T15:20:26.6431598Z Version: 20261101.360.1
+2026-11-06T15:20:26.6432343Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-06T15:20:26.6433281Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+2026-11-06T15:20:26.6433829Z ##[endgroup]
+2026-11-06T15:20:26.6434551Z ##[group]GITHUB_TOKEN Permissions
+2026-11-06T15:20:26.6435951Z Contents: write
+2026-11-06T15:20:26.6436383Z Metadata: read
+2026-11-06T15:20:26.6436834Z ##[endgroup]
+2026-11-06T15:20:26.6438181Z Secret source: Actions
+2026-11-06T15:20:26.6438720Z Cache mode: write
+2026-11-06T15:20:26.6439167Z Prepare workflow directory
+2026-11-06T15:20:26.6640711Z Prepare all required actions
+2026-11-06T15:20:26.6671650Z Getting action download info
+2026-11-06T15:20:27.0421814Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-06T15:20:27.1279604Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-06T15:20:27.2912542Z Complete job name: witness
+2026-11-06T15:20:27.3428431Z ##[group]Run actions/checkout@v4
+2026-11-06T15:20:27.3428872Z with:
+2026-11-06T15:20:27.3429127Z   repository: ilupu/mol-witness
+2026-11-06T15:20:27.3431136Z   token: ***
+2026-11-06T15:20:27.3431382Z   ssh-strict: true
+2026-11-06T15:20:27.3431634Z   ssh-user: git
+2026-11-06T15:20:27.3431891Z   persist-credentials: true
+2026-11-06T15:20:27.3432166Z   clean: true
+2026-11-06T15:20:27.3432424Z   sparse-checkout-cone-mode: true
+2026-11-06T15:20:27.3432720Z   fetch-depth: 1
+2026-11-06T15:20:27.3432968Z   fetch-tags: false
+2026-11-06T15:20:27.3433225Z   show-progress: true
+2026-11-06T15:20:27.3433482Z   lfs: false
+2026-11-06T15:20:27.3433719Z   submodules: false
+2026-11-06T15:20:27.3433977Z   set-safe-directory: true
+2026-11-06T15:20:27.3434261Z   allow-unsafe-pr-checkout: false
+2026-11-06T15:20:27.3434622Z ##[endgroup]
+2026-11-06T15:20:27.5717227Z Syncing repository: ilupu/mol-witness
+2026-11-06T15:20:27.5718272Z ##[group]Getting Git version info
+2026-11-06T15:20:27.5718732Z Working directory is '/home/runner/work/mol-witness/mol-witness'
+2026-11-06T15:20:27.5719308Z [command]/usr/bin/git version
+2026-11-06T15:20:27.5800982Z git version 2.56.0
+2026-11-06T15:20:27.5813501Z ##[endgroup]
+2026-11-06T15:20:27.5821420Z Temporarily overriding HOME='/home/runner/work/_temp/109e9b57-7ea4-4d60-b028-2798a446adbd' before making global git config changes
+2026-11-06T15:20:27.5822618Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-06T15:20:27.5824369Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/mol-witness/mol-witness
+2026-11-06T15:20:27.5867374Z Deleting the contents of '/home/runner/work/mol-witness/mol-witness'
+2026-11-06T15:20:27.5870373Z ##[group]Initializing the repository
+2026-11-06T15:20:27.5872469Z [command]/usr/bin/git init /home/runner/work/mol-witness/mol-witness
+2026-11-06T15:20:27.5976165Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-06T15:20:27.5976771Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-06T15:20:27.5977535Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-06T15:20:27.5977942Z hint: call:
+2026-11-06T15:20:27.5978170Z hint:
+2026-11-06T15:20:27.5978466Z hint: 	git config --global init.defaultBranch <name>
+2026-11-06T15:20:27.5978834Z hint:
+2026-11-06T15:20:27.5979157Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-06T15:20:27.5979667Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-06T15:20:27.5980067Z hint:
+2026-11-06T15:20:27.5980299Z hint: 	git branch -m <name>
+2026-11-06T15:20:27.5980564Z hint:
+2026-11-06T15:20:27.5980908Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-06T15:20:27.5991355Z Initialized empty Git repository in /home/runner/work/mol-witness/mol-witness/.git/
+2026-11-06T15:20:27.5998746Z [command]/usr/bin/git remote add origin https://github.com/ilupu/mol-witness
+2026-11-06T15:20:27.6038541Z ##[endgroup]
+2026-11-06T15:20:27.6039057Z ##[group]Disabling automatic garbage collection
+2026-11-06T15:20:27.6040544Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-06T15:20:27.6065782Z ##[endgroup]
+2026-11-06T15:20:27.6066259Z ##[group]Setting up auth
+2026-11-06T15:20:27.6069865Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-06T15:20:27.6097436Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-06T15:20:27.6409938Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-06T15:20:27.6436701Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-06T15:20:27.6619816Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-06T15:20:27.6646915Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-06T15:20:27.6830680Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-06T15:20:27.6865727Z ##[endgroup]
+2026-11-06T15:20:27.6866416Z ##[group]Fetching the repository
+2026-11-06T15:20:27.6875640Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +822e7267a92ae39cec8dbb953522522f9a069b25:refs/remotes/origin/main
+2026-11-06T15:20:30.3907935Z From https://github.com/ilupu/mol-witness
+2026-11-06T15:20:30.3909478Z  * [new ref]         822e7267a92ae39cec8dbb953522522f9a069b25 -> origin/main
+2026-11-06T15:20:30.3912603Z ##[endgroup]
+2026-11-06T15:20:30.3913578Z ##[group]Determining the checkout info
+2026-11-06T15:20:30.3914657Z ##[endgroup]
+2026-11-06T15:20:30.3916682Z [command]/usr/bin/git sparse-checkout disable
+2026-11-06T15:20:30.3960622Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-06T15:20:30.3989515Z ##[group]Checking out the ref
+2026-11-06T15:20:30.3997292Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-06T15:20:30.7481172Z Switched to a new branch 'main'
+2026-11-06T15:20:30.7484491Z branch 'main' set up to track 'origin/main'.
+2026-11-06T15:20:30.7503732Z ##[endgroup]
+2026-11-06T15:20:30.7542821Z [command]/usr/bin/git log -1 --format=%H
+2026-11-06T15:20:30.7564598Z 822e7267a92ae39cec8dbb953522522f9a069b25
+2026-11-06T15:20:30.7782173Z ##[group]Run actions/setup-python@v5
+2026-11-06T15:20:30.7782388Z with:
+2026-11-06T15:20:30.7782534Z   python-version: 3.12
+2026-11-06T15:20:30.7782690Z   check-latest: false
+2026-11-06T15:20:30.7784022Z   token: ***
+2026-11-06T15:20:30.7784163Z   update-environment: true
+2026-11-06T15:20:30.7784326Z   allow-prereleases: false
+2026-11-06T15:20:30.7784481Z   freethreaded: false
+2026-11-06T15:20:30.7784772Z ##[endgroup]
+2026-11-06T15:20:30.8721125Z ##[group]Installed versions
+2026-11-06T15:20:30.8797704Z (node:2112) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-06T15:20:30.8798310Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-06T15:20:30.8798696Z Successfully set up CPython (3.12.16)
+2026-11-06T15:20:30.8799033Z ##[endgroup]
+2026-11-06T15:20:30.8913206Z ##[group]Run python witness.py
+2026-11-06T15:20:30.8913490Z [36;1mpython witness.py[0m
+2026-11-06T15:20:30.8941071Z shell: /usr/bin/bash -e {0}
+2026-11-06T15:20:30.8941258Z env:
+2026-11-06T15:20:30.8941444Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-06T15:20:30.8941718Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-06T15:20:30.8941978Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-06T15:20:30.8942212Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-06T15:20:30.8942463Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-06T15:20:30.8942704Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-06T15:20:30.8944186Z   GITHUB_TOKEN: ***
+2026-11-06T15:20:30.8944333Z   MOL_FULL: 
+2026-11-06T15:20:30.8944470Z ##[endgroup]
+2026-11-06T15:21:38.4716926Z mod: recent
+2026-11-06T15:21:38.4717525Z lista-sedinte: 200 41209B sha256=2a22cd5f3c3f307c neschimbat (= 20261103T092126Z.meta.json)
+2026-11-06T15:21:38.4718544Z sedinte: {'8872': ['recent', 'fara-pv', 'fara-hcl', '0 hcl < 30 phcl'], '8853': ['recent', 'fara-hcl', '0 hcl < 3 phcl'], '8781': ['recent'], '8779': ['recent'], '8758': ['recent'], '8707': ['recent'], '8666': ['recent'], '8631': ['recent', '15 hcl < 16 phcl'], '8560': ['recent'], '8512': ['recent', '18 hcl < 20 phcl']}
+2026-11-06T15:21:38.4719794Z sedinta-8872-2026-10-29/hotarari: 200 124B sha256=2e72d4837505878d neschimbat (= 20261027T153219Z.meta.json)
+2026-11-06T15:21:38.4720395Z sedinta-8872-2026-10-29/proiecte: 200 24043B sha256=07bb417beddb914a neschimbat (= 20261029T152310Z.meta.json)
+2026-11-06T15:21:38.4720992Z sedinta-8872-2026-10-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261027T153229Z.meta.json)
+2026-11-06T15:21:38.4721554Z sedinta-8853-2026-10-20/hotarari: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064401Z.meta.json)
+2026-11-06T15:21:38.4722107Z sedinta-8853-2026-10-20/proiecte: 200 2589B sha256=15838b70115f4cf2 neschimbat (= 20261022T064405Z.meta.json)
+2026-11-06T15:21:38.4722635Z sedinta-8853-2026-10-20/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064408Z.meta.json)
+2026-11-06T15:21:38.4723172Z sedinta-8781-2026-09-30/hotarari: 200 2824B sha256=f4a343c28f80e97f neschimbat (= 20261022T064412Z.meta.json)
+2026-11-06T15:21:38.4723703Z sedinta-8781-2026-09-30/proiecte: 200 16446B sha256=8267326345de8a90 neschimbat (= 20261022T064416Z.meta.json)
+2026-11-06T15:21:38.4724219Z sedinta-8781-2026-09-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064419Z.meta.json)
+2026-11-06T15:21:38.4724737Z sedinta-8779-2026-09-24/hotarari: 200 723B sha256=7ee55a03544e23f1 neschimbat (= 20261103T092148Z.meta.json)
+2026-11-06T15:21:38.4725409Z sedinta-8779-2026-09-24/proiecte: 200 4011B sha256=9a253c7554e690d8 neschimbat (= 20261022T064429Z.meta.json)
+2026-11-06T15:21:38.4726555Z sedinta-8779-2026-09-24/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064432Z.meta.json)
+2026-11-06T15:21:38.4727108Z sedinta-8758-2026-09-17/hotarari: 200 723B sha256=2ff29791e885e945 neschimbat (= 20261102T122716Z.meta.json)
+2026-11-06T15:21:38.4727627Z sedinta-8758-2026-09-17/proiecte: 200 3987B sha256=9414d6bd2a90cd92 neschimbat (= 20261022T064441Z.meta.json)
+2026-11-06T15:21:38.4728152Z sedinta-8758-2026-09-17/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064444Z.meta.json)
+2026-11-06T15:21:38.4728671Z sedinta-8707-2026-08-27/hotarari: 200 2676B sha256=aaca01cdc65bd2c8 neschimbat (= 20261022T064449Z.meta.json)
+2026-11-06T15:21:38.4729197Z sedinta-8707-2026-08-27/proiecte: 200 14404B sha256=fc6cc81272d49ce3 neschimbat (= 20261022T064452Z.meta.json)
+2026-11-06T15:21:38.4730280Z sedinta-8707-2026-08-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064456Z.meta.json)
+2026-11-06T15:21:38.4730791Z sedinta-8666-2026-08-12/hotarari: 200 273B sha256=3b8170352e5964f2 neschimbat (= 20261022T064500Z.meta.json)
+2026-11-06T15:21:38.4731578Z sedinta-8666-2026-08-12/proiecte: 200 1169B sha256=afceb1268944393b neschimbat (= 20261022T064504Z.meta.json)
+2026-11-06T15:21:38.4732112Z sedinta-8666-2026-08-12/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064507Z.meta.json)
+2026-11-06T15:21:38.4732627Z sedinta-8631-2026-07-30/hotarari: 200 2374B sha256=537acc3dbb64d443 neschimbat (= 20261022T064512Z.meta.json)
+2026-11-06T15:21:38.4733165Z sedinta-8631-2026-07-30/proiecte: 200 14644B sha256=b8b3d4cef505094b neschimbat (= 20261022T064515Z.meta.json)
+2026-11-06T15:21:38.4733736Z sedinta-8631-2026-07-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064518Z.meta.json)
+2026-11-06T15:21:38.4734285Z sedinta-8560-2026-07-08/hotarari: 200 883B sha256=d67994c962120dd1 neschimbat (= 20261022T064523Z.meta.json)
+2026-11-06T15:21:38.4734832Z sedinta-8560-2026-07-08/proiecte: 200 5700B sha256=2cf0a206d67fdc6d neschimbat (= 20261022T064526Z.meta.json)
+2026-11-06T15:21:38.4735574Z sedinta-8560-2026-07-08/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064529Z.meta.json)
+2026-11-06T15:21:38.4736196Z sedinta-8512-2026-06-25/hotarari: 200 2824B sha256=cde067da50144b87 neschimbat (= 20261022T064534Z.meta.json)
+2026-11-06T15:21:38.4736761Z sedinta-8512-2026-06-25/proiecte: 200 15031B sha256=d5ecef67da66398f neschimbat (= 20261022T064537Z.meta.json)
+2026-11-06T15:21:38.4737323Z sedinta-8512-2026-06-25/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064540Z.meta.json)
+2026-11-06T15:21:38.4737893Z registru-proiecte-2026: 200 197529B sha256=8da0d26de60f4542 neschimbat (= 20261029T152354Z.meta.json)
+2026-11-06T15:21:38.4738449Z registru-hotarari-2026: 200 167116B sha256=f1baf230f44dbb58 neschimbat (= 20261103T093446Z.meta.json)
+2026-11-06T15:21:38.4738982Z registru-pv-2026: 200 3202B sha256=b562219f50628901 neschimbat (= 20261103T093450Z.meta.json)
+2026-11-06T15:21:38.4739460Z run 20261106T152030Z mode=recent sedinte=10 noi=0 neschimbate=34 commit=0d9c3a1
+2026-11-06T15:21:38.4891632Z Post job cleanup.
+2026-11-06T15:21:38.5663471Z (node:2150) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-06T15:21:38.5663967Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-06T15:21:38.5795680Z Post job cleanup.
+2026-11-06T15:21:38.6352635Z [command]/usr/bin/git version
+2026-11-06T15:21:38.6381714Z git version 2.56.0
+2026-11-06T15:21:38.6402662Z Temporarily overriding HOME='/home/runner/work/_temp/44c8f7c5-6c82-4664-9855-43034275a461' before making global git config changes
+2026-11-06T15:21:38.6403202Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-06T15:21:38.6406989Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/mol-witness/mol-witness
+2026-11-06T15:21:38.6433623Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-06T15:21:38.6459207Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-06T15:21:38.6650120Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-06T15:21:38.6672144Z http.https://github.com/.extraheader
+2026-11-06T15:21:38.6679377Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-06T15:21:38.6706331Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-06T15:21:38.6883833Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-06T15:21:38.6907704Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-06T15:21:38.7208206Z Cleaning up orphan processes
+2026-11-06T15:21:38.7456359Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

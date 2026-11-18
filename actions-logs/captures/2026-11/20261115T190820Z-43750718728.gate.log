@@ -1,0 +1,47 @@
+﻿2026-11-15T19:08:24.3003911Z Current runner version: '2.338.2'
+2026-11-15T19:08:24.3022974Z ##[group]Runner Image Provisioner
+2026-11-15T19:08:24.3023786Z Hosted Compute Agent
+2026-11-15T19:08:24.3024402Z Version: 20261103.629
+2026-11-15T19:08:24.3025068Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-15T19:08:24.3025851Z Build Date: 2026-11-03T17:26:59Z
+2026-11-15T19:08:24.3026539Z Worker ID: {76542ec6-9f25-4d42-912b-57f4e009f599}
+2026-11-15T19:08:24.3027244Z Region: us-east-1
+2026-11-15T19:08:24.3027752Z Cloud: AWS
+2026-11-15T19:08:24.3028315Z ##[endgroup]
+2026-11-15T19:08:24.3030072Z ##[group]Operating System
+2026-11-15T19:08:24.3030952Z Ubuntu
+2026-11-15T19:08:24.3031480Z 24.04.5
+2026-11-15T19:08:24.3032007Z LTS
+2026-11-15T19:08:24.3032531Z ##[endgroup]
+2026-11-15T19:08:24.3033066Z ##[group]Runner Image
+2026-11-15T19:08:24.3033676Z Image: ubuntu-24.04
+2026-11-15T19:08:24.3034231Z Version: 20261111.127.1
+2026-11-15T19:08:24.3035564Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261111.127/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-15T19:08:24.3037065Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261111.127
+2026-11-15T19:08:24.3038033Z ##[endgroup]
+2026-11-15T19:08:24.3039148Z ##[group]GITHUB_TOKEN Permissions
+2026-11-15T19:08:24.3041598Z Contents: write
+2026-11-15T19:08:24.3042142Z Metadata: read
+2026-11-15T19:08:24.3042683Z ##[endgroup]
+2026-11-15T19:08:24.3044987Z Secret source: Actions
+2026-11-15T19:08:24.3045924Z Cache mode: write
+2026-11-15T19:08:24.3046665Z Prepare workflow directory
+2026-11-15T19:08:24.3373837Z Prepare all required actions
+2026-11-15T19:08:24.3639297Z Complete job name: gate
+2026-11-15T19:08:24.4437078Z ##[group]Run if [ "schedule" != "schedule" ]; then
+2026-11-15T19:08:24.4437743Z [36;1mif [ "schedule" != "schedule" ]; then[0m
+2026-11-15T19:08:24.4438290Z [36;1m  echo "run=true" >> "$GITHUB_OUTPUT"; exit 0[0m
+2026-11-15T19:08:24.4438985Z [36;1mfi[0m
+2026-11-15T19:08:24.4439396Z [36;1mh=$(TZ=Europe/Bucharest date +%-H)[0m
+2026-11-15T19:08:24.4439981Z [36;1mecho "Ora locală (Europe/Bucharest): $h"[0m
+2026-11-15T19:08:24.4440505Z [36;1mif [ "$h" = "9" ] || [ "$h" = "21" ]; then[0m
+2026-11-15T19:08:24.4441284Z [36;1m  echo "run=true" >> "$GITHUB_OUTPUT"[0m
+2026-11-15T19:08:24.4441813Z [36;1melse[0m
+2026-11-15T19:08:24.4442228Z [36;1m  echo "run=false" >> "$GITHUB_OUTPUT"[0m
+2026-11-15T19:08:24.4442706Z [36;1mfi[0m
+2026-11-15T19:08:26.2989351Z shell: /usr/bin/bash -e {0}
+2026-11-15T19:08:26.2989971Z ##[endgroup]
+2026-11-15T19:08:26.3590134Z Ora locală (Europe/Bucharest): 21
+2026-11-15T19:08:26.3724640Z Evaluate and set job outputs
+2026-11-15T19:08:26.3733000Z Set output 'run'
+2026-11-15T19:08:26.3734421Z Cleaning up orphan processes

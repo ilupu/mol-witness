@@ -1,0 +1,25 @@
+name: MOL actions logs
+on:
+  schedule:
+    - cron: "41 2 * * *"   # zilnic (UTC), departe de witness (:17) și captures (:00); GitHub ține logurile 90 de zile
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Cel mult atâtea rulări arhivate la o execuție (implicit 200; restul, la următoarea)"
+        type: number
+        default: 200
+permissions:
+  contents: write
+  actions: read
+concurrency: actions-logs   # două arhivări în paralel ar rescrie SHA256SUMS una peste alta
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python archive_logs.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MOL_MAX_RUNS: ${{ inputs.max }}

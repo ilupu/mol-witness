@@ -1,0 +1,31 @@
+{
+ "github_run_id": "44290247785",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/44290247785",
+ "finished_at_utc": "2026-11-18T10:58:36.714885+00:00",
+ "targets": {
+  "8758": {
+   "label": "2026-09-17",
+   "reasons": [
+    "manual"
+   ]
+  },
+  "8779": {
+   "label": "2026-09-24",
+   "reasons": [
+    "manual"
+   ]
+  },
+  "8781": {
+   "label": "2026-09-30",
+   "reasons": [
+    "manual"
+   ]
+  }
+ },
+ "captured": [
+  "captures/sedinta-8758-2026-09-17/20261118T105817Z.jpg",
+  "captures/sedinta-8779-2026-09-24/20261118T105825Z.jpg",
+  "captures/sedinta-8781-2026-09-30/20261118T105831Z.jpg"
+ ],
+ "failed": {}
+}

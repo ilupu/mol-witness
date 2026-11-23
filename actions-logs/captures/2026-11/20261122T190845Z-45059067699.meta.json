@@ -1,0 +1,174 @@
+{
+ "run_id": 45059067699,
+ "run_number": 100,
+ "run_attempt": 1,
+ "workflow": "MOL captures",
+ "workflow_path": ".github/workflows/captures.yml",
+ "event": "schedule",
+ "status": "completed",
+ "conclusion": "success",
+ "actor": "ilupu",
+ "head_branch": "main",
+ "head_sha": "a73330a049a02fa5ac4587ef989fa68a49c74809",
+ "created_at": "2026-11-22T19:08:45Z",
+ "run_started_at": "2026-11-22T19:08:45Z",
+ "updated_at": "2026-11-22T19:09:54Z",
+ "html_url": "https://github.com/ilupu/mol-witness/actions/runs/45059067699",
+ "jobs": [
+  {
+   "id": 137320685869,
+   "name": "gate",
+   "run_attempt": 1,
+   "status": "completed",
+   "conclusion": "success",
+   "started_at": "2026-11-22T19:08:48Z",
+   "completed_at": "2026-11-22T19:08:51Z",
+   "runner_name": "GitHub Actions 1000003905",
+   "html_url": "https://github.com/ilupu/mol-witness/actions/runs/45059067699/job/137320685869",
+   "steps": [
+    {
+     "number": 1,
+     "name": "Set up job",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:08:49Z",
+     "completed_at": "2026-11-22T19:08:49Z"
+    },
+    {
+     "number": 2,
+     "name": "Run if [ \"schedule\" != \"schedule\" ]; then",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:08:49Z",
+     "completed_at": "2026-11-22T19:08:49Z"
+    },
+    {
+     "number": 3,
+     "name": "Complete job",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:08:49Z",
+     "completed_at": "2026-11-22T19:08:49Z"
+    }
+   ],
+   "log": "actions-logs/captures/2026-11/20261122T190845Z-45059067699.gate.log",
+   "log_sha256": "abc8576511ac85120d901ed0c3c27516a2c79da2485231f8b7d8a6ab2d6953f1",
+   "log_bytes": 2806
+  },
+  {
+   "id": 137320713193,
+   "name": "captures",
+   "run_attempt": 1,
+   "status": "completed",
+   "conclusion": "success",
+   "started_at": "2026-11-22T19:08:54Z",
+   "completed_at": "2026-11-22T19:09:54Z",
+   "runner_name": "GitHub Actions 1000003906",
+   "html_url": "https://github.com/ilupu/mol-witness/actions/runs/45059067699/job/137320713193",
+   "steps": [
+    {
+     "number": 1,
+     "name": "Set up job",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:08:54Z",
+     "completed_at": "2026-11-22T19:08:55Z"
+    },
+    {
+     "number": 2,
+     "name": "Run actions/checkout@v4",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:08:55Z",
+     "completed_at": "2026-11-22T19:09:02Z"
+    },
+    {
+     "number": 3,
+     "name": "Run actions/setup-python@v5",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:09:02Z",
+     "completed_at": "2026-11-22T19:09:05Z"
+    },
+    {
+     "number": 4,
+     "name": "Run pip install -r requirements-capture.txt",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:09:05Z",
+     "completed_at": "2026-11-22T19:09:07Z"
+    },
+    {
+     "number": 5,
+     "name": "Cache Chromium",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:09:07Z",
+     "completed_at": "2026-11-22T19:09:11Z"
+    },
+    {
+     "number": 6,
+     "name": "Run playwright install --with-deps chromium",
+     "status": "completed",
+     "conclusion": "skipped",
+     "started_at": "2026-11-22T19:09:11Z",
+     "completed_at": "2026-11-22T19:09:11Z"
+    },
+    {
+     "number": 7,
+     "name": "Run playwright install-deps chromium",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:09:11Z",
+     "completed_at": "2026-11-22T19:09:23Z"
+    },
+    {
+     "number": 8,
+     "name": "Run python capture.py",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:09:23Z",
+     "completed_at": "2026-11-22T19:09:52Z"
+    },
+    {
+     "number": 14,
+     "name": "Post Cache Chromium",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:09:52Z",
+     "completed_at": "2026-11-22T19:09:52Z"
+    },
+    {
+     "number": 15,
+     "name": "Post Run actions/setup-python@v5",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:09:52Z",
+     "completed_at": "2026-11-22T19:09:52Z"
+    },
+    {
+     "number": 16,
+     "name": "Post Run actions/checkout@v4",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:09:52Z",
+     "completed_at": "2026-11-22T19:09:53Z"
+    },
+    {
+     "number": 17,
+     "name": "Complete job",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-22T19:09:53Z",
+     "completed_at": "2026-11-22T19:09:53Z"
+    }
+   ],
+   "log": "actions-logs/captures/2026-11/20261122T190845Z-45059067699.captures.log",
+   "log_sha256": "2bf0fe0e135c73f5d0daf9f304ee39f57a1ef593977b69fd3e34d62b8655fc0c",
+   "log_bytes": 35247
+  }
+ ],
+ "archived_at_utc": "2026-11-23T02:46:44.607554+00:00",
+ "archived_by_run_id": "45102048792",
+ "archived_by_run_url": "https://github.com/ilupu/mol-witness/actions/runs/45102048792"
+}

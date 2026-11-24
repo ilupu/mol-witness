@@ -1,0 +1,94 @@
+{
+ "run_id": 45204315379,
+ "run_number": 273,
+ "run_attempt": 1,
+ "workflow": "MOL witness",
+ "workflow_path": ".github/workflows/witness.yml",
+ "event": "schedule",
+ "status": "completed",
+ "conclusion": "success",
+ "actor": "ilupu",
+ "head_branch": "main",
+ "head_sha": "f0852cd57b12df0ac2a7cef79bcf9969530920a4",
+ "created_at": "2026-11-23T15:21:29Z",
+ "run_started_at": "2026-11-23T15:21:29Z",
+ "updated_at": "2026-11-23T15:22:46Z",
+ "html_url": "https://github.com/ilupu/mol-witness/actions/runs/45204315379",
+ "jobs": [
+  {
+   "id": 137795778415,
+   "name": "witness",
+   "run_attempt": 1,
+   "status": "completed",
+   "conclusion": "success",
+   "started_at": "2026-11-23T15:21:33Z",
+   "completed_at": "2026-11-23T15:22:45Z",
+   "runner_name": "GitHub Actions 1000003920",
+   "html_url": "https://github.com/ilupu/mol-witness/actions/runs/45204315379/job/137795778415",
+   "steps": [
+    {
+     "number": 1,
+     "name": "Set up job",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-23T15:21:33Z",
+     "completed_at": "2026-11-23T15:21:34Z"
+    },
+    {
+     "number": 2,
+     "name": "Run actions/checkout@v4",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-23T15:21:34Z",
+     "completed_at": "2026-11-23T15:21:42Z"
+    },
+    {
+     "number": 3,
+     "name": "Run actions/setup-python@v5",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-23T15:21:42Z",
+     "completed_at": "2026-11-23T15:21:42Z"
+    },
+    {
+     "number": 4,
+     "name": "Run python witness.py",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-23T15:21:42Z",
+     "completed_at": "2026-11-23T15:22:43Z"
+    },
+    {
+     "number": 7,
+     "name": "Post Run actions/setup-python@v5",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-23T15:22:43Z",
+     "completed_at": "2026-11-23T15:22:44Z"
+    },
+    {
+     "number": 8,
+     "name": "Post Run actions/checkout@v4",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-23T15:22:44Z",
+     "completed_at": "2026-11-23T15:22:44Z"
+    },
+    {
+     "number": 9,
+     "name": "Complete job",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-23T15:22:44Z",
+     "completed_at": "2026-11-23T15:22:44Z"
+    }
+   ],
+   "log": "actions-logs/witness/2026-11/20261123T152129Z-45204315379.witness.log",
+   "log_sha256": "faacd9e8f62b23833e6f1b4c21b44309fd7fd0c3b676f14e270676d207b243c4",
+   "log_bytes": 17132
+  }
+ ],
+ "archived_at_utc": "2026-11-24T02:45:52.503259+00:00",
+ "archived_by_run_id": "45314656467",
+ "archived_by_run_url": "https://github.com/ilupu/mol-witness/actions/runs/45314656467"
+}

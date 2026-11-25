@@ -1,0 +1,21 @@
+{
+ "name": "lista-hotarari",
+ "url": "https://miroslava.cityon.ro/MonitorulOficialLocal/HotararileAutoritatiiDeliberative",
+ "captured_at_utc": "2026-11-25T19:09:58.530818+00:00",
+ "http_status": 200,
+ "page_title": "Hotărârile autorității deliberative / CityOn",
+ "reasons": [
+  "pagina"
+ ],
+ "overlay_text": "MOL witness  2026-11-25 19:09:58 UTC\nhttps://miroslava.cityon.ro/MonitorulOficialLocal/HotararileAutoritatiiDeliberative\nrun https://github.com/ilupu/mol-witness/actions/runs/45682290656  motiv: pagina",
+ "viewport": [
+  1280,
+  900
+ ],
+ "format": "jpeg",
+ "sha256": "890568ddef3726feaf7a4292113da68663b154ca5ffcc6059183b822a352b4ad",
+ "bytes": 235916,
+ "browser": "chromium/playwright",
+ "github_run_id": "45682290656",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/45682290656"
+}

@@ -1,0 +1,21 @@
+{
+ "name": "lista-dispozitii",
+ "url": "https://miroslava.cityon.ro/MonitorulOficialLocal/DispozitiileAutoritatiiExecutive",
+ "captured_at_utc": "2026-11-25T07:13:53.742910+00:00",
+ "http_status": 200,
+ "page_title": "Dispozițiile autorității executive / CityOn",
+ "reasons": [
+  "pagina"
+ ],
+ "overlay_text": "MOL witness  2026-11-25 07:13:53 UTC\nhttps://miroslava.cityon.ro/MonitorulOficialLocal/DispozitiileAutoritatiiExecutive\nrun https://github.com/ilupu/mol-witness/actions/runs/45566361336  motiv: pagina",
+ "viewport": [
+  1280,
+  900
+ ],
+ "format": "jpeg",
+ "sha256": "725b22498ebfa6ce9883be3a0609df95ac35c3de72906f34744d7053f5bdd366",
+ "bytes": 188941,
+ "browser": "chromium/playwright",
+ "github_run_id": "45566361336",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/45566361336"
+}

@@ -1,0 +1,30 @@
+{
+ "name": "registru-pv-2026",
+ "url": "https://miroslava.cityon.ro/api/services/app/RegistruMonitorulOficialLocal/IncarcaRegistruProceseVerbale",
+ "request_body": {
+  "filter": "",
+  "deLaData": "",
+  "panaLaData": "",
+  "an": "2026",
+  "idCategorieDocument": 6,
+  "maxResultCount": 500,
+  "skipCount": 0
+ },
+ "fetched_at_utc": "2026-11-26T06:32:10.221764+00:00",
+ "http_status": 200,
+ "response_headers": {
+  "Content-Length": "3588",
+  "Content-Type": "application/json; charset=utf-8",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Content-Type-Options": "nosniff",
+  "X-XSS-Protection": "1; mode=block",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "Date": "Thu, 26 Nov 2026 06:32:09 GMT",
+  "Connection": "close"
+ },
+ "sha256": "d99ba07958ec16f410ce7fce7f4163e4017043cfc3ca0e6d24a8dd3f711a8f07",
+ "bytes": 3588,
+ "github_run_id": "45768737503",
+ "github_run_url": "https://github.com/ilupu/mol-witness/actions/runs/45768737503"
+}

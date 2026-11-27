@@ -1,0 +1,657 @@
+﻿2026-11-26T09:22:48.4440521Z Current runner version: '2.338.2'
+2026-11-26T09:22:48.4476923Z ##[group]Runner Image Provisioner
+2026-11-26T09:22:48.4478491Z Hosted Compute Agent
+2026-11-26T09:22:48.4479807Z Version: 20261111.635
+2026-11-26T09:22:48.4480950Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-26T09:22:48.4482404Z Build Date: 2026-11-11T01:49:01Z
+2026-11-26T09:22:48.4483801Z Worker ID: {42779b44-f91c-4d66-94e7-b6ff85e73cac}
+2026-11-26T09:22:48.4485367Z Region: centralus
+2026-11-26T09:22:48.4486353Z Cloud: Azure
+2026-11-26T09:22:48.4487232Z ##[endgroup]
+2026-11-26T09:22:48.4489998Z ##[group]Operating System
+2026-11-26T09:22:48.4491144Z Ubuntu
+2026-11-26T09:22:48.4492175Z 26.04.1
+2026-11-26T09:22:48.4493229Z LTS
+2026-11-26T09:22:48.4494177Z ##[endgroup]
+2026-11-26T09:22:48.4495390Z ##[group]Runner Image
+2026-11-26T09:22:48.4496484Z Image: ubuntu-26.04
+2026-11-26T09:22:48.4497759Z Version: 20261116.202.1
+2026-11-26T09:22:48.4500180Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-26T09:22:48.4503252Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+2026-11-26T09:22:48.4505044Z ##[endgroup]
+2026-11-26T09:22:48.4506496Z ##[group]GITHUB_TOKEN Permissions
+2026-11-26T09:22:48.4508935Z Contents: write
+2026-11-26T09:22:48.4509677Z Metadata: read
+2026-11-26T09:22:48.4510258Z ##[endgroup]
+2026-11-26T09:22:48.4512467Z Secret source: Actions
+2026-11-26T09:22:48.4513466Z Cache mode: write
+2026-11-26T09:22:48.4514415Z Prepare workflow directory
+2026-11-26T09:22:48.4886395Z Prepare all required actions
+2026-11-26T09:22:48.4959155Z Getting action download info
+2026-11-26T09:22:48.7774334Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-26T09:22:48.8780267Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-26T09:22:49.0445038Z Complete job name: witness
+2026-11-26T09:22:49.1307024Z ##[group]Run actions/checkout@v4
+2026-11-26T09:22:49.1307945Z with:
+2026-11-26T09:22:49.1308407Z   repository: ilupu/mol-witness
+2026-11-26T09:22:49.1312392Z   token: ***
+2026-11-26T09:22:49.1312839Z   ssh-strict: true
+2026-11-26T09:22:49.1313296Z   ssh-user: git
+2026-11-26T09:22:49.1313757Z   persist-credentials: true
+2026-11-26T09:22:49.1314256Z   clean: true
+2026-11-26T09:22:49.1314712Z   sparse-checkout-cone-mode: true
+2026-11-26T09:22:49.1315246Z   fetch-depth: 1
+2026-11-26T09:22:49.1315691Z   fetch-tags: false
+2026-11-26T09:22:49.1316165Z   show-progress: true
+2026-11-26T09:22:49.1316630Z   lfs: false
+2026-11-26T09:22:49.1317055Z   submodules: false
+2026-11-26T09:22:49.1317544Z   set-safe-directory: true
+2026-11-26T09:22:49.1318064Z   allow-unsafe-pr-checkout: false
+2026-11-26T09:22:49.1318964Z ##[endgroup]
+2026-11-26T09:22:49.3789006Z Syncing repository: ilupu/mol-witness
+2026-11-26T09:22:49.3791030Z ##[group]Getting Git version info
+2026-11-26T09:22:49.3791951Z Working directory is '/home/runner/work/mol-witness/mol-witness'
+2026-11-26T09:22:49.3793136Z [command]/usr/bin/git version
+2026-11-26T09:22:49.3804424Z git version 2.56.1
+2026-11-26T09:22:49.3824949Z ##[endgroup]
+2026-11-26T09:22:49.3839246Z Temporarily overriding HOME='/home/runner/work/_temp/92b09880-e981-4975-a924-c0e4b3db1dc0' before making global git config changes
+2026-11-26T09:22:49.3843771Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-26T09:22:49.3845816Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/mol-witness/mol-witness
+2026-11-26T09:22:49.3908266Z Deleting the contents of '/home/runner/work/mol-witness/mol-witness'
+2026-11-26T09:22:49.3911757Z ##[group]Initializing the repository
+2026-11-26T09:22:49.3915831Z [command]/usr/bin/git init /home/runner/work/mol-witness/mol-witness
+2026-11-26T09:22:49.4011989Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-26T09:22:49.4013734Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-26T09:22:49.4015697Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-26T09:22:49.4017052Z hint: call:
+2026-11-26T09:22:49.4017955Z hint:
+2026-11-26T09:22:49.4019239Z hint: 	git config --global init.defaultBranch <name>
+2026-11-26T09:22:49.4020308Z hint:
+2026-11-26T09:22:49.4021451Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-26T09:22:49.4022962Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-26T09:22:49.4024075Z hint:
+2026-11-26T09:22:49.4025061Z hint: 	git branch -m <name>
+2026-11-26T09:22:49.4025879Z hint:
+2026-11-26T09:22:49.4027397Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-26T09:22:49.4029390Z Initialized empty Git repository in /home/runner/work/mol-witness/mol-witness/.git/
+2026-11-26T09:22:49.4037213Z [command]/usr/bin/git remote add origin https://github.com/ilupu/mol-witness
+2026-11-26T09:22:49.4090018Z ##[endgroup]
+2026-11-26T09:22:49.4090981Z ##[group]Disabling automatic garbage collection
+2026-11-26T09:22:49.4095053Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-26T09:22:49.4129764Z ##[endgroup]
+2026-11-26T09:22:49.4131480Z ##[group]Setting up auth
+2026-11-26T09:22:49.4136890Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-26T09:22:49.4177344Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-26T09:22:49.4585441Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-26T09:22:49.4617814Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-26T09:22:49.4904268Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-26T09:22:49.4944325Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-26T09:22:49.5233831Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-26T09:22:49.5276598Z ##[endgroup]
+2026-11-26T09:22:49.5277476Z ##[group]Fetching the repository
+2026-11-26T09:22:49.5291890Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +697956142e97ed2e11be778faf67df6c613c8627:refs/remotes/origin/main
+2026-11-26T09:22:54.2380357Z From https://github.com/ilupu/mol-witness
+2026-11-26T09:22:54.2383187Z  * [new ref]         697956142e97ed2e11be778faf67df6c613c8627 -> origin/main
+2026-11-26T09:22:54.2387996Z ##[endgroup]
+2026-11-26T09:22:54.2390178Z ##[group]Determining the checkout info
+2026-11-26T09:22:54.2392330Z ##[endgroup]
+2026-11-26T09:22:54.2394757Z [command]/usr/bin/git sparse-checkout disable
+2026-11-26T09:22:54.2445394Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-26T09:22:54.2476370Z ##[group]Checking out the ref
+2026-11-26T09:22:54.2480454Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-26T09:22:54.9951562Z Switched to a new branch 'main'
+2026-11-26T09:22:54.9979589Z branch 'main' set up to track 'origin/main'.
+2026-11-26T09:22:54.9986209Z ##[endgroup]
+2026-11-26T09:22:55.0037275Z [command]/usr/bin/git log -1 --format=%H
+2026-11-26T09:22:55.0063686Z 697956142e97ed2e11be778faf67df6c613c8627
+2026-11-26T09:22:55.0352546Z ##[group]Run actions/setup-python@v5
+2026-11-26T09:22:55.0352894Z with:
+2026-11-26T09:22:55.0353115Z   python-version: 3.12
+2026-11-26T09:22:55.0353351Z   check-latest: false
+2026-11-26T09:22:55.0355833Z   token: ***
+2026-11-26T09:22:55.0356071Z   update-environment: true
+2026-11-26T09:22:55.0356332Z   allow-prereleases: false
+2026-11-26T09:22:55.0356570Z   freethreaded: false
+2026-11-26T09:22:55.0357047Z ##[endgroup]
+2026-11-26T09:22:55.1693890Z ##[group]Installed versions
+2026-11-26T09:22:55.1818848Z (node:2423) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-26T09:22:55.1820239Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-26T09:22:55.1821072Z Successfully set up CPython (3.12.16)
+2026-11-26T09:22:55.1821873Z ##[endgroup]
+2026-11-26T09:22:55.1963674Z ##[group]Run python witness.py
+2026-11-26T09:22:55.1964085Z [36;1mpython witness.py[0m
+2026-11-26T09:22:55.2016281Z shell: /usr/bin/bash -e {0}
+2026-11-26T09:22:55.2016568Z env:
+2026-11-26T09:22:55.2016862Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-26T09:22:55.2017340Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-26T09:22:55.2017795Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-26T09:22:55.2018191Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-26T09:22:55.2018640Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-26T09:22:55.2019350Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-26T09:22:55.2022087Z   GITHUB_TOKEN: ***
+2026-11-26T09:22:55.2022311Z   MOL_FULL: 
+2026-11-26T09:22:55.2022514Z ##[endgroup]
+2026-11-26T09:24:18.3394686Z mod: full
+2026-11-26T09:24:18.3395475Z lista-sedinte: 200 41726B items=166 sha256=c4894365be52bbef commit=bb68d63
+2026-11-26T09:24:18.3406735Z sedinte: {'8967': ['recent', 'fara-pv', 'fara-hcl', '0 hcl < 29 phcl'], '8909': ['recent', '4 hcl < 5 phcl'], '8872': ['recent', '25 hcl < 30 phcl'], '8853': ['recent'], '8781': ['recent'], '8779': ['recent'], '8758': ['recent'], '8707': ['recent'], '8666': ['recent'], '8631': ['recent', '15 hcl < 16 phcl'], '8560': ['recent'], '8512': ['recent'], '8415': ['recent'], '8182': ['recent'], '8168': ['recent'], '8102': ['recent'], '7650': ['recent'], '7167': ['recent'], '6639': ['recent'], '6456': ['recent'], '6395': ['recent'], '6369': ['recent'], '6320': ['recent'], '6277': ['recent'], '6149': ['recent'], '6267': ['recent'], '6147': ['recent'], '5502': ['recent'], '5407': ['recent'], '5398': ['recent'], '5180': ['recent'], '5146': ['recent'], '4828': ['recent'], '4822': ['recent'], '4818': ['recent'], '4702': ['recent'], '4705': ['recent'], '4701': ['recent'], '4431': ['recent'], '4371': ['recent'], '4206': ['recent'], '4205': ['recent'], '4203': ['recent'], '3638': ['recent'], '3633': ['recent'], '3622': ['recent'], '3568': ['recent'], '3559': ['recent'], '3495': ['recent'], '3460': ['recent'], '3452': ['recent'], '3451': ['recent'], '3450': ['recent'], '3430': ['recent'], '3365': ['recent'], '3363': ['recent'], '3362': ['recent'], '3351': ['recent'], '3312': ['recent'], '3247': ['recent'], '3242': ['recent'], '3207': ['recent'], '3167': ['recent'], '2807': ['recent'], '2799': ['recent'], '2779': ['recent'], '2771': ['recent'], '2770': ['recent'], '2759': ['recent'], '2758': ['recent'], '2465': ['recent'], '2395': ['recent'], '2394': ['recent'], '2371': ['recent'], '2247': ['recent'], '2246': ['recent'], '2233': ['recent'], '2211': ['recent'], '2201': ['recent'], '2193': ['recent'], '1983': ['recent'], '1981': ['recent'], '1946': ['recent'], '1944': ['recent'], '1844': ['recent'], '1807': ['recent'], '1805': ['recent'], '1803': ['recent'], '1552': ['recent'], '1472': ['recent'], '1470': ['recent'], '1469': ['recent'], '1468': ['recent'], '1296': ['recent'], '1290': ['recent'], '1289': ['recent'], '1285': ['recent'], '1243': ['recent'], '1242': ['recent'], '1229': ['recent'], '1194': ['recent'], '1189': ['recent'], '874': ['recent'], '873': ['recent'], '872': ['recent'], '871': ['recent'], '3233': ['recent'], '859': ['recent'], '850': ['recent'], '529': ['recent'], '519': ['recent'], '518': ['recent'], '505': ['recent'], '497': ['recent'], '488': ['recent'], '487': ['recent'], '486': ['recent'], '320': ['recent'], '348': ['recent'], '183': ['recent'], '182': ['recent'], '181': ['recent'], '180': ['recent'], '179': ['recent'], '178': ['recent'], '177': ['recent'], '117': ['recent'], '82': ['recent'], '79': ['recent'], '68': ['recent'], '53': ['recent'], '6': ['recent'], '5': ['recent'], '7': ['recent'], '8': ['recent'], '9': ['recent'], '10': ['recent'], '11': ['recent'], '12': ['recent'], '13': ['recent'], '14': ['recent'], '15': ['recent'], '16': ['recent'], '17': ['recent'], '18': ['recent'], '19': ['recent'], '20': ['recent'], '21': ['recent'], '22': ['recent'], '23': ['recent'], '24': ['recent'], '25': ['recent'], '26': ['recent'], '27': ['recent'], '28': ['recent'], '29': ['recent'], '30': ['recent'], '31': ['recent'], '32': ['recent'], '33': ['recent'], '34': ['recent'], '35': ['recent'], '36': ['recent'], '37': ['recent'], '38': ['recent'], '1256': ['recent']}
+2026-11-26T09:24:18.3415460Z sedinta-8967-2026-11-26/hotarari: 200 124B sha256=2e72d4837505878d neschimbat (= 20261123T063956Z.meta.json)
+2026-11-26T09:24:18.3416114Z sedinta-8967-2026-11-26/proiecte: 200 23642B items=29 sha256=3033175a1c1577a1 commit=6f26d41
+2026-11-26T09:24:18.3416763Z sedinta-8967-2026-11-26/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261123T064004Z.meta.json)
+2026-11-26T09:24:18.3417435Z sedinta-8909-2026-11-13/hotarari: 200 723B sha256=6127b10ce5f5b351 neschimbat (= 20261124T063101Z.meta.json)
+2026-11-26T09:24:18.3418106Z sedinta-8909-2026-11-13/proiecte: 200 4487B sha256=15a3ae836b78c437 neschimbat (= 20261110T092220Z.meta.json)
+2026-11-26T09:24:18.3418961Z sedinta-8909-2026-11-13/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261110T092224Z.meta.json)
+2026-11-26T09:24:18.3419643Z sedinta-8872-2026-10-29/hotarari: 200 3879B sha256=8e0b700a19d4fafa neschimbat (= 20261112T062945Z.meta.json)
+2026-11-26T09:24:18.3420322Z sedinta-8872-2026-10-29/proiecte: 200 24054B sha256=34fe837035204887 neschimbat (= 20261125T152139Z.meta.json)
+2026-11-26T09:24:18.3420993Z sedinta-8872-2026-10-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261027T153229Z.meta.json)
+2026-11-26T09:24:18.3421660Z sedinta-8853-2026-10-20/hotarari: 200 573B sha256=75a190d684d4036c neschimbat (= 20261112T092223Z.meta.json)
+2026-11-26T09:24:18.3422329Z sedinta-8853-2026-10-20/proiecte: 200 2614B sha256=adf06f62ec2c3a44 neschimbat (= 20261125T152146Z.meta.json)
+2026-11-26T09:24:18.3423008Z sedinta-8853-2026-10-20/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064408Z.meta.json)
+2026-11-26T09:24:18.3423689Z sedinta-8781-2026-09-30/hotarari: 200 2824B sha256=f4a343c28f80e97f neschimbat (= 20261022T064412Z.meta.json)
+2026-11-26T09:24:18.3424366Z sedinta-8781-2026-09-30/proiecte: 200 16446B sha256=8267326345de8a90 neschimbat (= 20261022T064416Z.meta.json)
+2026-11-26T09:24:18.3425043Z sedinta-8781-2026-09-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064419Z.meta.json)
+2026-11-26T09:24:18.3425703Z sedinta-8779-2026-09-24/hotarari: 200 723B sha256=7ee55a03544e23f1 neschimbat (= 20261103T092148Z.meta.json)
+2026-11-26T09:24:18.3426377Z sedinta-8779-2026-09-24/proiecte: 200 4011B sha256=9a253c7554e690d8 neschimbat (= 20261022T064429Z.meta.json)
+2026-11-26T09:24:18.3427065Z sedinta-8779-2026-09-24/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064432Z.meta.json)
+2026-11-26T09:24:18.3427723Z sedinta-8758-2026-09-17/hotarari: 200 723B sha256=2ff29791e885e945 neschimbat (= 20261102T122716Z.meta.json)
+2026-11-26T09:24:18.3428386Z sedinta-8758-2026-09-17/proiecte: 200 3987B sha256=9414d6bd2a90cd92 neschimbat (= 20261022T064441Z.meta.json)
+2026-11-26T09:24:18.3429374Z sedinta-8758-2026-09-17/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064444Z.meta.json)
+2026-11-26T09:24:18.3430048Z sedinta-8707-2026-08-27/hotarari: 200 2676B sha256=aaca01cdc65bd2c8 neschimbat (= 20261022T064449Z.meta.json)
+2026-11-26T09:24:18.3430741Z sedinta-8707-2026-08-27/proiecte: 200 14404B sha256=fc6cc81272d49ce3 neschimbat (= 20261022T064452Z.meta.json)
+2026-11-26T09:24:18.3431458Z sedinta-8707-2026-08-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064456Z.meta.json)
+2026-11-26T09:24:18.3432157Z sedinta-8666-2026-08-12/hotarari: 200 273B sha256=3b8170352e5964f2 neschimbat (= 20261022T064500Z.meta.json)
+2026-11-26T09:24:18.3433030Z sedinta-8666-2026-08-12/proiecte: 200 1169B sha256=afceb1268944393b neschimbat (= 20261022T064504Z.meta.json)
+2026-11-26T09:24:18.3433727Z sedinta-8666-2026-08-12/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064507Z.meta.json)
+2026-11-26T09:24:18.3434542Z sedinta-8631-2026-07-30/hotarari: 200 2374B sha256=537acc3dbb64d443 neschimbat (= 20261022T064512Z.meta.json)
+2026-11-26T09:24:18.3435248Z sedinta-8631-2026-07-30/proiecte: 200 14644B sha256=b8b3d4cef505094b neschimbat (= 20261022T064515Z.meta.json)
+2026-11-26T09:24:18.3435921Z sedinta-8631-2026-07-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064518Z.meta.json)
+2026-11-26T09:24:18.3436670Z sedinta-8560-2026-07-08/hotarari: 200 883B sha256=d67994c962120dd1 neschimbat (= 20261022T064523Z.meta.json)
+2026-11-26T09:24:18.3437380Z sedinta-8560-2026-07-08/proiecte: 200 5700B sha256=2cf0a206d67fdc6d neschimbat (= 20261022T064526Z.meta.json)
+2026-11-26T09:24:18.3438059Z sedinta-8560-2026-07-08/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064529Z.meta.json)
+2026-11-26T09:24:18.3438920Z sedinta-8512-2026-06-25/hotarari: 200 2824B sha256=cde067da50144b87 neschimbat (= 20261022T064534Z.meta.json)
+2026-11-26T09:24:18.3439626Z sedinta-8512-2026-06-25/proiecte: 200 15031B sha256=d5ecef67da66398f neschimbat (= 20261022T064537Z.meta.json)
+2026-11-26T09:24:18.3440298Z sedinta-8512-2026-06-25/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064540Z.meta.json)
+2026-11-26T09:24:18.3440970Z sedinta-8415-2026-05-28/hotarari: 200 3694B sha256=a66cbfffae2f9318 neschimbat (= 20261022T064544Z.meta.json)
+2026-11-26T09:24:18.3441660Z sedinta-8415-2026-05-28/proiecte: 200 22626B sha256=1f626beae364cfb0 neschimbat (= 20261022T064548Z.meta.json)
+2026-11-26T09:24:18.3442331Z sedinta-8415-2026-05-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064552Z.meta.json)
+2026-11-26T09:24:18.3442999Z sedinta-8182-2026-05-05/hotarari: 200 419B sha256=451cef03baaaeecd neschimbat (= 20261022T064557Z.meta.json)
+2026-11-26T09:24:18.3443679Z sedinta-8182-2026-05-05/proiecte: 200 1614B sha256=9f7edbb7dfd695d3 neschimbat (= 20261022T064600Z.meta.json)
+2026-11-26T09:24:18.3444349Z sedinta-8182-2026-05-05/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064604Z.meta.json)
+2026-11-26T09:24:18.3445021Z sedinta-8168-2026-04-30/hotarari: 200 2791B sha256=a13c59deb9a3762d neschimbat (= 20261022T064609Z.meta.json)
+2026-11-26T09:26:22.3651347Z sedinta-8168-2026-04-30/proiecte: 200 14450B sha256=0c0584b8362f147f neschimbat (= 20261022T064612Z.meta.json)
+2026-11-26T09:26:22.3652120Z sedinta-8168-2026-04-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064615Z.meta.json)
+2026-11-26T09:26:22.3652824Z sedinta-8102-2026-04-17/hotarari: 200 567B sha256=92007738ba65f34f neschimbat (= 20261022T064619Z.meta.json)
+2026-11-26T09:26:22.3653918Z sedinta-8102-2026-04-17/proiecte: 200 1545B sha256=9de45bce3df132d0 neschimbat (= 20261022T064623Z.meta.json)
+2026-11-26T09:26:22.3655006Z sedinta-8102-2026-04-17/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064627Z.meta.json)
+2026-11-26T09:26:22.3656071Z sedinta-7650-2026-03-31/hotarari: 200 3091B sha256=2a364509722f856e neschimbat (= 20261022T064631Z.meta.json)
+2026-11-26T09:26:22.3657225Z sedinta-7650-2026-03-31/proiecte: 200 20052B sha256=9b018e2b21a8cc2d neschimbat (= 20261022T064634Z.meta.json)
+2026-11-26T09:26:22.3658089Z sedinta-7650-2026-03-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064638Z.meta.json)
+2026-11-26T09:26:22.3659006Z sedinta-7167-2026-02-26/hotarari: 200 2492B sha256=0dca40f1df0d2e13 neschimbat (= 20261022T064642Z.meta.json)
+2026-11-26T09:26:22.3659705Z sedinta-7167-2026-02-26/proiecte: 200 14395B sha256=62cdffeea8410e66 neschimbat (= 20261022T064646Z.meta.json)
+2026-11-26T09:26:22.3660386Z sedinta-7167-2026-02-26/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064649Z.meta.json)
+2026-11-26T09:26:22.3661413Z sedinta-6639-2026-01-29/hotarari: 200 3810B sha256=c47d59abd753193f neschimbat (= 20261022T064654Z.meta.json)
+2026-11-26T09:26:22.3662086Z sedinta-6639-2026-01-29/proiecte: 200 23313B sha256=e8151a4bfc924650 neschimbat (= 20261022T064657Z.meta.json)
+2026-11-26T09:26:22.3662754Z sedinta-6639-2026-01-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064700Z.meta.json)
+2026-11-26T09:26:22.3663568Z sedinta-6456-2025-12-18/hotarari: 200 3124B sha256=0155d55bcaf5eac8 neschimbat (= 20261022T064704Z.meta.json)
+2026-11-26T09:26:22.3664260Z sedinta-6456-2025-12-18/proiecte: 200 17594B sha256=47e8aa0cd676235b neschimbat (= 20261022T064708Z.meta.json)
+2026-11-26T09:26:22.3664927Z sedinta-6456-2025-12-18/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064711Z.meta.json)
+2026-11-26T09:26:22.3665586Z sedinta-6395-2025-11-27/hotarari: 200 3424B sha256=147cac69fb081472 neschimbat (= 20261022T064715Z.meta.json)
+2026-11-26T09:26:22.3666255Z sedinta-6395-2025-11-27/proiecte: 200 18638B sha256=883c1221c421fa86 neschimbat (= 20261022T064718Z.meta.json)
+2026-11-26T09:26:22.3666948Z sedinta-6395-2025-11-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064721Z.meta.json)
+2026-11-26T09:26:22.3667609Z sedinta-6369-2025-11-19/hotarari: 200 873B sha256=42c340c14285b3ad neschimbat (= 20261022T064725Z.meta.json)
+2026-11-26T09:26:22.3668277Z sedinta-6369-2025-11-19/proiecte: 200 6005B sha256=254437a2834879a1 neschimbat (= 20261022T064728Z.meta.json)
+2026-11-26T09:26:22.3669150Z sedinta-6369-2025-11-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064731Z.meta.json)
+2026-11-26T09:26:22.3669823Z sedinta-6320-2025-10-31/hotarari: 200 4924B sha256=990ae29f24e5fd3a neschimbat (= 20261022T064735Z.meta.json)
+2026-11-26T09:26:22.3670497Z sedinta-6320-2025-10-31/proiecte: 200 24421B sha256=3a486a037357d50a neschimbat (= 20261022T064738Z.meta.json)
+2026-11-26T09:26:22.3671161Z sedinta-6320-2025-10-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064742Z.meta.json)
+2026-11-26T09:26:22.3671837Z sedinta-6277-2025-09-30/hotarari: 200 3424B sha256=3aedc8964da81116 neschimbat (= 20261022T064746Z.meta.json)
+2026-11-26T09:26:22.3672505Z sedinta-6277-2025-09-30/proiecte: 200 2519B sha256=1bfd0aa0d6de35e5 neschimbat (= 20261022T064749Z.meta.json)
+2026-11-26T09:26:22.3673179Z sedinta-6277-2025-09-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064753Z.meta.json)
+2026-11-26T09:26:22.3674212Z sedinta-6149-2025-09-04/hotarari: 200 1166B sha256=fe4f20ec92bdef68 neschimbat (= 20261022T064757Z.meta.json)
+2026-11-26T09:26:22.3675390Z sedinta-6149-2025-09-04/proiecte: 200 5591B sha256=419675b6413b8bbc neschimbat (= 20261022T064800Z.meta.json)
+2026-11-26T09:26:22.3676652Z sedinta-6149-2025-09-04/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064803Z.meta.json)
+2026-11-26T09:26:22.3677859Z sedinta-6267-2025-08-28/hotarari: 200 2955B sha256=2ded3b6fb01e7388 neschimbat (= 20261022T064807Z.meta.json)
+2026-11-26T09:26:22.3679278Z sedinta-6267-2025-08-28/proiecte: 200 15946B sha256=133e8bc702ae425f neschimbat (= 20261022T064810Z.meta.json)
+2026-11-26T09:26:22.3680500Z sedinta-6267-2025-08-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064814Z.meta.json)
+2026-11-26T09:26:22.3681683Z sedinta-6147-2025-08-12/hotarari: 200 424B sha256=392c058843ade221 neschimbat (= 20261022T064817Z.meta.json)
+2026-11-26T09:26:22.3682897Z sedinta-6147-2025-08-12/proiecte: 200 1926B sha256=4d6893e4c64e5111 neschimbat (= 20261022T064822Z.meta.json)
+2026-11-26T09:26:22.3684152Z sedinta-6147-2025-08-12/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064825Z.meta.json)
+2026-11-26T09:26:22.3685395Z sedinta-5502-2025-07-24/hotarari: 200 1624B sha256=217c4a1c2e1b6ce4 neschimbat (= 20261022T064830Z.meta.json)
+2026-11-26T09:26:22.3686709Z sedinta-5502-2025-07-24/proiecte: 200 9509B sha256=a8eee6df4680d2de neschimbat (= 20261022T064833Z.meta.json)
+2026-11-26T09:26:22.3688003Z sedinta-5502-2025-07-24/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064836Z.meta.json)
+2026-11-26T09:26:22.3689782Z sedinta-5407-2025-07-14/hotarari: 200 1173B sha256=12daff82a7765a26 neschimbat (= 20261022T064840Z.meta.json)
+2026-11-26T09:26:22.3690988Z sedinta-5407-2025-07-14/proiecte: 200 7323B sha256=c669eb71c0f89de9 neschimbat (= 20261022T064844Z.meta.json)
+2026-11-26T09:26:22.3692425Z sedinta-5407-2025-07-14/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064847Z.meta.json)
+2026-11-26T09:26:22.3693675Z sedinta-5398-2025-06-26/hotarari: 200 3253B sha256=8caae482bc322fab neschimbat (= 20261022T064852Z.meta.json)
+2026-11-26T09:26:22.3694956Z sedinta-5398-2025-06-26/proiecte: 200 20409B sha256=43ae7af67e2cef79 neschimbat (= 20261022T064855Z.meta.json)
+2026-11-26T09:26:22.3696209Z sedinta-5398-2025-06-26/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064859Z.meta.json)
+2026-11-26T09:26:22.3697437Z sedinta-5180-2025-05-30/hotarari: 200 2952B sha256=84e5bce6c5ebfe3f neschimbat (= 20261022T064904Z.meta.json)
+2026-11-26T09:26:22.3698922Z sedinta-5180-2025-05-30/proiecte: 200 20256B sha256=3b5fb3beae2674c5 neschimbat (= 20261022T064907Z.meta.json)
+2026-11-26T09:26:22.3700191Z sedinta-5180-2025-05-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064911Z.meta.json)
+2026-11-26T09:26:22.3701425Z sedinta-5146-2025-04-30/hotarari: 200 3380B sha256=bc2b928e126f0588 neschimbat (= 20261022T064915Z.meta.json)
+2026-11-26T09:26:22.3702687Z sedinta-5146-2025-04-30/proiecte: 200 24051B sha256=6ed2c4161ff05f41 neschimbat (= 20261022T064918Z.meta.json)
+2026-11-26T09:26:22.3703928Z sedinta-5146-2025-04-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064922Z.meta.json)
+2026-11-26T09:26:22.3705221Z sedinta-4828-2025-04-04/hotarari: 200 864B sha256=ed1fd6cb23e29cb3 neschimbat (= 20261022T064926Z.meta.json)
+2026-11-26T09:26:22.3706218Z sedinta-4828-2025-04-04/proiecte: 200 5628B sha256=48dd79cb2ef6fcc6 neschimbat (= 20261022T064929Z.meta.json)
+2026-11-26T09:26:22.3707116Z sedinta-4828-2025-04-04/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064933Z.meta.json)
+2026-11-26T09:26:22.3707818Z sedinta-4822-2025-03-27/hotarari: 200 2936B sha256=093817f3de426b7e neschimbat (= 20261022T064938Z.meta.json)
+2026-11-26T09:26:22.3708570Z sedinta-4822-2025-03-27/proiecte: 200 14678B sha256=994e42bd95cf8c5e neschimbat (= 20261022T064941Z.meta.json)
+2026-11-26T09:26:22.3709516Z sedinta-4822-2025-03-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064944Z.meta.json)
+2026-11-26T09:26:22.3710213Z sedinta-4818-2025-03-21/hotarari: 200 271B sha256=5552bd85bb062b69 neschimbat (= 20261022T064949Z.meta.json)
+2026-11-26T09:26:22.3710910Z sedinta-4818-2025-03-21/proiecte: 200 1812B sha256=b65aa0d188bb6071 neschimbat (= 20261022T064952Z.meta.json)
+2026-11-26T09:26:22.3711606Z sedinta-4818-2025-03-21/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T064956Z.meta.json)
+2026-11-26T09:26:22.3712299Z sedinta-4702-2025-02-27/hotarari: 200 3828B sha256=4497e93c66ae2f01 neschimbat (= 20261022T065000Z.meta.json)
+2026-11-26T09:26:22.3713005Z sedinta-4702-2025-02-27/proiecte: 200 25908B sha256=20c2774b3dc30504 neschimbat (= 20261022T065004Z.meta.json)
+2026-11-26T09:26:22.3713704Z sedinta-4702-2025-02-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065008Z.meta.json)
+2026-11-26T09:26:22.3714415Z sedinta-4705-2025-02-27/hotarari: 200 270B sha256=b77430cbe5adba1d neschimbat (= 20261022T065011Z.meta.json)
+2026-11-26T09:26:22.3715117Z sedinta-4705-2025-02-27/proiecte: 200 1288B sha256=7142c1dfdfe85d5b neschimbat (= 20261022T065015Z.meta.json)
+2026-11-26T09:26:22.3716508Z sedinta-4705-2025-02-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065018Z.meta.json)
+2026-11-26T09:26:22.3717648Z sedinta-4701-2025-01-31/hotarari: 200 2326B sha256=6978053ff86515c3 neschimbat (= 20261022T065022Z.meta.json)
+2026-11-26T09:26:22.3718354Z sedinta-4701-2025-01-31/proiecte: 200 19118B sha256=08062decb684910e neschimbat (= 20261022T065025Z.meta.json)
+2026-11-26T09:26:22.3719494Z sedinta-4701-2025-01-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065029Z.meta.json)
+2026-11-26T09:26:22.3720195Z sedinta-4431-2024-12-19/hotarari: 200 723B sha256=9744bfaeab8444e5 neschimbat (= 20261022T065033Z.meta.json)
+2026-11-26T09:26:22.3720867Z sedinta-4431-2024-12-19/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065036Z.meta.json)
+2026-11-26T09:26:22.3721635Z sedinta-4431-2024-12-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065040Z.meta.json)
+2026-11-26T09:26:22.3722301Z sedinta-4371-2024-12-19/hotarari: 200 5524B sha256=97de065790481ca6 neschimbat (= 20261022T065044Z.meta.json)
+2026-11-26T09:28:19.2705478Z sedinta-4371-2024-12-19/proiecte: 200 39136B sha256=e3acc1103968cc27 neschimbat (= 20261022T065048Z.meta.json)
+2026-11-26T09:28:19.2707194Z sedinta-4371-2024-12-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065051Z.meta.json)
+2026-11-26T09:28:19.2708203Z sedinta-4206-2024-11-28/hotarari: 200 2657B sha256=46702f2503a988d3 neschimbat (= 20261022T065056Z.meta.json)
+2026-11-26T09:28:19.2709641Z sedinta-4206-2024-11-28/proiecte: 200 16495B sha256=3dd40b2157139095 neschimbat (= 20261022T065059Z.meta.json)
+2026-11-26T09:28:19.2710740Z sedinta-4206-2024-11-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065103Z.meta.json)
+2026-11-26T09:28:19.2711494Z sedinta-4205-2024-11-20/hotarari: 200 719B sha256=607c659e62b79d71 neschimbat (= 20261022T065107Z.meta.json)
+2026-11-26T09:28:19.2712218Z sedinta-4205-2024-11-20/proiecte: 200 3423B sha256=775384f6f4974029 neschimbat (= 20261022T065111Z.meta.json)
+2026-11-26T09:28:19.2712934Z sedinta-4205-2024-11-20/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065114Z.meta.json)
+2026-11-26T09:28:19.2713645Z sedinta-4203-2024-10-31/hotarari: 200 3402B sha256=99e1d5fd2bc5a852 neschimbat (= 20261022T065118Z.meta.json)
+2026-11-26T09:28:19.2714371Z sedinta-4203-2024-10-31/proiecte: 200 22146B sha256=af67e74758a2c6bd neschimbat (= 20261022T065121Z.meta.json)
+2026-11-26T09:28:19.2715067Z sedinta-4203-2024-10-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065125Z.meta.json)
+2026-11-26T09:28:19.2715725Z sedinta-3638-2024-10-18/hotarari: 200 1017B sha256=1798f217f5bf997d neschimbat (= 20261022T065129Z.meta.json)
+2026-11-26T09:28:19.2716386Z sedinta-3638-2024-10-18/proiecte: 200 5590B sha256=0d7482eac74a6971 neschimbat (= 20261022T065133Z.meta.json)
+2026-11-26T09:28:19.2717044Z sedinta-3638-2024-10-18/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065136Z.meta.json)
+2026-11-26T09:28:19.2717727Z sedinta-3633-2024-10-07/hotarari: 200 272B sha256=583070a3e09d5c37 neschimbat (= 20261022T065141Z.meta.json)
+2026-11-26T09:28:19.2718416Z sedinta-3633-2024-10-07/proiecte: 200 1255B sha256=bc286ce7c726f8fa neschimbat (= 20261022T065144Z.meta.json)
+2026-11-26T09:28:19.2719329Z sedinta-3633-2024-10-07/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065147Z.meta.json)
+2026-11-26T09:28:19.2719998Z sedinta-3622-2024-09-26/hotarari: 200 3253B sha256=43b6853fb540761c neschimbat (= 20261022T065151Z.meta.json)
+2026-11-26T09:28:19.2720666Z sedinta-3622-2024-09-26/proiecte: 200 20236B sha256=b84eb53ef6744bd8 neschimbat (= 20261022T065155Z.meta.json)
+2026-11-26T09:28:19.2721342Z sedinta-3622-2024-09-26/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065158Z.meta.json)
+2026-11-26T09:28:19.2722013Z sedinta-3568-2024-08-29/hotarari: 200 3253B sha256=34d46de327da33db neschimbat (= 20261022T065202Z.meta.json)
+2026-11-26T09:28:19.2722694Z sedinta-3568-2024-08-29/proiecte: 200 18543B sha256=917e5df5ca2d6ccc neschimbat (= 20261022T065205Z.meta.json)
+2026-11-26T09:28:19.2723361Z sedinta-3568-2024-08-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065209Z.meta.json)
+2026-11-26T09:28:19.2724022Z sedinta-3559-2024-08-06/hotarari: 200 421B sha256=7853b5b816ca4a43 neschimbat (= 20261022T065213Z.meta.json)
+2026-11-26T09:28:19.2724683Z sedinta-3559-2024-08-06/proiecte: 200 2583B sha256=4bd321604cabef2a neschimbat (= 20261022T065216Z.meta.json)
+2026-11-26T09:28:19.2725623Z sedinta-3559-2024-08-06/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065219Z.meta.json)
+2026-11-26T09:28:19.2726286Z sedinta-3495-2024-07-31/hotarari: 200 2809B sha256=acc42b010e3f3f6c neschimbat (= 20261022T065224Z.meta.json)
+2026-11-26T09:28:19.2727097Z sedinta-3495-2024-07-31/proiecte: 200 16389B sha256=ac11d43d518eba01 neschimbat (= 20261022T065229Z.meta.json)
+2026-11-26T09:28:19.2727768Z sedinta-3495-2024-07-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065232Z.meta.json)
+2026-11-26T09:28:19.2728426Z sedinta-3460-2024-06-27/hotarari: 200 2232B sha256=674b3b5cd90f8eaa neschimbat (= 20261022T065236Z.meta.json)
+2026-11-26T09:28:19.2729470Z sedinta-3460-2024-06-27/proiecte: 200 14255B sha256=3274ae709566f0ca neschimbat (= 20261022T065239Z.meta.json)
+2026-11-26T09:28:19.2730155Z sedinta-3460-2024-06-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065243Z.meta.json)
+2026-11-26T09:28:19.2730834Z sedinta-3452-2024-05-30/hotarari: 200 4024B sha256=b818e7b6362793b8 neschimbat (= 20261022T065247Z.meta.json)
+2026-11-26T09:28:19.2731508Z sedinta-3452-2024-05-30/proiecte: 200 23560B sha256=251743145d53a484 neschimbat (= 20261022T065251Z.meta.json)
+2026-11-26T09:28:19.2732174Z sedinta-3452-2024-05-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065254Z.meta.json)
+2026-11-26T09:28:19.2732834Z sedinta-3451-2024-05-17/hotarari: 200 727B sha256=95cab65166f727c2 neschimbat (= 20261022T065259Z.meta.json)
+2026-11-26T09:28:19.2733503Z sedinta-3451-2024-05-17/proiecte: 200 4052B sha256=d62c59042bc7afc6 neschimbat (= 20261022T065302Z.meta.json)
+2026-11-26T09:28:19.2734196Z sedinta-3451-2024-05-17/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065306Z.meta.json)
+2026-11-26T09:28:19.2734871Z sedinta-3450-2024-05-07/hotarari: 200 273B sha256=d6a6a75e6201a0a9 neschimbat (= 20261022T065311Z.meta.json)
+2026-11-26T09:28:19.2735556Z sedinta-3450-2024-05-07/proiecte: 200 1092B sha256=8aa12ccbfef3ccf9 neschimbat (= 20261022T065315Z.meta.json)
+2026-11-26T09:28:19.2736230Z sedinta-3450-2024-05-07/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065319Z.meta.json)
+2026-11-26T09:28:19.2736893Z sedinta-3430-2024-04-25/hotarari: 200 7621B sha256=418fbb7cbc5fd2e2 neschimbat (= 20261022T065324Z.meta.json)
+2026-11-26T09:28:19.2737578Z sedinta-3430-2024-04-25/proiecte: 200 39941B sha256=9144990bcdd99ffa neschimbat (= 20261022T065327Z.meta.json)
+2026-11-26T09:28:19.2738251Z sedinta-3430-2024-04-25/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065331Z.meta.json)
+2026-11-26T09:28:19.2739140Z sedinta-3365-2024-04-05/hotarari: 200 567B sha256=22ecdd056e9019be neschimbat (= 20261022T065335Z.meta.json)
+2026-11-26T09:28:19.2739823Z sedinta-3365-2024-04-05/proiecte: 200 2553B sha256=9b0939393c8fa669 neschimbat (= 20261022T065339Z.meta.json)
+2026-11-26T09:28:19.2740527Z sedinta-3365-2024-04-05/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065342Z.meta.json)
+2026-11-26T09:28:19.2741201Z sedinta-3363-2024-03-28/hotarari: 200 3530B sha256=c4aab0c69ab4f73a neschimbat (= 20261022T065347Z.meta.json)
+2026-11-26T09:28:19.2741880Z sedinta-3363-2024-03-28/proiecte: 200 25686B sha256=f9329f9229a9af9b neschimbat (= 20261022T065350Z.meta.json)
+2026-11-26T09:28:19.2742551Z sedinta-3363-2024-03-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065354Z.meta.json)
+2026-11-26T09:28:19.2743208Z sedinta-3362-2024-03-19/hotarari: 200 569B sha256=3dff90c1c7f12e65 neschimbat (= 20261022T065358Z.meta.json)
+2026-11-26T09:28:19.2743870Z sedinta-3362-2024-03-19/proiecte: 200 3245B sha256=fff610db68314a8d neschimbat (= 20261022T065401Z.meta.json)
+2026-11-26T09:28:19.2744534Z sedinta-3362-2024-03-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065405Z.meta.json)
+2026-11-26T09:28:19.2745190Z sedinta-3351-2024-02-29/hotarari: 200 2344B sha256=645467f95c8bf27c neschimbat (= 20261022T065409Z.meta.json)
+2026-11-26T09:28:19.2746064Z sedinta-3351-2024-02-29/proiecte: 200 13732B sha256=62fb95b702c224fd neschimbat (= 20261022T065412Z.meta.json)
+2026-11-26T09:28:19.2746727Z sedinta-3351-2024-02-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065416Z.meta.json)
+2026-11-26T09:28:19.2747379Z sedinta-3312-2024-02-16/hotarari: 200 716B sha256=8723b8b283ce860b neschimbat (= 20261022T065420Z.meta.json)
+2026-11-26T09:28:19.2748211Z sedinta-3312-2024-02-16/proiecte: 200 4361B sha256=c464b9cb0befeb34 neschimbat (= 20261022T065423Z.meta.json)
+2026-11-26T09:28:19.2749016Z sedinta-3312-2024-02-16/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065426Z.meta.json)
+2026-11-26T09:28:19.2749682Z sedinta-3247-2024-02-09/hotarari: 200 1455B sha256=939f41593e303570 neschimbat (= 20261022T065430Z.meta.json)
+2026-11-26T09:28:19.2750355Z sedinta-3247-2024-02-09/proiecte: 200 8840B sha256=02c92b3bf76ddf1d neschimbat (= 20261022T065434Z.meta.json)
+2026-11-26T09:28:19.2751029Z sedinta-3247-2024-02-09/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065438Z.meta.json)
+2026-11-26T09:28:19.2751702Z sedinta-3242-2024-01-31/hotarari: 200 2027B sha256=50107ef03f204813 neschimbat (= 20261022T065442Z.meta.json)
+2026-11-26T09:28:19.2752377Z sedinta-3242-2024-01-31/proiecte: 200 13341B sha256=fd9f215ca7a92393 neschimbat (= 20261022T065445Z.meta.json)
+2026-11-26T09:28:19.2753053Z sedinta-3242-2024-01-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065449Z.meta.json)
+2026-11-26T09:28:19.2753719Z sedinta-3207-2024-01-15/hotarari: 200 562B sha256=4c69902c26da586c neschimbat (= 20261022T065454Z.meta.json)
+2026-11-26T09:28:19.2754389Z sedinta-3207-2024-01-15/proiecte: 200 3518B sha256=72b108c922ea4683 neschimbat (= 20261022T065457Z.meta.json)
+2026-11-26T09:28:19.2755051Z sedinta-3207-2024-01-15/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065501Z.meta.json)
+2026-11-26T09:28:19.2755719Z sedinta-3167-2023-12-28/hotarari: 200 3426B sha256=4483f0e41ab8bac1 neschimbat (= 20261022T065504Z.meta.json)
+2026-11-26T09:28:19.2756396Z sedinta-3167-2023-12-28/proiecte: 200 21939B sha256=d06e2fc9378da991 neschimbat (= 20261022T065508Z.meta.json)
+2026-11-26T09:28:19.2757067Z sedinta-3167-2023-12-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065511Z.meta.json)
+2026-11-26T09:28:19.2757731Z sedinta-2807-2023-12-11/hotarari: 200 422B sha256=f4ac491529033ece neschimbat (= 20261022T065515Z.meta.json)
+2026-11-26T09:28:19.2758399Z sedinta-2807-2023-12-11/proiecte: 200 1937B sha256=4c08e19ec752d78d neschimbat (= 20261022T065519Z.meta.json)
+2026-11-26T09:28:19.2759177Z sedinta-2807-2023-12-11/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065522Z.meta.json)
+2026-11-26T09:28:19.2759836Z sedinta-2799-2023-12-05/hotarari: 200 570B sha256=0676080076a943bd neschimbat (= 20261022T065526Z.meta.json)
+2026-11-26T09:30:24.8273785Z sedinta-2799-2023-12-05/proiecte: 200 3179B sha256=9409383014a4d9b8 neschimbat (= 20261022T065529Z.meta.json)
+2026-11-26T09:30:24.8275086Z sedinta-2799-2023-12-05/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065532Z.meta.json)
+2026-11-26T09:30:24.8276047Z sedinta-2779-2023-11-29/hotarari: 200 3426B sha256=5a456e44ad44203a neschimbat (= 20261022T065536Z.meta.json)
+2026-11-26T09:30:24.8276984Z sedinta-2779-2023-11-29/proiecte: 200 21188B sha256=0b05912d558d9683 neschimbat (= 20261022T065540Z.meta.json)
+2026-11-26T09:30:24.8277920Z sedinta-2779-2023-11-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065543Z.meta.json)
+2026-11-26T09:30:24.8279178Z sedinta-2771-2023-11-16/hotarari: 200 422B sha256=382d78e5eeb523cc neschimbat (= 20261022T065547Z.meta.json)
+2026-11-26T09:30:24.8279904Z sedinta-2771-2023-11-16/proiecte: 200 2226B sha256=83c59a33b31e6224 neschimbat (= 20261022T065550Z.meta.json)
+2026-11-26T09:30:24.8280617Z sedinta-2771-2023-11-16/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065553Z.meta.json)
+2026-11-26T09:30:24.8281329Z sedinta-2770-2023-10-31/hotarari: 200 719B sha256=83bbc2551f0fd68d neschimbat (= 20261022T065558Z.meta.json)
+2026-11-26T09:30:24.8283618Z sedinta-2770-2023-10-31/proiecte: 200 5724B sha256=28213ace17ba1a1a neschimbat (= 20261022T065601Z.meta.json)
+2026-11-26T09:30:24.8284376Z sedinta-2770-2023-10-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065604Z.meta.json)
+2026-11-26T09:30:24.8285399Z sedinta-2759-2023-10-26/hotarari: 200 4327B sha256=bde0a0fa6d747a12 neschimbat (= 20261022T065607Z.meta.json)
+2026-11-26T09:30:24.8286235Z sedinta-2759-2023-10-26/proiecte: 200 30264B sha256=1bafdfbb96cf94be neschimbat (= 20261022T065611Z.meta.json)
+2026-11-26T09:30:24.8286993Z sedinta-2759-2023-10-26/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065614Z.meta.json)
+2026-11-26T09:30:24.8287700Z sedinta-2758-2023-10-17/hotarari: 200 570B sha256=4b83378769c2dcb0 neschimbat (= 20261022T065618Z.meta.json)
+2026-11-26T09:30:24.8288416Z sedinta-2758-2023-10-17/proiecte: 200 3255B sha256=61237767e2c4460d neschimbat (= 20261022T065621Z.meta.json)
+2026-11-26T09:30:24.8289289Z sedinta-2758-2023-10-17/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065625Z.meta.json)
+2026-11-26T09:30:24.8289977Z sedinta-2465-2023-09-28/hotarari: 200 2061B sha256=093780e16479cc95 neschimbat (= 20261022T065629Z.meta.json)
+2026-11-26T09:30:24.8290646Z sedinta-2465-2023-09-28/proiecte: 200 13769B sha256=2db76f1211f810e6 neschimbat (= 20261022T065632Z.meta.json)
+2026-11-26T09:30:24.8291312Z sedinta-2465-2023-09-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065635Z.meta.json)
+2026-11-26T09:30:24.8291978Z sedinta-2395-2023-09-15/hotarari: 200 424B sha256=3f45b8a635dd0a92 neschimbat (= 20261022T065639Z.meta.json)
+2026-11-26T09:30:24.8292662Z sedinta-2395-2023-09-15/proiecte: 200 2232B sha256=cb8e6c56914d6784 neschimbat (= 20261022T065642Z.meta.json)
+2026-11-26T09:30:24.8293317Z sedinta-2395-2023-09-15/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065646Z.meta.json)
+2026-11-26T09:30:24.8293974Z sedinta-2394-2023-09-06/hotarari: 200 1624B sha256=84c71adc6d1bd326 neschimbat (= 20261022T065650Z.meta.json)
+2026-11-26T09:30:24.8294645Z sedinta-2394-2023-09-06/proiecte: 200 10118B sha256=405e2432df4462c2 neschimbat (= 20261022T065653Z.meta.json)
+2026-11-26T09:30:24.8295307Z sedinta-2394-2023-09-06/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065657Z.meta.json)
+2026-11-26T09:30:24.8295968Z sedinta-2371-2023-08-31/hotarari: 200 2216B sha256=5280599eaf1fbfc1 neschimbat (= 20261022T065701Z.meta.json)
+2026-11-26T09:30:24.8296637Z sedinta-2371-2023-08-31/proiecte: 200 13841B sha256=c1ea6e1ec219b73b neschimbat (= 20261022T065704Z.meta.json)
+2026-11-26T09:30:24.8297308Z sedinta-2371-2023-08-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065708Z.meta.json)
+2026-11-26T09:30:24.8297958Z sedinta-2247-2023-08-02/hotarari: 200 570B sha256=0eae7e865486e89a neschimbat (= 20261022T065713Z.meta.json)
+2026-11-26T09:30:24.8298622Z sedinta-2247-2023-08-02/proiecte: 200 3682B sha256=dcb25a30b0fb00f7 neschimbat (= 20261022T065717Z.meta.json)
+2026-11-26T09:30:24.8299390Z sedinta-2247-2023-08-02/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065721Z.meta.json)
+2026-11-26T09:30:24.8300049Z sedinta-2246-2023-07-31/hotarari: 200 2067B sha256=a9437c6c5a19e44d neschimbat (= 20261022T065725Z.meta.json)
+2026-11-26T09:30:24.8300735Z sedinta-2246-2023-07-31/proiecte: 200 13375B sha256=973048ea4f98083b neschimbat (= 20261022T065729Z.meta.json)
+2026-11-26T09:30:24.8301420Z sedinta-2246-2023-07-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065733Z.meta.json)
+2026-11-26T09:30:24.8302079Z sedinta-2233-2023-07-27/hotarari: 200 719B sha256=0610370479616a67 neschimbat (= 20261022T065736Z.meta.json)
+2026-11-26T09:30:24.8302741Z sedinta-2233-2023-07-27/proiecte: 200 4425B sha256=4958fbe3e781b3a4 neschimbat (= 20261022T065740Z.meta.json)
+2026-11-26T09:30:24.8303405Z sedinta-2233-2023-07-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065744Z.meta.json)
+2026-11-26T09:30:24.8304189Z sedinta-2211-2023-07-11/hotarari: 200 571B sha256=8fad01fca30a7d66 neschimbat (= 20261022T065748Z.meta.json)
+2026-11-26T09:30:24.8304855Z sedinta-2211-2023-07-11/proiecte: 200 4099B sha256=01e22826c58cb37b neschimbat (= 20261022T065751Z.meta.json)
+2026-11-26T09:30:24.8305513Z sedinta-2211-2023-07-11/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065754Z.meta.json)
+2026-11-26T09:30:24.8306277Z sedinta-2201-2023-06-29/hotarari: 200 2215B sha256=7c239f25d59c4a80 neschimbat (= 20261022T065759Z.meta.json)
+2026-11-26T09:30:24.8306947Z sedinta-2201-2023-06-29/proiecte: 200 15567B sha256=70de23717140a075 neschimbat (= 20261022T065803Z.meta.json)
+2026-11-26T09:30:24.8307606Z sedinta-2201-2023-06-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065806Z.meta.json)
+2026-11-26T09:30:24.8308259Z sedinta-2193-2023-06-19/hotarari: 200 719B sha256=4fe68c697071054d neschimbat (= 20261022T065810Z.meta.json)
+2026-11-26T09:30:24.8309020Z sedinta-2193-2023-06-19/proiecte: 200 4337B sha256=d8553d4c9991cdd9 neschimbat (= 20261022T065814Z.meta.json)
+2026-11-26T09:30:24.8309686Z sedinta-2193-2023-06-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065817Z.meta.json)
+2026-11-26T09:30:24.8310349Z sedinta-1983-2023-05-31/hotarari: 200 2508B sha256=64d211fc4104c012 neschimbat (= 20261022T065822Z.meta.json)
+2026-11-26T09:30:24.8311038Z sedinta-1983-2023-05-31/proiecte: 200 23965B sha256=f0cbfb13273b77d7 neschimbat (= 20261022T065826Z.meta.json)
+2026-11-26T09:30:24.8311705Z sedinta-1983-2023-05-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065829Z.meta.json)
+2026-11-26T09:30:24.8312356Z sedinta-1981-2023-05-26/hotarari: 200 568B sha256=319d2074b1bb5fea neschimbat (= 20261022T065833Z.meta.json)
+2026-11-26T09:30:24.8313016Z sedinta-1981-2023-05-26/proiecte: 200 3982B sha256=7fa37acdc63cf97f neschimbat (= 20261022T065837Z.meta.json)
+2026-11-26T09:30:24.8313678Z sedinta-1981-2023-05-26/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065840Z.meta.json)
+2026-11-26T09:30:24.8314344Z sedinta-1946-2023-04-27/hotarari: 200 2196B sha256=6dc624cadb8ba00a neschimbat (= 20261022T065844Z.meta.json)
+2026-11-26T09:30:24.8315027Z sedinta-1946-2023-04-27/proiecte: 200 16462B sha256=b64754d605de3673 neschimbat (= 20261022T065848Z.meta.json)
+2026-11-26T09:30:24.8315693Z sedinta-1946-2023-04-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065851Z.meta.json)
+2026-11-26T09:30:24.8316347Z sedinta-1944-2023-04-10/hotarari: 200 564B sha256=064f669880fb9b14 neschimbat (= 20261022T065855Z.meta.json)
+2026-11-26T09:30:24.8317008Z sedinta-1944-2023-04-10/proiecte: 200 3273B sha256=bee0300cb64eaac2 neschimbat (= 20261022T065904Z.meta.json)
+2026-11-26T09:30:24.8317669Z sedinta-1944-2023-04-10/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065907Z.meta.json)
+2026-11-26T09:30:24.8318322Z sedinta-1844-2023-03-30/hotarari: 200 3381B sha256=2eb516881b0f47f9 neschimbat (= 20261022T065911Z.meta.json)
+2026-11-26T09:30:24.8319146Z sedinta-1844-2023-03-30/proiecte: 200 22077B sha256=a0de117655d15227 neschimbat (= 20261022T065915Z.meta.json)
+2026-11-26T09:30:24.8319818Z sedinta-1844-2023-03-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065918Z.meta.json)
+2026-11-26T09:30:24.8320468Z sedinta-1807-2023-03-03/hotarari: 200 270B sha256=35f26ff3f7eb52b2 neschimbat (= 20261022T065922Z.meta.json)
+2026-11-26T09:30:24.8321123Z sedinta-1807-2023-03-03/proiecte: 200 998B sha256=7030477c59922f88 neschimbat (= 20261022T065926Z.meta.json)
+2026-11-26T09:30:24.8321770Z sedinta-1807-2023-03-03/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065929Z.meta.json)
+2026-11-26T09:30:24.8322383Z sedinta-1805-2023-02-28/hotarari: 200 3064B items=20 sha256=07a6bf9fbe8e3f72 commit=6bf09c2
+2026-11-26T09:30:24.8323009Z sedinta-1805-2023-02-28/proiecte: 200 19700B sha256=32771d35c6a9ebee neschimbat (= 20261022T065936Z.meta.json)
+2026-11-26T09:30:24.8323684Z sedinta-1805-2023-02-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065940Z.meta.json)
+2026-11-26T09:30:24.8324465Z sedinta-1803-2023-02-08/hotarari: 200 270B sha256=139b715524adeda8 neschimbat (= 20261022T065945Z.meta.json)
+2026-11-26T09:30:24.8325121Z sedinta-1803-2023-02-08/proiecte: 200 979B sha256=d8c217f12ab60264 neschimbat (= 20261022T065948Z.meta.json)
+2026-11-26T09:30:24.8325884Z sedinta-1803-2023-02-08/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T065951Z.meta.json)
+2026-11-26T09:30:24.8326555Z sedinta-1552-2023-01-31/hotarari: 200 5570B sha256=6d8b71c24fc211a2 neschimbat (= 20261022T065955Z.meta.json)
+2026-11-26T09:30:24.8327232Z sedinta-1552-2023-01-31/proiecte: 200 35028B sha256=1d06eafc53aaabe2 neschimbat (= 20261022T065958Z.meta.json)
+2026-11-26T09:30:24.8327900Z sedinta-1552-2023-01-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070001Z.meta.json)
+2026-11-26T09:30:24.8328560Z sedinta-1472-2022-12-29/hotarari: 200 2657B sha256=8a9d046be5449d54 neschimbat (= 20261022T070005Z.meta.json)
+2026-11-26T09:32:23.7310189Z sedinta-1472-2022-12-29/proiecte: 200 17474B sha256=c7c378aee500820b neschimbat (= 20261022T070008Z.meta.json)
+2026-11-26T09:32:23.7310996Z sedinta-1472-2022-12-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070012Z.meta.json)
+2026-11-26T09:32:23.7311741Z sedinta-1470-2022-12-19/hotarari: 200 423B sha256=5e7911e793685b32 neschimbat (= 20261022T070017Z.meta.json)
+2026-11-26T09:32:23.7312483Z sedinta-1470-2022-12-19/proiecte: 200 3350B sha256=74100ba35e3b0209 neschimbat (= 20261022T070020Z.meta.json)
+2026-11-26T09:32:23.7313192Z sedinta-1470-2022-12-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070024Z.meta.json)
+2026-11-26T09:32:23.7313893Z sedinta-1469-2022-12-14/hotarari: 200 422B sha256=d12b9eea40c31d7a neschimbat (= 20261022T070029Z.meta.json)
+2026-11-26T09:32:23.7314599Z sedinta-1469-2022-12-14/proiecte: 200 1697B sha256=05491ecba5b6c9f3 neschimbat (= 20261022T070033Z.meta.json)
+2026-11-26T09:32:23.7315304Z sedinta-1469-2022-12-14/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070036Z.meta.json)
+2026-11-26T09:32:23.7316013Z sedinta-1468-2022-12-12/hotarari: 200 724B sha256=2ccfefa3e7530fa2 neschimbat (= 20261022T070040Z.meta.json)
+2026-11-26T09:32:23.7316725Z sedinta-1468-2022-12-12/proiecte: 200 5045B sha256=b9abea709d93d46b neschimbat (= 20261022T070043Z.meta.json)
+2026-11-26T09:32:23.7317440Z sedinta-1468-2022-12-12/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070047Z.meta.json)
+2026-11-26T09:32:23.7318142Z sedinta-1296-2022-11-29/hotarari: 200 4025B sha256=e37ef1177f17af9e neschimbat (= 20261022T070051Z.meta.json)
+2026-11-26T09:32:23.7319123Z sedinta-1296-2022-11-29/proiecte: 200 27985B sha256=0da31e007e6d5c5d neschimbat (= 20261022T070055Z.meta.json)
+2026-11-26T09:32:23.7319851Z sedinta-1296-2022-11-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070059Z.meta.json)
+2026-11-26T09:32:23.7320520Z sedinta-1290-2022-11-03/hotarari: 200 1319B sha256=0604f048425e0ce2 neschimbat (= 20261022T070103Z.meta.json)
+2026-11-26T09:32:23.7321207Z sedinta-1290-2022-11-03/proiecte: 200 10337B sha256=341ad029e439770d neschimbat (= 20261022T070107Z.meta.json)
+2026-11-26T09:32:23.7321889Z sedinta-1290-2022-11-03/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070111Z.meta.json)
+2026-11-26T09:32:23.7322545Z sedinta-1289-2022-10-28/hotarari: 200 2967B sha256=0d4e6e59b6179bae neschimbat (= 20261022T070115Z.meta.json)
+2026-11-26T09:32:23.7323219Z sedinta-1289-2022-10-28/proiecte: 200 24254B sha256=13986915fdbdec24 neschimbat (= 20261022T070119Z.meta.json)
+2026-11-26T09:32:23.7323878Z sedinta-1289-2022-10-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070123Z.meta.json)
+2026-11-26T09:32:23.7324530Z sedinta-1285-2022-10-19/hotarari: 200 272B sha256=e1b11047398c111f neschimbat (= 20261022T070127Z.meta.json)
+2026-11-26T09:32:23.7325179Z sedinta-1285-2022-10-19/proiecte: 200 884B sha256=10d6819820504493 neschimbat (= 20261022T070131Z.meta.json)
+2026-11-26T09:32:23.7325884Z sedinta-1285-2022-10-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070134Z.meta.json)
+2026-11-26T09:32:23.7326911Z sedinta-1243-2022-10-10/hotarari: 200 421B sha256=75a66b060e9d02d0 neschimbat (= 20261022T070138Z.meta.json)
+2026-11-26T09:32:23.7327581Z sedinta-1243-2022-10-10/proiecte: 200 2771B sha256=166f4bd186d66379 neschimbat (= 20261022T070143Z.meta.json)
+2026-11-26T09:32:23.7328383Z sedinta-1243-2022-10-10/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070147Z.meta.json)
+2026-11-26T09:32:23.7329215Z sedinta-1242-2022-10-05/hotarari: 200 421B sha256=4d03bc0ae0070ece neschimbat (= 20261022T070152Z.meta.json)
+2026-11-26T09:32:23.7329885Z sedinta-1242-2022-10-05/proiecte: 200 2079B sha256=500e3317bf4fcdd8 neschimbat (= 20261022T070156Z.meta.json)
+2026-11-26T09:32:23.7330545Z sedinta-1242-2022-10-05/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070200Z.meta.json)
+2026-11-26T09:32:23.7331202Z sedinta-1229-2022-09-30/hotarari: 200 6726B sha256=d06bad14330dde25 neschimbat (= 20261022T070204Z.meta.json)
+2026-11-26T09:32:23.7331885Z sedinta-1229-2022-09-30/proiecte: 200 50429B sha256=0031f3167ede5cbf neschimbat (= 20261022T070208Z.meta.json)
+2026-11-26T09:32:23.7332548Z sedinta-1229-2022-09-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070212Z.meta.json)
+2026-11-26T09:32:23.7333209Z sedinta-1194-2022-09-21/hotarari: 200 273B sha256=5635c607f7ba734b neschimbat (= 20261022T070216Z.meta.json)
+2026-11-26T09:32:23.7333868Z sedinta-1194-2022-09-21/proiecte: 200 906B sha256=073079589684bb8e neschimbat (= 20261022T070220Z.meta.json)
+2026-11-26T09:32:23.7334518Z sedinta-1194-2022-09-21/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070223Z.meta.json)
+2026-11-26T09:32:23.7335173Z sedinta-1189-2022-09-14/hotarari: 200 723B sha256=5d8c2ba173f42392 neschimbat (= 20261022T070228Z.meta.json)
+2026-11-26T09:32:23.7335834Z sedinta-1189-2022-09-14/proiecte: 200 4600B sha256=c8c34fcc7394e7c1 neschimbat (= 20261022T070231Z.meta.json)
+2026-11-26T09:32:23.7336496Z sedinta-1189-2022-09-14/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070235Z.meta.json)
+2026-11-26T09:32:23.7337148Z sedinta-874-2022-08-24/hotarari: 200 2509B sha256=3f00884f0e94cc7b neschimbat (= 20261022T070239Z.meta.json)
+2026-11-26T09:32:23.7337812Z sedinta-874-2022-08-24/proiecte: 200 15164B sha256=0f27e8d43cea0464 neschimbat (= 20261022T070243Z.meta.json)
+2026-11-26T09:32:23.7338481Z sedinta-874-2022-08-24/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261112T093039Z.meta.json)
+2026-11-26T09:32:23.7339237Z sedinta-873-2022-08-17/hotarari: 200 421B sha256=b5a6d2019b0ced31 neschimbat (= 20261022T070250Z.meta.json)
+2026-11-26T09:32:23.7339893Z sedinta-873-2022-08-17/proiecte: 200 2342B sha256=43626bb48f7842b7 neschimbat (= 20261022T070253Z.meta.json)
+2026-11-26T09:32:23.7340548Z sedinta-873-2022-08-17/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070257Z.meta.json)
+2026-11-26T09:32:23.7341200Z sedinta-872-2022-07-27/hotarari: 200 1766B sha256=103e33c4938406a0 neschimbat (= 20261022T070301Z.meta.json)
+2026-11-26T09:32:23.7341868Z sedinta-872-2022-07-27/proiecte: 200 10039B sha256=fd978ebbae2f7aef neschimbat (= 20261022T070304Z.meta.json)
+2026-11-26T09:32:23.7342533Z sedinta-872-2022-07-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070308Z.meta.json)
+2026-11-26T09:32:23.7343191Z sedinta-871-2022-06-30/hotarari: 200 2211B sha256=4eed4980a6fd2a6e neschimbat (= 20261022T070311Z.meta.json)
+2026-11-26T09:32:23.7343855Z sedinta-871-2022-06-30/proiecte: 200 13508B sha256=ad8d582ee87fdc61 neschimbat (= 20261022T070315Z.meta.json)
+2026-11-26T09:32:23.7344512Z sedinta-871-2022-06-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070319Z.meta.json)
+2026-11-26T09:32:23.7345165Z sedinta-3233-2022-06-23/hotarari: 200 722B sha256=dd5b99ca92c45541 neschimbat (= 20261022T070323Z.meta.json)
+2026-11-26T09:32:23.7345824Z sedinta-3233-2022-06-23/proiecte: 200 3711B sha256=103c06320177e47c neschimbat (= 20261022T070328Z.meta.json)
+2026-11-26T09:32:23.7346657Z sedinta-3233-2022-06-23/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070331Z.meta.json)
+2026-11-26T09:32:23.7347322Z sedinta-859-2022-06-15/hotarari: 200 1315B sha256=55ee6caefc6e2e13 neschimbat (= 20261022T070335Z.meta.json)
+2026-11-26T09:32:23.7347978Z sedinta-859-2022-06-15/proiecte: 200 9287B sha256=1348f50e758c52e6 neschimbat (= 20261022T070338Z.meta.json)
+2026-11-26T09:32:23.7348994Z sedinta-859-2022-06-15/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070341Z.meta.json)
+2026-11-26T09:32:23.7349873Z sedinta-850-2022-05-30/hotarari: 200 4746B sha256=2f60ea71e5a7b75e neschimbat (= 20261022T070345Z.meta.json)
+2026-11-26T09:32:23.7350549Z sedinta-850-2022-05-30/proiecte: 200 27853B sha256=5296e20919135cb7 neschimbat (= 20261022T070348Z.meta.json)
+2026-11-26T09:32:23.7351208Z sedinta-850-2022-05-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070352Z.meta.json)
+2026-11-26T09:32:23.7351857Z sedinta-529-2022-05-20/hotarari: 200 423B sha256=5083cd375a4ef23d neschimbat (= 20261022T070356Z.meta.json)
+2026-11-26T09:32:23.7352529Z sedinta-529-2022-05-20/proiecte: 200 1753B sha256=c9457f6a3c86a4d4 neschimbat (= 20261022T070359Z.meta.json)
+2026-11-26T09:32:23.7353187Z sedinta-529-2022-05-20/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070403Z.meta.json)
+2026-11-26T09:32:23.7353853Z sedinta-519-2022-05-06/hotarari: 200 422B sha256=d2cc8453705f797a neschimbat (= 20261022T070407Z.meta.json)
+2026-11-26T09:32:23.7354510Z sedinta-519-2022-05-06/proiecte: 200 2006B sha256=5be7dd940f02603b neschimbat (= 20261022T070411Z.meta.json)
+2026-11-26T09:32:23.7355170Z sedinta-519-2022-05-06/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070414Z.meta.json)
+2026-11-26T09:32:23.7355825Z sedinta-518-2022-04-29/hotarari: 200 2966B sha256=f30ab001fe3ae3b5 neschimbat (= 20261022T070418Z.meta.json)
+2026-11-26T09:32:23.7356490Z sedinta-518-2022-04-29/proiecte: 200 15569B sha256=d59f4dd812939691 neschimbat (= 20261022T070421Z.meta.json)
+2026-11-26T09:32:23.7357146Z sedinta-518-2022-04-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070424Z.meta.json)
+2026-11-26T09:32:23.7357798Z sedinta-505-2022-04-14/hotarari: 200 1315B sha256=9c92d7af6aeccaba neschimbat (= 20261022T070428Z.meta.json)
+2026-11-26T09:32:23.7358490Z sedinta-505-2022-04-14/proiecte: 200 9484B sha256=35fe33f627c1932e neschimbat (= 20261022T070431Z.meta.json)
+2026-11-26T09:32:23.7359514Z sedinta-505-2022-04-14/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070435Z.meta.json)
+2026-11-26T09:32:23.7360214Z sedinta-497-2022-03-31/hotarari: 200 5419B sha256=f8ced50104debdcb neschimbat (= 20261022T070439Z.meta.json)
+2026-11-26T09:32:23.7360888Z sedinta-497-2022-03-31/proiecte: 200 37733B sha256=f5f8b0eeb20f3490 neschimbat (= 20261022T070442Z.meta.json)
+2026-11-26T09:32:23.7361555Z sedinta-497-2022-03-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070445Z.meta.json)
+2026-11-26T09:32:23.7362213Z sedinta-488-2022-02-28/hotarari: 200 2192B sha256=d91bb5f1d55fcfa6 neschimbat (= 20261022T070449Z.meta.json)
+2026-11-26T09:32:23.7362887Z sedinta-488-2022-02-28/proiecte: 200 12791B sha256=9aec06a97da0d97e neschimbat (= 20261022T070453Z.meta.json)
+2026-11-26T09:34:32.9613724Z sedinta-488-2022-02-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070456Z.meta.json)
+2026-11-26T09:34:32.9614534Z sedinta-487-2022-02-11/hotarari: 200 271B sha256=f8d8af66ea0bfd33 neschimbat (= 20261022T070500Z.meta.json)
+2026-11-26T09:34:32.9615318Z sedinta-487-2022-02-11/proiecte: 200 738B sha256=b14095c21df168b7 neschimbat (= 20261022T070504Z.meta.json)
+2026-11-26T09:34:32.9616034Z sedinta-487-2022-02-11/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070507Z.meta.json)
+2026-11-26T09:34:32.9616742Z sedinta-486-2022-01-27/hotarari: 200 6877B sha256=06a095dda7ec4e2c neschimbat (= 20261022T070512Z.meta.json)
+2026-11-26T09:34:32.9617462Z sedinta-486-2022-01-27/proiecte: 200 45540B sha256=3b60afeaf723557e neschimbat (= 20261022T070515Z.meta.json)
+2026-11-26T09:34:32.9618511Z sedinta-486-2022-01-27/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070519Z.meta.json)
+2026-11-26T09:34:32.9619527Z sedinta-320-2022-01-11/hotarari: 200 704B sha256=f71dcbc90f35e283 neschimbat (= 20261022T070523Z.meta.json)
+2026-11-26T09:34:32.9620449Z sedinta-320-2022-01-11/proiecte: 200 3940B sha256=a91e578d76573191 neschimbat (= 20261022T070527Z.meta.json)
+2026-11-26T09:34:32.9621174Z sedinta-320-2022-01-11/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070531Z.meta.json)
+2026-11-26T09:34:32.9621894Z sedinta-348-2021-12-21/hotarari: 200 3551B sha256=183c8c5a68330a47 neschimbat (= 20261022T070535Z.meta.json)
+2026-11-26T09:34:32.9622612Z sedinta-348-2021-12-21/proiecte: 200 12640B sha256=cad3a51baf50baca neschimbat (= 20261022T070539Z.meta.json)
+2026-11-26T09:34:32.9623325Z sedinta-348-2021-12-21/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070542Z.meta.json)
+2026-11-26T09:34:32.9624002Z sedinta-183-2021-11-25/hotarari: 200 3232B sha256=7cc44793f283b0f0 neschimbat (= 20261022T070546Z.meta.json)
+2026-11-26T09:34:32.9624665Z sedinta-183-2021-11-25/proiecte: 200 22779B sha256=929a5481c0277784 neschimbat (= 20261022T070549Z.meta.json)
+2026-11-26T09:34:32.9625320Z sedinta-183-2021-11-25/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070553Z.meta.json)
+2026-11-26T09:34:32.9625977Z sedinta-182-2021-11-17/hotarari: 200 421B sha256=7c9530e8ee11f046 neschimbat (= 20261022T070557Z.meta.json)
+2026-11-26T09:34:32.9626633Z sedinta-182-2021-11-17/proiecte: 200 2318B sha256=df35376cfd0da40f neschimbat (= 20261022T070601Z.meta.json)
+2026-11-26T09:34:32.9627305Z sedinta-182-2021-11-17/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070604Z.meta.json)
+2026-11-26T09:34:32.9627952Z sedinta-181-2021-11-01/hotarari: 200 569B sha256=0a81e00d0cbfad8c neschimbat (= 20261022T070608Z.meta.json)
+2026-11-26T09:34:32.9628606Z sedinta-181-2021-11-01/proiecte: 200 2927B sha256=80e19ce29aea3f4c neschimbat (= 20261022T070611Z.meta.json)
+2026-11-26T09:34:32.9629468Z sedinta-181-2021-11-01/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070615Z.meta.json)
+2026-11-26T09:34:32.9630145Z sedinta-180-2021-10-28/hotarari: 200 3104B sha256=f56e0b25e92e16cc neschimbat (= 20261022T070618Z.meta.json)
+2026-11-26T09:34:32.9630826Z sedinta-180-2021-10-28/proiecte: 200 17936B sha256=c6e69997a6c77d2f neschimbat (= 20261022T070622Z.meta.json)
+2026-11-26T09:34:32.9631526Z sedinta-180-2021-10-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070625Z.meta.json)
+2026-11-26T09:34:32.9632208Z sedinta-179-2021-10-19/hotarari: 200 719B sha256=aee7e32091eeec69 neschimbat (= 20261022T070630Z.meta.json)
+2026-11-26T09:34:32.9632882Z sedinta-179-2021-10-19/proiecte: 200 4046B sha256=f88180f2d52ce570 neschimbat (= 20261022T070633Z.meta.json)
+2026-11-26T09:34:32.9633549Z sedinta-179-2021-10-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070637Z.meta.json)
+2026-11-26T09:34:32.9634208Z sedinta-178-2021-10-14/hotarari: 200 719B sha256=996912324ffef2b7 neschimbat (= 20261022T070641Z.meta.json)
+2026-11-26T09:34:32.9634877Z sedinta-178-2021-10-14/proiecte: 200 5272B sha256=7cd6f2ba8b967d37 neschimbat (= 20261022T070644Z.meta.json)
+2026-11-26T09:34:32.9635547Z sedinta-178-2021-10-14/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070648Z.meta.json)
+2026-11-26T09:34:32.9636219Z sedinta-177-2021-09-30/hotarari: 200 3253B sha256=50b96e3dc70ee19d neschimbat (= 20261022T070652Z.meta.json)
+2026-11-26T09:34:32.9636897Z sedinta-177-2021-09-30/proiecte: 200 23633B sha256=60e0a377c896d530 neschimbat (= 20261022T070656Z.meta.json)
+2026-11-26T09:34:32.9637567Z sedinta-177-2021-09-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070659Z.meta.json)
+2026-11-26T09:34:32.9638225Z sedinta-117-2021-09-23/hotarari: 200 1160B sha256=ce73c4ee7053e21a neschimbat (= 20261022T070703Z.meta.json)
+2026-11-26T09:34:32.9639061Z sedinta-117-2021-09-23/proiecte: 200 6468B sha256=c60501cf5396214b neschimbat (= 20261022T070706Z.meta.json)
+2026-11-26T09:34:32.9639866Z sedinta-117-2021-09-23/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070710Z.meta.json)
+2026-11-26T09:34:32.9640527Z sedinta-82-2021-08-31/hotarari: 200 2635B sha256=874e45725464c365 neschimbat (= 20261022T070715Z.meta.json)
+2026-11-26T09:34:32.9641306Z sedinta-82-2021-08-31/proiecte: 200 19706B sha256=22a48becdee3ab37 neschimbat (= 20261022T070719Z.meta.json)
+2026-11-26T09:34:32.9642004Z sedinta-82-2021-08-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070722Z.meta.json)
+2026-11-26T09:34:32.9642662Z sedinta-79-2021-08-18/hotarari: 200 858B sha256=320add835ed3960c neschimbat (= 20261022T070727Z.meta.json)
+2026-11-26T09:34:32.9643320Z sedinta-79-2021-08-18/proiecte: 200 5258B sha256=5c24f27c38cd646d neschimbat (= 20261022T070730Z.meta.json)
+2026-11-26T09:34:32.9643974Z sedinta-79-2021-08-18/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070733Z.meta.json)
+2026-11-26T09:34:32.9644637Z sedinta-68-2021-07-29/hotarari: 200 3200B sha256=f7946d79f0e0beb1 neschimbat (= 20261022T070737Z.meta.json)
+2026-11-26T09:34:32.9645300Z sedinta-68-2021-07-29/proiecte: 200 22694B sha256=e7d6c1d68fc949a1 neschimbat (= 20261022T070741Z.meta.json)
+2026-11-26T09:34:32.9645957Z sedinta-68-2021-07-29/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070745Z.meta.json)
+2026-11-26T09:34:32.9646623Z sedinta-53-2021-06-30/hotarari: 200 1888B sha256=58892a717004e053 neschimbat (= 20261022T070748Z.meta.json)
+2026-11-26T09:34:32.9647303Z sedinta-53-2021-06-30/proiecte: 200 11388B sha256=126b067c8932259f neschimbat (= 20261022T070751Z.meta.json)
+2026-11-26T09:34:32.9647960Z sedinta-53-2021-06-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070755Z.meta.json)
+2026-11-26T09:34:32.9648608Z sedinta-6-2021-06-18/hotarari: 200 407B sha256=614b484568dabdea neschimbat (= 20261022T070759Z.meta.json)
+2026-11-26T09:34:32.9649443Z sedinta-6-2021-06-18/proiecte: 200 2352B sha256=b572f158fa624a7d neschimbat (= 20261022T070802Z.meta.json)
+2026-11-26T09:34:32.9650099Z sedinta-6-2021-06-18/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070805Z.meta.json)
+2026-11-26T09:34:32.9650696Z sedinta-5-2021-05-31/hotarari: 200 11536B items=34 sha256=394657c0184f89e7 commit=3643837
+2026-11-26T09:34:32.9651314Z sedinta-5-2021-05-31/proiecte: 200 12322B sha256=89d416b9179a9a5e neschimbat (= 20261022T070813Z.meta.json)
+2026-11-26T09:34:32.9651965Z sedinta-5-2021-05-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070817Z.meta.json)
+2026-11-26T09:34:32.9652621Z sedinta-7-2021-04-28/hotarari: 200 6282B sha256=b303dd276a4c6e33 neschimbat (= 20261022T070821Z.meta.json)
+2026-11-26T09:34:32.9653284Z sedinta-7-2021-04-28/proiecte: 200 11330B sha256=1b7bbc10f26118f5 neschimbat (= 20261022T070824Z.meta.json)
+2026-11-26T09:34:32.9653923Z sedinta-7-2021-04-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070827Z.meta.json)
+2026-11-26T09:34:32.9654563Z sedinta-8-2021-04-23/hotarari: 200 694B sha256=e90faae135f3c0b7 neschimbat (= 20261022T070831Z.meta.json)
+2026-11-26T09:34:32.9655199Z sedinta-8-2021-04-23/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070834Z.meta.json)
+2026-11-26T09:34:32.9655828Z sedinta-8-2021-04-23/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070837Z.meta.json)
+2026-11-26T09:34:32.9656811Z sedinta-9-2021-04-19/hotarari: 200 1424B sha256=60cac329baf63e01 neschimbat (= 20261022T070842Z.meta.json)
+2026-11-26T09:34:32.9674524Z sedinta-9-2021-04-19/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070846Z.meta.json)
+2026-11-26T09:34:32.9675239Z sedinta-9-2021-04-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070849Z.meta.json)
+2026-11-26T09:34:32.9675909Z sedinta-10-2021-04-07/hotarari: 200 690B sha256=70c84b219b06e449 neschimbat (= 20261022T070853Z.meta.json)
+2026-11-26T09:34:32.9676580Z sedinta-10-2021-04-07/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070856Z.meta.json)
+2026-11-26T09:34:32.9677530Z sedinta-10-2021-04-07/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070859Z.meta.json)
+2026-11-26T09:34:32.9678209Z sedinta-11-2021-03-31/hotarari: 200 11657B sha256=e40d80d116f04c7c neschimbat (= 20261022T070903Z.meta.json)
+2026-11-26T09:34:32.9679321Z sedinta-11-2021-03-31/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070906Z.meta.json)
+2026-11-26T09:34:32.9680019Z sedinta-11-2021-03-31/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070910Z.meta.json)
+2026-11-26T09:34:32.9680670Z sedinta-12-2021-03-19/hotarari: 200 961B sha256=1d57ef91672fd8ae neschimbat (= 20261022T070914Z.meta.json)
+2026-11-26T09:34:32.9681311Z sedinta-12-2021-03-19/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070917Z.meta.json)
+2026-11-26T09:34:32.9681947Z sedinta-12-2021-03-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070920Z.meta.json)
+2026-11-26T09:34:32.9682603Z sedinta-13-2021-02-25/hotarari: 200 10977B sha256=f24b336a27e5161b neschimbat (= 20261022T070924Z.meta.json)
+2026-11-26T09:34:32.9683266Z sedinta-13-2021-02-25/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070928Z.meta.json)
+2026-11-26T09:34:32.9683905Z sedinta-13-2021-02-25/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070931Z.meta.json)
+2026-11-26T09:34:32.9684562Z sedinta-14-2021-01-28/hotarari: 200 7393B sha256=a5176c4c00566854 neschimbat (= 20261022T070935Z.meta.json)
+2026-11-26T09:36:35.1872699Z sedinta-14-2021-01-28/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070939Z.meta.json)
+2026-11-26T09:36:35.1873661Z sedinta-14-2021-01-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070942Z.meta.json)
+2026-11-26T09:36:35.1874568Z sedinta-15-2021-01-08/hotarari: 200 1106B sha256=8bde990811e4e8e8 neschimbat (= 20261022T070946Z.meta.json)
+2026-11-26T09:36:35.1875410Z sedinta-15-2021-01-08/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070949Z.meta.json)
+2026-11-26T09:36:35.1876179Z sedinta-15-2021-01-08/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T070953Z.meta.json)
+2026-11-26T09:36:35.1876918Z sedinta-16-2020-12-28/hotarari: 200 656B sha256=0192de4e6a02929e neschimbat (= 20261022T070956Z.meta.json)
+2026-11-26T09:36:35.1877661Z sedinta-16-2020-12-28/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071000Z.meta.json)
+2026-11-26T09:36:35.1878398Z sedinta-16-2020-12-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071003Z.meta.json)
+2026-11-26T09:36:35.1879414Z sedinta-17-2020-12-22/hotarari: 200 8973B sha256=e30b90dd6f80bd21 neschimbat (= 20261022T071007Z.meta.json)
+2026-11-26T09:36:35.1880160Z sedinta-17-2020-12-22/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071010Z.meta.json)
+2026-11-26T09:36:35.1880897Z sedinta-17-2020-12-22/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071014Z.meta.json)
+2026-11-26T09:36:35.1881658Z sedinta-18-2020-12-21/hotarari: 200 12238B sha256=ee435af46fcb5bea neschimbat (= 20261022T071018Z.meta.json)
+2026-11-26T09:36:35.1882407Z sedinta-18-2020-12-21/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071021Z.meta.json)
+2026-11-26T09:36:35.1883138Z sedinta-18-2020-12-21/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071024Z.meta.json)
+2026-11-26T09:36:35.1883897Z sedinta-19-2020-11-26/hotarari: 200 10075B sha256=2e19d14732ee11eb neschimbat (= 20261022T071028Z.meta.json)
+2026-11-26T09:36:35.1884643Z sedinta-19-2020-11-26/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071031Z.meta.json)
+2026-11-26T09:36:35.1885409Z sedinta-19-2020-11-26/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071035Z.meta.json)
+2026-11-26T09:36:35.1886139Z sedinta-20-2020-11-04/hotarari: 200 876B sha256=7563016749605503 neschimbat (= 20261022T071038Z.meta.json)
+2026-11-26T09:36:35.1886876Z sedinta-20-2020-11-04/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071042Z.meta.json)
+2026-11-26T09:36:35.1887996Z sedinta-20-2020-11-04/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071045Z.meta.json)
+2026-11-26T09:36:35.1888886Z sedinta-21-2020-10-09/hotarari: 200 2293B sha256=8c2554282e3e119d neschimbat (= 20261022T071049Z.meta.json)
+2026-11-26T09:36:35.1889979Z sedinta-21-2020-10-09/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071052Z.meta.json)
+2026-11-26T09:36:35.1890712Z sedinta-21-2020-10-09/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071055Z.meta.json)
+2026-11-26T09:36:35.1891457Z sedinta-22-2020-09-24/hotarari: 200 7413B sha256=0764ae8df07eb2d6 neschimbat (= 20261022T071059Z.meta.json)
+2026-11-26T09:36:35.1892164Z sedinta-22-2020-09-24/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071102Z.meta.json)
+2026-11-26T09:36:35.1892802Z sedinta-22-2020-09-24/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071105Z.meta.json)
+2026-11-26T09:36:35.1893445Z sedinta-23-2020-09-11/hotarari: 200 472B sha256=ae8fc9570573b07b neschimbat (= 20261022T071109Z.meta.json)
+2026-11-26T09:36:35.1894088Z sedinta-23-2020-09-11/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071113Z.meta.json)
+2026-11-26T09:36:35.1894722Z sedinta-23-2020-09-11/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071117Z.meta.json)
+2026-11-26T09:36:35.1895375Z sedinta-24-2020-08-28/hotarari: 200 9204B sha256=8700b18b407afe78 neschimbat (= 20261022T071121Z.meta.json)
+2026-11-26T09:36:35.1896013Z sedinta-24-2020-08-28/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071125Z.meta.json)
+2026-11-26T09:36:35.1896649Z sedinta-24-2020-08-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071128Z.meta.json)
+2026-11-26T09:36:35.1897290Z sedinta-25-2020-08-12/hotarari: 200 618B sha256=1f5a6bc574c1e2a6 neschimbat (= 20261022T071132Z.meta.json)
+2026-11-26T09:36:35.1897936Z sedinta-25-2020-08-12/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071135Z.meta.json)
+2026-11-26T09:36:35.1898575Z sedinta-25-2020-08-12/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071138Z.meta.json)
+2026-11-26T09:36:35.1899323Z sedinta-26-2020-07-30/hotarari: 200 3998B sha256=2b51699a2108ed73 neschimbat (= 20261022T071142Z.meta.json)
+2026-11-26T09:36:35.1899969Z sedinta-26-2020-07-30/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071145Z.meta.json)
+2026-11-26T09:36:35.1900610Z sedinta-26-2020-07-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071148Z.meta.json)
+2026-11-26T09:36:35.1901251Z sedinta-27-2020-07-02/hotarari: 200 801B sha256=885eb2192861d1c2 neschimbat (= 20261022T071152Z.meta.json)
+2026-11-26T09:36:35.1901892Z sedinta-27-2020-07-02/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071155Z.meta.json)
+2026-11-26T09:36:35.1902540Z sedinta-27-2020-07-02/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071159Z.meta.json)
+2026-11-26T09:36:35.1903193Z sedinta-28-2020-06-26/hotarari: 200 11360B sha256=cc638f1dfd452996 neschimbat (= 20261022T071203Z.meta.json)
+2026-11-26T09:36:35.1903845Z sedinta-28-2020-06-26/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071206Z.meta.json)
+2026-11-26T09:36:35.1904485Z sedinta-28-2020-06-26/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071209Z.meta.json)
+2026-11-26T09:36:35.1905141Z sedinta-29-2020-06-16/hotarari: 200 2162B sha256=b4047be5da7b4684 neschimbat (= 20261022T071214Z.meta.json)
+2026-11-26T09:36:35.1905790Z sedinta-29-2020-06-16/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071217Z.meta.json)
+2026-11-26T09:36:35.1906424Z sedinta-29-2020-06-16/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071220Z.meta.json)
+2026-11-26T09:36:35.1907076Z sedinta-30-2020-05-28/hotarari: 200 7106B sha256=32252c6240a79bcd neschimbat (= 20261022T071224Z.meta.json)
+2026-11-26T09:36:35.1907718Z sedinta-30-2020-05-28/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071227Z.meta.json)
+2026-11-26T09:36:35.1908473Z sedinta-30-2020-05-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071231Z.meta.json)
+2026-11-26T09:36:35.1909219Z sedinta-31-2020-04-30/hotarari: 200 10156B sha256=ac3224c4ef85649e neschimbat (= 20261022T071235Z.meta.json)
+2026-11-26T09:36:35.1909871Z sedinta-31-2020-04-30/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071238Z.meta.json)
+2026-11-26T09:36:35.1910618Z sedinta-31-2020-04-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071241Z.meta.json)
+2026-11-26T09:36:35.1911274Z sedinta-32-2020-03-26/hotarari: 200 2616B sha256=9241ea08147d78cb neschimbat (= 20261022T071245Z.meta.json)
+2026-11-26T09:36:35.1911924Z sedinta-32-2020-03-26/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071248Z.meta.json)
+2026-11-26T09:36:35.1912565Z sedinta-32-2020-03-26/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071251Z.meta.json)
+2026-11-26T09:36:35.1913228Z sedinta-33-2020-03-20/hotarari: 200 416B sha256=462756ef903273a9 neschimbat (= 20261022T071256Z.meta.json)
+2026-11-26T09:36:35.1913877Z sedinta-33-2020-03-20/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071259Z.meta.json)
+2026-11-26T09:36:35.1914536Z sedinta-33-2020-03-20/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071302Z.meta.json)
+2026-11-26T09:36:35.1915185Z sedinta-34-2020-03-03/hotarari: 200 413B sha256=e2f9ed93794882e2 neschimbat (= 20261022T071306Z.meta.json)
+2026-11-26T09:36:35.1915832Z sedinta-34-2020-03-03/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071310Z.meta.json)
+2026-11-26T09:36:35.1916465Z sedinta-34-2020-03-03/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071313Z.meta.json)
+2026-11-26T09:36:35.1917107Z sedinta-35-2020-02-28/hotarari: 200 8566B sha256=b7b6328f619cb45c neschimbat (= 20261022T071317Z.meta.json)
+2026-11-26T09:36:35.1917748Z sedinta-35-2020-02-28/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071321Z.meta.json)
+2026-11-26T09:36:35.1918387Z sedinta-35-2020-02-28/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071324Z.meta.json)
+2026-11-26T09:36:35.1919247Z sedinta-36-2020-02-20/hotarari: 200 693B sha256=67c3faf5c21eec31 neschimbat (= 20261022T071328Z.meta.json)
+2026-11-26T09:36:35.1919896Z sedinta-36-2020-02-20/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071332Z.meta.json)
+2026-11-26T09:36:35.1920556Z sedinta-36-2020-02-20/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071336Z.meta.json)
+2026-11-26T09:36:35.1921232Z sedinta-37-2020-01-30/hotarari: 200 10437B sha256=88168d6897d3498f neschimbat (= 20261022T071339Z.meta.json)
+2026-11-26T09:36:35.1921886Z sedinta-37-2020-01-30/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071343Z.meta.json)
+2026-11-26T09:36:35.1922523Z sedinta-37-2020-01-30/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071346Z.meta.json)
+2026-11-26T09:36:35.1923159Z sedinta-38-2020-01-15/hotarari: 200 799B sha256=a00e262430ae4f5c neschimbat (= 20261022T071350Z.meta.json)
+2026-11-26T09:36:35.1923805Z sedinta-38-2020-01-15/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071353Z.meta.json)
+2026-11-26T09:36:35.1924451Z sedinta-38-2020-01-15/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071357Z.meta.json)
+2026-11-26T09:36:35.1925102Z sedinta-1256-2019-12-19/hotarari: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071401Z.meta.json)
+2026-11-26T09:36:35.1925757Z sedinta-1256-2019-12-19/proiecte: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071404Z.meta.json)
+2026-11-26T09:36:35.1926412Z sedinta-1256-2019-12-19/prezenta: 200 124B sha256=2e72d4837505878d neschimbat (= 20261022T071407Z.meta.json)
+2026-11-26T09:36:42.1144091Z registru-proiecte-2026: 200 225345B items=262 sha256=165b77f96866d2f1 commit=0bd257f
+2026-11-26T09:36:42.1145459Z registru-hotarari-2026: 200 198083B sha256=18c91db547e18e1a neschimbat (= 20261124T063155Z.meta.json)
+2026-11-26T09:36:42.1146972Z registru-pv-2026: 200 3588B sha256=d99ba07958ec16f4 neschimbat (= 20261126T063210Z.meta.json)
+2026-11-26T09:36:42.1147870Z run 20261126T092255Z mode=full sedinte=166 noi=5 neschimbate=497 commit=cfade7a
+2026-11-26T09:36:42.1360872Z Post job cleanup.
+2026-11-26T09:36:42.2559782Z (node:2633) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-26T09:36:42.2560540Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-26T09:36:42.2728106Z Post job cleanup.
+2026-11-26T09:36:42.3567105Z [command]/usr/bin/git version
+2026-11-26T09:36:42.3605173Z git version 2.56.1
+2026-11-26T09:36:42.3643504Z Temporarily overriding HOME='/home/runner/work/_temp/ce9aa900-b0ce-478f-9f93-0629d391354a' before making global git config changes
+2026-11-26T09:36:42.3644869Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-26T09:36:42.3650314Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/mol-witness/mol-witness
+2026-11-26T09:36:42.3688368Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-26T09:36:42.3723911Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-26T09:36:42.4015391Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-26T09:36:42.4038236Z http.https://github.com/.extraheader
+2026-11-26T09:36:42.4049664Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-26T09:36:42.4082693Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-26T09:36:42.4376561Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-26T09:36:42.4416325Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-26T09:36:42.4852066Z Cleaning up orphan processes
+2026-11-26T09:36:42.5233789Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

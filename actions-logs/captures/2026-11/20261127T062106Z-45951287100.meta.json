@@ -1,0 +1,76 @@
+{
+ "run_id": 45951287100,
+ "run_number": 117,
+ "run_attempt": 1,
+ "workflow": "MOL captures",
+ "workflow_path": ".github/workflows/captures.yml",
+ "event": "schedule",
+ "status": "completed",
+ "conclusion": "success",
+ "actor": "ilupu",
+ "head_branch": "main",
+ "head_sha": "6b431e059420ea82e464adff19133838d858499e",
+ "created_at": "2026-11-27T06:21:06Z",
+ "run_started_at": "2026-11-27T06:21:06Z",
+ "updated_at": "2026-11-27T06:21:11Z",
+ "html_url": "https://github.com/ilupu/mol-witness/actions/runs/45951287100",
+ "jobs": [
+  {
+   "id": 140347494074,
+   "name": "gate",
+   "run_attempt": 1,
+   "status": "completed",
+   "conclusion": "success",
+   "started_at": "2026-11-27T06:21:08Z",
+   "completed_at": "2026-11-27T06:21:11Z",
+   "runner_name": "GitHub Actions 1000003986",
+   "html_url": "https://github.com/ilupu/mol-witness/actions/runs/45951287100/job/140347494074",
+   "steps": [
+    {
+     "number": 1,
+     "name": "Set up job",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-27T06:21:09Z",
+     "completed_at": "2026-11-27T06:21:09Z"
+    },
+    {
+     "number": 2,
+     "name": "Run if [ \"schedule\" != \"schedule\" ]; then",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-27T06:21:09Z",
+     "completed_at": "2026-11-27T06:21:09Z"
+    },
+    {
+     "number": 3,
+     "name": "Complete job",
+     "status": "completed",
+     "conclusion": "success",
+     "started_at": "2026-11-27T06:21:09Z",
+     "completed_at": "2026-11-27T06:21:09Z"
+    }
+   ],
+   "log": "actions-logs/captures/2026-11/20261127T062106Z-45951287100.gate.log",
+   "log_sha256": "bb269148b18609041cc0c52f643d78f284b511764b7458c62d2304050b078e0c",
+   "log_bytes": 2798
+  },
+  {
+   "id": 140347522626,
+   "name": "captures",
+   "run_attempt": 1,
+   "status": "completed",
+   "conclusion": "skipped",
+   "started_at": "2026-11-27T06:21:11Z",
+   "completed_at": "2026-11-27T06:21:11Z",
+   "runner_name": null,
+   "html_url": "https://github.com/ilupu/mol-witness/actions/runs/45951287100/job/140347522626",
+   "steps": [],
+   "log": null,
+   "log_error": "HTTP 404"
+  }
+ ],
+ "archived_at_utc": "2026-11-28T02:45:22.612912+00:00",
+ "archived_by_run_id": "46099563733",
+ "archived_by_run_url": "https://github.com/ilupu/mol-witness/actions/runs/46099563733"
+}
